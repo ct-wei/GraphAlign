@@ -1,0 +1,198 @@
+import cv2
+import numpy as np
+import os
+from tqdm import tqdm
+import pytesseract  # OCR引擎（需单独安装）
+from concurrent.futures import ThreadPoolExecutor
+
+class PPTKeyframeExtractor:
+    def __init__(self, video_path, output_dir="output"):
+        self.video_path = video_path
+        self.output_dir = output_dir
+        os.makedirs(output_dir, exist_ok=True)
+        
+        # 优化参数配置（可根据视频特性调整）
+        self.config = {
+            'base_threshold': 18000,    # 幻灯片切换检测阈值
+            'accum_threshold': 50000,   # 动画累积变化阈值
+            'min_segment_len': 15,      # 最短分段长度（帧数）
+            'crop_margin': 0.1,         # 内容区域裁剪边界
+            'sharpening_kernel': np.array([[0,-1,0], [-1,5,-1], [0,-1,0]]),  # 锐化卷积核
+            'resize_size': (64,64),     # 特征签名尺寸
+            'ocr_config': '--psm 6'     # Tesseract OCR配置
+        }
+
+    def extract_frames(self, interval=1):
+        """智能视频采帧（支持跳帧）"""
+        cap = cv2.VideoCapture(self.video_path)
+        if not cap.isOpened():
+            raise IOError("无法打开视频文件")
+
+        total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        frames = []
+        
+        for i in tqdm(range(total_frames), desc="视频采帧"):
+            ret = cap.grab()
+            if i % interval != 0:
+                continue
+            ret, frame = cap.retrieve()
+            if ret:
+                frames.append(frame)
+        
+        cap.release()
+        print(f"共采集到 {len(frames)} 帧（间隔={interval}）")
+        return frames
+
+    def detect_content_region(self, frame):
+        """自动检测PPT内容主区域"""
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        edges = cv2.Canny(gray, 50, 150)
+        
+        # 寻找最大轮廓
+        contours, _ = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        if not contours:
+            return frame
+        
+        max_contour = max(contours, key=cv2.contourArea)
+        x,y,w,h = cv2.boundingRect(max_contour)
+        
+        # 添加边界容错
+        margin = int(min(w,h) * self.config['crop_margin'])
+        return frame[
+            max(0,y-margin):min(frame.shape[0], y+h+margin),
+            max(0,x-margin):min(frame.shape[1], x+w+margin)]
+    
+    def preprocess_frame(self, frame):
+        """帧预处理流程"""
+        # 1. 内容区域裁剪
+        cropped = self.detect_content_region(frame)
+        
+        # 2. 锐化增强
+        sharpened = cv2.filter2D(cropped, -1, self.config['sharpening_kernel'])
+        
+        # 3. 自适应二值化
+        gray = cv2.cvtColor(sharpened, cv2.COLOR_BGR2GRAY)
+        return cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+                                   cv2.THRESH_BINARY, 11, 2)
+
+    def generate_signature(self, frame):
+        """生成增强型特征签名"""
+        processed = self.preprocess_frame(frame)
+        resized = cv2.resize(processed, self.config['resize_size'])
+        return resized.astype(np.int16)
+    
+    def extract_text(self, frame):
+        """提取幻灯片文字内容（用于去重）"""
+        processed = self.preprocess_frame(frame)
+        try:
+            text = pytesseract.image_to_string(processed, config=self.config['ocr_config'])
+            return ' '.join(text.split())  # 标准化空格
+        except:
+            return ""
+
+    def content_similarity(self, text1, text2):
+        """基于文本相似度的内容比对"""
+        if not text1 or not text2:
+            return 0.0
+        
+        # 简单重合率计算
+        set1 = set(text1.split())
+        set2 = set(text2.split())
+        intersection = set1 & set2
+        return len(intersection) / max(len(set1), len(set2))
+
+    def detect_keyframes(self, frames):
+        """核心关键帧检测算法"""
+        print("正在计算帧特征...")
+        with ThreadPoolExecutor() as executor:
+            signatures = list(tqdm(executor.map(self.generate_signature, frames), 
+                                 total=len(frames)))
+        
+        print("正在分析关键帧...")
+        keyframes = [0]  # 第一帧总是关键帧
+        prev_sig = signatures[0]
+        accum_diff = 0
+        last_text = self.extract_text(frames[0])
+        
+        for idx in tqdm(range(1, len(frames)), desc="帧分析"):
+            current_diff = np.abs(signatures[idx] - prev_sig).sum()
+            accum_diff += current_diff
+            
+            # 条件1：检测到幻灯片切换
+            if current_diff > self.config['base_threshold']:
+                if (idx - keyframes[-1]) > self.config['min_segment_len']:
+                    keyframes.append(idx)
+                    prev_sig = signatures[idx]
+                    accum_diff = 0
+                    last_text = self.extract_text(frames[idx])
+            
+            # 条件2：检测到累积动画变化
+            elif accum_diff > self.config['accum_threshold']:
+                current_text = self.extract_text(frames[idx])
+                if self.content_similarity(last_text, current_text) < 0.7:
+                    keyframes.append(idx)
+                    prev_sig = signatures[idx]
+                    accum_diff = 0
+                    last_text = current_text
+        
+        return keyframes
+
+    def save_results(self, frames, keyframes):
+        """保存关键帧与可视化报告"""
+        print("正在保存结果...")
+        
+        # 保存所有关键帧
+        for i, idx in enumerate(tqdm(keyframes, desc="保存关键帧")):
+            cv2.imwrite(
+                os.path.join(self.output_dir, f"keyframe_{i:04d}.jpg"), 
+                frames[idx]
+            )
+        
+        # 生成带标记的视频用于验证
+        fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+        out = cv2.VideoWriter(
+            os.path.join(self.output_dir, "marked.mp4"),
+            fourcc, 10.0, 
+            (frames[0].shape[1], frames[0].shape[0])
+        )
+        
+        for idx in tqdm(range(len(frames)), desc="生成标记视频"):
+            frame = frames[idx].copy()
+            if idx in keyframes:
+                cv2.putText(frame, "KEYFRAME", (50,50),
+                            cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 2)
+                cv2.rectangle(frame, (0,0), (frame.shape[1]-1, frame.shape[0]-1), 
+                             (0,0,255), 5)
+            out.write(frame)
+        out.release()
+
+    def process(self):
+        """完整处理流程"""
+        # 1. 视频采帧
+        frames = self.extract_frames(interval=1)
+        
+        # 2. 检测关键帧
+        keyframes = self.detect_keyframes(frames)
+        print(f"检测到 {len(keyframes)} 个关键帧")
+        
+        # 3. 保存结果
+        self.save_results(frames, keyframes)
+        
+        return keyframes
+
+if __name__ == "__main__":
+    # 使用示例
+    processor = PPTKeyframeExtractor(
+        video_path="lecture.mp4",
+        output_dir="ppt_keyframes"
+    )
+    
+    # 开始处理（返回关键帧索引列表）
+    keyframe_indices = processor.process()
+    
+    # 打印关键帧位置（秒）
+    cap = cv2.VideoCapture("lecture.mp4")
+    fps = cap.get(cv2.CAP_PROP_FPS)
+    for idx in keyframe_indices:
+        print(f"关键帧 {idx:4d} -> 时间: {idx/fps:.2f}秒")
+    cap.release()
