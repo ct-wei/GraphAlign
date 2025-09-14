@@ -1,0 +1,93 @@
+{
+    "scene": "A person standing on an elevated surface with birds nearby against a backdrop of clouds.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Person standing on an elevated flat surface",
+            "objects": [
+                {
+                    "name": "Person",
+                    "attribute": [
+                        "silhouette",
+                        "holding a camera or mobile phone"
+                    ]
+                },
+                {
+                    "name": "elevated flat surface",
+                    "attribute": [
+                        "possible rooftop"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Two birds perching",
+            "objects": [
+                {
+                    "name": "Bird 1",
+                    "attribute": [
+                        "perched on a pole"
+                    ]
+                },
+                {
+                    "name": "Bird 2",
+                    "attribute": [
+                        "perched on the edge"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Backdrop of soft, cumulus clouds scattered across the sky",
+            "objects": [
+                {
+                    "name": "clouds",
+                    "attribute": [
+                        "soft",
+                        "cumulus",
+                        "scattered"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Person",
+            "relationship": "standing on",
+            "object": "elevated flat surface"
+        },
+        {
+            "subject": "Person",
+            "relationship": "holding",
+            "object": "camera or mobile phone"
+        },
+        {
+            "subject": "Bird 1",
+            "relationship": "perched on",
+            "object": "pole"
+        },
+        {
+            "subject": "Bird 2",
+            "relationship": "perched on",
+            "object": "edge"
+        },
+        {
+            "subject": "clouds",
+            "relationship": "backdrop for",
+            "object": "Person"
+        },
+        {
+            "subject": "clouds",
+            "relationship": "backdrop for",
+            "object": "Bird 1"
+        },
+        {
+            "subject": "clouds",
+            "relationship": "backdrop for",
+            "object": "Bird 2"
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "scene": "A man making a sandwich in a home kitchen with various kitchen items around.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Man making a sandwich",
+            "objects": [
+                {
+                    "name": "man",
+                    "attribute": [
+                        "smiling",
+                        "wearing glasses",
+                        "plaid shirt"
+                    ]
+                },
+                {
+                    "name": "sandwich",
+                    "attribute": [
+                        "in preparation"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Kitchen counter with items",
+            "objects": [
+                {
+                    "name": "bread loaf",
+                    "attribute": [
+                        "packaged"
+                    ]
+                },
+                {
+                    "name": "butter",
+                    "attribute": [
+                        "in container with lid off"
+                    ]
+                },
+                {
+                    "name": "hot sauce bottle",
+                    "attribute": [
+                        "red",
+                        "upright"
+                    ]
+                },
+                {
+                    "name": "knife set",
+                    "attribute": [
+                        "in holder"
+                    ]
+                },
+                {
+                    "name": "salt container",
+                    "attribute": [
+                        "iodized",
+                        "opened"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Kitchen appliances",
+            "objects": [
+                {
+                    "name": "coffee pot",
+                    "attribute": [
+                        "black",
+                        "handle"
+                    ]
+                },
+                {
+                    "name": "stove",
+                    "attribute": [
+                        "white",
+                        "knobs on front"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "man",
+            "relationship": "using",
+            "object": "knife set"
+        },
+        {
+            "subject": "man",
+            "relationship": "making",
+            "object": "sandwich"
+        },
+        {
+            "subject": "bread loaf",
+            "relationship": "next to",
+            "object": "butter"
+        },
+        {
+            "subject": "sandwich",
+            "relationship": "on",
+            "object": "stove"
+        },
+        {
+            "subject": "hot sauce bottle",
+            "relationship": "in front of",
+            "object": "butter"
+        },
+        {
+            "subject": "knife set",
+            "relationship": "in",
+            "object": "holder"
+        },
+        {
+            "subject": "salt container",
+            "relationship": "next to",
+            "object": "coffee pot"
+        }
+    ]
+}

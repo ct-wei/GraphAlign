@@ -1,0 +1,92 @@
+{
+    "scene": "A female rider on horseback at a beach with water and a clear sky in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Female rider on horseback",
+            "objects": [
+                {
+                    "name": "female rider",
+                    "attribute": [
+                        "wearing sunglasses",
+                        "black top",
+                        "riding",
+                        "casual attire"
+                    ]
+                },
+                {
+                    "name": "horse",
+                    "attribute": [
+                        "brown",
+                        "wearing bridle",
+                        "saddled"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Beach with water",
+            "objects": [
+                {
+                    "name": "beach",
+                    "attribute": [
+                        "sandy"
+                    ]
+                },
+                {
+                    "name": "water",
+                    "attribute": [
+                        "calm",
+                        "blue"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Clear sky",
+            "objects": [
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "clear",
+                        "blue"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "female rider",
+            "relationship": "sitting on",
+            "object": "horse"
+        },
+        {
+            "subject": "female rider",
+            "relationship": "at",
+            "object": "beach"
+        },
+        {
+            "subject": "horse",
+            "relationship": "at",
+            "object": "beach"
+        },
+        {
+            "subject": "beach",
+            "relationship": "next to",
+            "object": "water"
+        },
+        {
+            "subject": "beach",
+            "relationship": "under",
+            "object": "sky"
+        },
+        {
+            "subject": "water",
+            "relationship": "under",
+            "object": "sky"
+        }
+    ]
+}

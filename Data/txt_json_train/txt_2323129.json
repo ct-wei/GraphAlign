@@ -1,0 +1,106 @@
+{
+    "scene": "A detailed model train scene featuring a red caboose, various railcars, realistic landscaping, and model buildings.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Foreground with red caboose and model railcars",
+            "objects": [
+                {
+                    "name": "caboose",
+                    "attribute": [
+                        "red",
+                        "labeled with 'SEABOARD'",
+                        "number '12321' visible on side"
+                    ]
+                },
+                {
+                    "name": "tanker railcar",
+                    "attribute": [
+                        "attached to caboose"
+                    ]
+                },
+                {
+                    "name": "boxcar",
+                    "attribute": [
+                        "marked with 'PENNSYLVANIA'",
+                        "attached to caboose"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Model setup with landscaping",
+            "objects": [
+                {
+                    "name": "grassy knolls",
+                    "attribute": [
+                        "green",
+                        "realistic"
+                    ]
+                },
+                {
+                    "name": "shrubbery",
+                    "attribute": [
+                        "alongside the tracks",
+                        "realistic"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background with model buildings",
+            "objects": [
+                {
+                    "name": "industrial building",
+                    "attribute": [
+                        "part of a small industrial area or rail yard"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "caboose",
+            "relationship": "attached to",
+            "object": "tanker railcar"
+        },
+        {
+            "subject": "caboose",
+            "relationship": "part of",
+            "object": "model train scene"
+        },
+        {
+            "subject": "tanker railcar",
+            "relationship": "attached to",
+            "object": "boxcar"
+        },
+        {
+            "subject": "boxcar",
+            "relationship": "part of",
+            "object": "model train scene"
+        },
+        {
+            "subject": "grassy knolls",
+            "relationship": "located next to",
+            "object": "shrubbery"
+        },
+        {
+            "subject": "shrubbery",
+            "relationship": "flanks",
+            "object": "tracks"
+        },
+        {
+            "subject": "industrial building",
+            "relationship": "part of",
+            "object": "model buildings area"
+        },
+        {
+            "subject": "model train scene",
+            "relationship": "includes",
+            "object": "industrial building"
+        }
+    ]
+}

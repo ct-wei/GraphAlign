@@ -1,0 +1,137 @@
+{
+    "scene": "A family sitting on a couch with a toddler playing with a toy train in front of them.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Family sitting on the couch",
+            "objects": [
+                {
+                    "name": "male adult 1",
+                    "attribute": [
+                        "sitting",
+                        "white hair",
+                        "smiling",
+                        "wearing a blue shirt"
+                    ]
+                },
+                {
+                    "name": "male adult 2",
+                    "attribute": [
+                        "sitting",
+                        "gray hair",
+                        "pointing",
+                        "wearing glasses",
+                        "wearing a beige shirt"
+                    ]
+                },
+                {
+                    "name": "female adult 1",
+                    "attribute": [
+                        "sitting",
+                        "white hair",
+                        "smiling",
+                        "wearing a dark top"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Toddler playing with a toy train",
+            "objects": [
+                {
+                    "name": "toddler 1",
+                    "attribute": [
+                        "playing",
+                        "blond hair",
+                        "wearing a striped top"
+                    ]
+                },
+                {
+                    "name": "toy train",
+                    "attribute": [
+                        "colorful",
+                        "on toy tracks"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Living room area",
+            "objects": [
+                {
+                    "name": "couch",
+                    "attribute": [
+                        "beige",
+                        "fabric"
+                    ]
+                },
+                {
+                    "name": "toy tracks",
+                    "attribute": [
+                        "blue and green"
+                    ]
+                },
+                {
+                    "name": "toy blocks",
+                    "attribute": [
+                        "multicolored"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "male adult 1",
+            "relationship": "sitting next to",
+            "object": "male adult 2"
+        },
+        {
+            "subject": "male adult 2",
+            "relationship": "sitting next to",
+            "object": "female adult 1"
+        },
+        {
+            "subject": "female adult 1",
+            "relationship": "sitting on",
+            "object": "couch"
+        },
+        {
+            "subject": "male adult 1",
+            "relationship": "looking at",
+            "object": "toddler 1"
+        },
+        {
+            "subject": "male adult 2",
+            "relationship": "pointing towards",
+            "object": "toddler 1"
+        },
+        {
+            "subject": "toddler 1",
+            "relationship": "playing with",
+            "object": "toy train"
+        },
+        {
+            "subject": "toy train",
+            "relationship": "on",
+            "object": "toy tracks"
+        },
+        {
+            "subject": "couch",
+            "relationship": "in",
+            "object": "living room area"
+        },
+        {
+            "subject": "toy tracks",
+            "relationship": "around",
+            "object": "toy train"
+        },
+        {
+            "subject": "toddler 1",
+            "relationship": "in front of",
+            "object": "couch"
+        }
+    ]
+}

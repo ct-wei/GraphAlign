@@ -1,0 +1,56 @@
+{
+    "scene": "A modern chandelier with multiple arms and lights hangs from a ceiling.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Modern chandelier with multiple arms",
+            "objects": [
+                {
+                    "name": "chandelier",
+                    "attribute": [
+                        "gold",
+                        "contemporary design",
+                        "multiple arms",
+                        "hanging",
+                        "illuminated"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Ceiling above the chandelier",
+            "objects": [
+                {
+                    "name": "ceiling",
+                    "attribute": [
+                        "white",
+                        "textured"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "chandelier",
+            "relationship": "hanging from",
+            "object": "ceiling"
+        },
+        {
+            "subject": "chandelier",
+            "relationship": "is",
+            "object": "illuminated"
+        },
+        {
+            "subject": "chandelier",
+            "relationship": "colored",
+            "object": "gold"
+        },
+        {
+            "subject": "ceiling",
+            "relationship": "supports",
+            "object": "chandelier"
+        }
+    ]
+}

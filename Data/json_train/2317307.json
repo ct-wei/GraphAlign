@@ -1,0 +1,104 @@
+{
+    "scene": "A person skateboarding down some steps in front of a building with another person observing.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Person skateboarding down steps",
+            "objects": [
+                {
+                    "name": "skateboarder (male)",
+                    "attribute": [
+                        "wearing cap",
+                        "blue jeans",
+                        "white hoodie",
+                        "performing trick"
+                    ]
+                },
+                {
+                    "name": "skateboard",
+                    "attribute": [
+                        "under feet",
+                        "in motion"
+                    ]
+                },
+                {
+                    "name": "steps",
+                    "attribute": [
+                        "stone",
+                        "architectural"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Person observing near the building",
+            "objects": [
+                {
+                    "name": "observer (male)",
+                    "attribute": [
+                        "wearing dark clothes",
+                        "standing",
+                        "watching"
+                    ]
+                },
+                {
+                    "name": "building",
+                    "attribute": [
+                        "historic",
+                        "stone facade"
+                    ]
+                },
+                {
+                    "name": "statue",
+                    "attribute": [
+                        "bronze",
+                        "mounted on pedestal"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "skateboarder (male)",
+            "relationship": "riding",
+            "object": "skateboard"
+        },
+        {
+            "subject": "skateboarder (male)",
+            "relationship": "moving down",
+            "object": "steps"
+        },
+        {
+            "subject": "observer (male)",
+            "relationship": "watching",
+            "object": "skateboarder (male)"
+        },
+        {
+            "subject": "skateboard",
+            "relationship": "above",
+            "object": "steps"
+        },
+        {
+            "subject": "building",
+            "relationship": "behind",
+            "object": "skateboarder (male)"
+        },
+        {
+            "subject": "building",
+            "relationship": "behind",
+            "object": "observer (male)"
+        },
+        {
+            "subject": "statue",
+            "relationship": "adjacent to",
+            "object": "observer (male)"
+        },
+        {
+            "subject": "steps",
+            "relationship": "part of",
+            "object": "building"
+        }
+    ]
+}

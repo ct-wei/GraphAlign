@@ -1,0 +1,124 @@
+{
+    "scene": "A dynamic moment during a baseball game with the batter ready to hit the ball and the catcher and umpire in position.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Batter area",
+            "objects": [
+                {
+                    "name": "Batter (male)",
+                    "attribute": [
+                        "red shirt",
+                        "black helmet",
+                        "batting stance",
+                        "holding bat"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Catcher area",
+            "objects": [
+                {
+                    "name": "Catcher (male)",
+                    "attribute": [
+                        "white uniform",
+                        "black and red details",
+                        "crouched",
+                        "catcher's mitt extended"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Umpire area",
+            "objects": [
+                {
+                    "name": "Umpire (male)",
+                    "attribute": [
+                        "black protective gear",
+                        "positioned behind catcher",
+                        "watching play"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Field area",
+            "objects": [
+                {
+                    "name": "Chalk lines",
+                    "attribute": [
+                        "white",
+                        "indicate batter's boxes and foul lines"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Batter (male)",
+            "relationship": "wearing",
+            "object": "red shirt"
+        },
+        {
+            "subject": "Batter (male)",
+            "relationship": "wearing",
+            "object": "black helmet"
+        },
+        {
+            "subject": "Batter (male)",
+            "relationship": "holding",
+            "object": "bat"
+        },
+        {
+            "subject": "Catcher (male)",
+            "relationship": "wearing",
+            "object": "white uniform"
+        },
+        {
+            "subject": "Catcher (male)",
+            "relationship": "crouched behind",
+            "object": "home plate"
+        },
+        {
+            "subject": "Catcher (male)",
+            "relationship": "has",
+            "object": "catcher's mitt extended"
+        },
+        {
+            "subject": "Umpire (male)",
+            "relationship": "wearing",
+            "object": "black protective gear"
+        },
+        {
+            "subject": "Umpire (male)",
+            "relationship": "positioned behind",
+            "object": "Catcher (male)"
+        },
+        {
+            "subject": "Umpire (male)",
+            "relationship": "watching",
+            "object": "play"
+        },
+        {
+            "subject": "Chalk lines",
+            "relationship": "on",
+            "object": "ground"
+        },
+        {
+            "subject": "Chalk lines",
+            "relationship": "indicate",
+            "object": "batter's boxes"
+        },
+        {
+            "subject": "Chalk lines",
+            "relationship": "indicate",
+            "object": "foul lines"
+        }
+    ]
+}

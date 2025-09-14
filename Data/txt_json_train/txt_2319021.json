@@ -1,0 +1,70 @@
+{
+    "scene": "A young child imitating a conversation on a mobile phone inside a vehicle.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Child holding a mobile phone",
+            "objects": [
+                {
+                    "name": "child",
+                    "attribute": [
+                        "young",
+                        "curly blond hair",
+                        "holding mobile phone",
+                        "wearing striped t-shirt",
+                        "curious and engaged expression"
+                    ]
+                },
+                {
+                    "name": "mobile phone",
+                    "attribute": [
+                        "held up to ear"
+                    ]
+                },
+                {
+                    "name": "t-shirt",
+                    "attribute": [
+                        "black and white",
+                        "horizontal stripes"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Interior of a vehicle",
+            "objects": [
+                {
+                    "name": "vehicle",
+                    "attribute": [
+                        "interior",
+                        "window structure",
+                        "patterned seats"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "child",
+            "relationship": "wearing",
+            "object": "t-shirt"
+        },
+        {
+            "subject": "child",
+            "relationship": "holding",
+            "object": "mobile phone"
+        },
+        {
+            "subject": "child",
+            "relationship": "sitting in",
+            "object": "vehicle"
+        },
+        {
+            "subject": "mobile phone",
+            "relationship": "near",
+            "object": "child's ear"
+        }
+    ]
+}

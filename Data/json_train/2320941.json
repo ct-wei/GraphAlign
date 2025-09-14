@@ -1,0 +1,122 @@
+{
+    "scene": "A man standing and holding a remote with a seated couple in the background inside a room.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Man standing in the foreground",
+            "objects": [
+                {
+                    "name": "man 1",
+                    "attribute": [
+                        "wearing a hat",
+                        "holding a remote",
+                        "smiling",
+                        "wearing a short-sleeve shirt",
+                        "wearing shorts"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Couple seated in the background",
+            "objects": [
+                {
+                    "name": "man 2",
+                    "attribute": [
+                        "seated",
+                        "wearing a sleeveless shirt",
+                        "smiling"
+                    ]
+                },
+                {
+                    "name": "woman 1",
+                    "attribute": [
+                        "seated",
+                        "smiling",
+                        "wearing a sleeveless top"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Room interior with furniture",
+            "objects": [
+                {
+                    "name": "chair 1",
+                    "attribute": [
+                        "wooden",
+                        "armrests"
+                    ]
+                },
+                {
+                    "name": "fan",
+                    "attribute": [
+                        "electric",
+                        "floor-standing"
+                    ]
+                },
+                {
+                    "name": "string lights",
+                    "attribute": [
+                        "hung up",
+                        "turned on"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "man 1",
+            "relationship": "holding",
+            "object": "remote"
+        },
+        {
+            "subject": "man 1",
+            "relationship": "standing in front of",
+            "object": "chair 1"
+        },
+        {
+            "subject": "man 1",
+            "relationship": "wearing",
+            "object": "hat"
+        },
+        {
+            "subject": "man 2",
+            "relationship": "sitting next to",
+            "object": "woman 1"
+        },
+        {
+            "subject": "man 2",
+            "relationship": "sitting on",
+            "object": "chair 1"
+        },
+        {
+            "subject": "woman 1",
+            "relationship": "sitting on",
+            "object": "chair 1"
+        },
+        {
+            "subject": "chair 1",
+            "relationship": "positioned near",
+            "object": "fan"
+        },
+        {
+            "subject": "string lights",
+            "relationship": "attached to",
+            "object": "room"
+        },
+        {
+            "subject": "man 1",
+            "relationship": "standing closer to camera than",
+            "object": "man 2"
+        },
+        {
+            "subject": "man 1",
+            "relationship": "standing closer to camera than",
+            "object": "woman 1"
+        }
+    ]
+}

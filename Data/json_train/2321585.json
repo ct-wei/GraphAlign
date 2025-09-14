@@ -1,0 +1,103 @@
+{
+    "scene": "A tidy bedroom with a neatly made bed, a window with curtains, and exposed brick walls.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "The bed area with beddings",
+            "objects": [
+                {
+                    "name": "bed",
+                    "attribute": [
+                        "double size",
+                        "white bed frame",
+                        "neatly made"
+                    ]
+                },
+                {
+                    "name": "pillow",
+                    "attribute": [
+                        "fluffy",
+                        "covered"
+                    ]
+                },
+                {
+                    "name": "quilt",
+                    "attribute": [
+                        "patchwork",
+                        "multicolored"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Window area with curtains",
+            "objects": [
+                {
+                    "name": "window",
+                    "attribute": [
+                        "rectangle",
+                        "daylight coming through"
+                    ]
+                },
+                {
+                    "name": "curtains",
+                    "attribute": [
+                        "patterned",
+                        "green and white"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Walls and room decoration",
+            "objects": [
+                {
+                    "name": "brick wall",
+                    "attribute": [
+                        "exposed",
+                        "painted purple"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "quilt",
+            "relationship": "is on",
+            "object": "bed"
+        },
+        {
+            "subject": "pillow",
+            "relationship": "is on",
+            "object": "bed"
+        },
+        {
+            "subject": "bed",
+            "relationship": "is in",
+            "object": "region1"
+        },
+        {
+            "subject": "window",
+            "relationship": "is above",
+            "object": "bed"
+        },
+        {
+            "subject": "curtains",
+            "relationship": "are hanging on",
+            "object": "window"
+        },
+        {
+            "subject": "brick wall",
+            "relationship": "is behind",
+            "object": "bed"
+        },
+        {
+            "subject": "window",
+            "relationship": "is part of",
+            "object": "brick wall"
+        }
+    ]
+}

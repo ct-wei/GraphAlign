@@ -1,0 +1,124 @@
+{
+    "scene": "A selection of teddy bears dressed in festive Christmas attire displayed in a store.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Large teddy bears wearing Santa hats and Christmas clothes",
+            "objects": [
+                {
+                    "name": "Teddy bear 1",
+                    "attribute": [
+                        "large",
+                        "beige",
+                        "wearing Santa hat",
+                        "red Christmas dress"
+                    ]
+                },
+                {
+                    "name": "Teddy bear 2",
+                    "attribute": [
+                        "large",
+                        "beige",
+                        "wearing Santa hat"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Smaller teddy bears and Christmas decorations",
+            "objects": [
+                {
+                    "name": "Teddy bear 3",
+                    "attribute": [
+                        "small",
+                        "white",
+                        "wearing Santa hat"
+                    ]
+                },
+                {
+                    "name": "Teddy bear 4",
+                    "attribute": [
+                        "small",
+                        "beige",
+                        "wearing Santa hat"
+                    ]
+                },
+                {
+                    "name": "Christmas tree",
+                    "attribute": [
+                        "green",
+                        "decorated",
+                        "plush"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Christmas greeting sign and gift boxes",
+            "objects": [
+                {
+                    "name": "Greeting sign",
+                    "attribute": [
+                        "colorful",
+                        "text 'HAPPY NEW YEAR'"
+                    ]
+                },
+                {
+                    "name": "Gift box 1",
+                    "attribute": [
+                        "red",
+                        "wrapped",
+                        "with bow"
+                    ]
+                },
+                {
+                    "name": "Gift box 2",
+                    "attribute": [
+                        "green",
+                        "wrapped",
+                        "with bow"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Teddy bear 1",
+            "relationship": "next to",
+            "object": "Teddy bear 2"
+        },
+        {
+            "subject": "Teddy bear 3",
+            "relationship": "in front of",
+            "object": "Teddy bear 1"
+        },
+        {
+            "subject": "Teddy bear 4",
+            "relationship": "in front of",
+            "object": "Teddy bear 2"
+        },
+        {
+            "subject": "Christmas tree",
+            "relationship": "adjacent to",
+            "object": "Teddy bear 3"
+        },
+        {
+            "subject": "Greeting sign",
+            "relationship": "behind",
+            "object": "Teddy bear 4"
+        },
+        {
+            "subject": "Gift box 1",
+            "relationship": "below",
+            "object": "Greeting sign"
+        },
+        {
+            "subject": "Gift box 2",
+            "relationship": "next to",
+            "object": "Gift box 1"
+        }
+    ]
+}

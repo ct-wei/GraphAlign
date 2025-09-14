@@ -1,0 +1,119 @@
+{
+    "scene": "A young male skateboarder riding a skateboard in an open area with industrial structures in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Young male skateboarder riding a skateboard",
+            "objects": [
+                {
+                    "name": "person",
+                    "attribute": [
+                        "young",
+                        "male",
+                        "casual clothing",
+                        "brown jacket",
+                        "skateboarding",
+                        "dark hair"
+                    ]
+                },
+                {
+                    "name": "skateboard",
+                    "attribute": [
+                        "short board"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Open area with industrial structures",
+            "objects": [
+                {
+                    "name": "ground",
+                    "attribute": [
+                        "paved"
+                    ]
+                },
+                {
+                    "name": "industrial structure 1",
+                    "attribute": [
+                        "green container",
+                        "metallic structure"
+                    ]
+                },
+                {
+                    "name": "industrial structure 2",
+                    "attribute": [
+                        "fenced area",
+                        "metal fencing"
+                    ]
+                },
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "cloudy"
+                    ]
+                },
+                {
+                    "name": "mountains",
+                    "attribute": [
+                        "in the distance",
+                        "partly covered by clouds"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "person",
+            "relationship": "riding",
+            "object": "skateboard"
+        },
+        {
+            "subject": "skateboard",
+            "relationship": "on",
+            "object": "ground"
+        },
+        {
+            "subject": "person",
+            "relationship": "in front of",
+            "object": "industrial structure 1"
+        },
+        {
+            "subject": "person",
+            "relationship": "in front of",
+            "object": "industrial structure 2"
+        },
+        {
+            "subject": "industrial structure 1",
+            "relationship": "adjacent to",
+            "object": "industrial structure 2"
+        },
+        {
+            "subject": "ground",
+            "relationship": "surrounded by",
+            "object": "industrial structure 1"
+        },
+        {
+            "subject": "ground",
+            "relationship": "surrounded by",
+            "object": "industrial structure 2"
+        },
+        {
+            "subject": "sky",
+            "relationship": "above",
+            "object": "all objects"
+        },
+        {
+            "subject": "mountains",
+            "relationship": "behind",
+            "object": "industrial structures"
+        },
+        {
+            "subject": "industrial structures",
+            "relationship": "in front of",
+            "object": "mountains"
+        }
+    ]
+}

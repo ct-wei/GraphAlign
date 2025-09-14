@@ -1,0 +1,94 @@
+{
+    "scene": "An old-fashioned black steam locomotive with metal accents on tracks in a daytime urban or museum setting.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Old-fashioned black steam locomotive with number 7 and gold and red trim details",
+            "objects": [
+                {
+                    "name": "locomotive",
+                    "attribute": [
+                        "old-fashioned",
+                        "black",
+                        "steam-powered",
+                        "gleaming metal accents",
+                        "number 7",
+                        "gold and red trim details",
+                        "round front boiler",
+                        "complex network of pipes",
+                        "large driving wheels"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Locomotive stationed on tracks",
+            "objects": [
+                {
+                    "name": "tracks",
+                    "attribute": [
+                        "metal"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background with brick buildings and partly cloudy sky",
+            "objects": [
+                {
+                    "name": "brick buildings",
+                    "attribute": [
+                        "red",
+                        "urban"
+                    ]
+                },
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "partly cloudy",
+                        "daytime"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "locomotive",
+            "relationship": "is stationed on",
+            "object": "tracks"
+        },
+        {
+            "subject": "locomotive",
+            "relationship": "is located in",
+            "object": "region1"
+        },
+        {
+            "subject": "tracks",
+            "relationship": "are located in",
+            "object": "region2"
+        },
+        {
+            "subject": "brick buildings",
+            "relationship": "form the background of",
+            "object": "region3"
+        },
+        {
+            "subject": "sky",
+            "relationship": "forms the backdrop of",
+            "object": "region3"
+        },
+        {
+            "subject": "locomotive",
+            "relationship": "is surrounded by",
+            "object": "brick buildings"
+        },
+        {
+            "subject": "locomotive",
+            "relationship": "is under",
+            "object": "sky"
+        }
+    ]
+}

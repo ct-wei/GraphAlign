@@ -1,0 +1,92 @@
+{
+    "scene": "A plate of braised meat and cauliflower on a green placemat in a domestic kitchen setting.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Plate containing braised meat with brown sauce and side of cauliflower",
+            "objects": [
+                {
+                    "name": "braised meat",
+                    "attribute": [
+                        "tender",
+                        "cooked in chunks",
+                        "glazed with brown sauce",
+                        "savory"
+                    ]
+                },
+                {
+                    "name": "cauliflower",
+                    "attribute": [
+                        "garnished with green herbs",
+                        "boiled or steamed"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Green placemat with plate and a hint of a napkin or dish towel",
+            "objects": [
+                {
+                    "name": "placemat",
+                    "attribute": [
+                        "green"
+                    ]
+                },
+                {
+                    "name": "napkin or dish towel",
+                    "attribute": [
+                        "partially visible",
+                        "left side of the image"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Domestic kitchen background with blurred details",
+            "objects": [
+                {
+                    "name": "kitchen",
+                    "attribute": [
+                        "white power outlet",
+                        "domestic",
+                        "blurred background"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "braised meat",
+            "relationship": "on",
+            "object": "plate"
+        },
+        {
+            "subject": "cauliflower",
+            "relationship": "on",
+            "object": "plate"
+        },
+        {
+            "subject": "plate",
+            "relationship": "on",
+            "object": "placemat"
+        },
+        {
+            "subject": "napkin or dish towel",
+            "relationship": "next to",
+            "object": "plate"
+        },
+        {
+            "subject": "placemat",
+            "relationship": "on",
+            "object": "kitchen"
+        },
+        {
+            "subject": "kitchen",
+            "relationship": "contains",
+            "object": "white power outlet"
+        }
+    ]
+}

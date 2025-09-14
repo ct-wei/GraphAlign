@@ -1,0 +1,93 @@
+{
+    "scene": "A plated dish with pieces of meat and a side of cauliflower and potatoes on a table.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Pieces of meat on a plate",
+            "objects": [
+                {
+                    "name": "meat piece 1",
+                    "attribute": [
+                        "grilled",
+                        "brown",
+                        "juicy"
+                    ]
+                },
+                {
+                    "name": "meat piece 2",
+                    "attribute": [
+                        "grilled",
+                        "brown",
+                        "juicy"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Cauliflower and potatoes on the same plate",
+            "objects": [
+                {
+                    "name": "cauliflower",
+                    "attribute": [
+                        "steamed",
+                        "white",
+                        "florets"
+                    ]
+                },
+                {
+                    "name": "potato",
+                    "attribute": [
+                        "boiled",
+                        "white"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Table under the plate",
+            "objects": [
+                {
+                    "name": "table",
+                    "attribute": [
+                        "green",
+                        "cloth"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "meat piece 1",
+            "relationship": "next to",
+            "object": "meat piece 2"
+        },
+        {
+            "subject": "cauliflower",
+            "relationship": "on",
+            "object": "plate"
+        },
+        {
+            "subject": "potato",
+            "relationship": "next to",
+            "object": "cauliflower"
+        },
+        {
+            "subject": "meat piece 1",
+            "relationship": "on same plate as",
+            "object": "cauliflower"
+        },
+        {
+            "subject": "meat piece 2",
+            "relationship": "on same plate as",
+            "object": "potato"
+        },
+        {
+            "subject": "plate",
+            "relationship": "on",
+            "object": "table"
+        }
+    ]
+}

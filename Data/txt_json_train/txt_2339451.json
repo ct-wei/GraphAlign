@@ -1,0 +1,130 @@
+{
+    "scene": "A lived-in room with a cozy, cluttered atmosphere featuring various functional areas and personal touches.",
+    "regions": [
+        {
+            "region_name": "Dining Area",
+            "description": "A table covered with red-checkered cloth and chairs draped with fabrics.",
+            "objects": [
+                {
+                    "name": "table",
+                    "attribute": [
+                        "covered with red-checkered cloth"
+                    ]
+                },
+                {
+                    "name": "chair 1",
+                    "attribute": [
+                        "draped with fabric"
+                    ]
+                },
+                {
+                    "name": "chair 2",
+                    "attribute": [
+                        "draped with fabric"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "Living Area",
+            "description": "Featuring a desk with a computer, ceiling fan, and walls decorated with pictures and art.",
+            "objects": [
+                {
+                    "name": "ceiling fan",
+                    "attribute": [
+                        "providing light",
+                        "airflow"
+                    ]
+                },
+                {
+                    "name": "wall",
+                    "attribute": [
+                        "painted yellow",
+                        "adorned with picture frames and art"
+                    ]
+                },
+                {
+                    "name": "desk",
+                    "attribute": [
+                        "with a computer"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "Storage Area",
+            "description": "A shelving unit cluttered with various items and a plastic bag hanging from a hook.",
+            "objects": [
+                {
+                    "name": "shelving unit",
+                    "attribute": [
+                        "cluttered with items"
+                    ]
+                },
+                {
+                    "name": "plastic bag",
+                    "attribute": [
+                        "hanging from a hook"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "Secondary Table Area",
+            "description": "A glimpse of another table, suggesting additional dining or workspace functionality.",
+            "objects": [
+                {
+                    "name": "secondary table",
+                    "attribute": []
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "table",
+            "relationship": "covered by",
+            "object": "red-checkered cloth"
+        },
+        {
+            "subject": "chair 1",
+            "relationship": "paired with",
+            "object": "table"
+        },
+        {
+            "subject": "chair 2",
+            "relationship": "paired with",
+            "object": "table"
+        },
+        {
+            "subject": "ceiling fan",
+            "relationship": "mounted above",
+            "object": "Dining Area"
+        },
+        {
+            "subject": "wall",
+            "relationship": "supports",
+            "object": "picture frames and art"
+        },
+        {
+            "subject": "desk",
+            "relationship": "features",
+            "object": "computer"
+        },
+        {
+            "subject": "shelving unit",
+            "relationship": "holds",
+            "object": "various items"
+        },
+        {
+            "subject": "plastic bag",
+            "relationship": "hangs from",
+            "object": "hook"
+        },
+        {
+            "subject": "secondary table",
+            "relationship": "suggests",
+            "object": "additional functionality"
+        }
+    ]
+}

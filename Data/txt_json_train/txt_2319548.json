@@ -1,0 +1,86 @@
+{
+    "scene": "A street scene with a traffic light, street signs, and an ornate red-brick building.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Foreground with traffic light and street signs",
+            "objects": [
+                {
+                    "name": "traffic light",
+                    "attribute": [
+                        "red",
+                        "yellow",
+                        "green",
+                        "on pole"
+                    ]
+                },
+                {
+                    "name": "street sign 1",
+                    "attribute": [
+                        "metal",
+                        "white text",
+                        "blue background",
+                        "indicates One Way"
+                    ]
+                },
+                {
+                    "name": "street sign 2",
+                    "attribute": [
+                        "metal",
+                        "black text",
+                        "white background",
+                        "indicates Houston St."
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Background with ornate red-brick building",
+            "objects": [
+                {
+                    "name": "building",
+                    "attribute": [
+                        "red-brick",
+                        "ornate",
+                        "Romanesque Revival architecture",
+                        "rounded turrets",
+                        "corner"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "street sign 1",
+            "relationship": "attached to",
+            "object": "traffic light"
+        },
+        {
+            "subject": "street sign 2",
+            "relationship": "attached to",
+            "object": "traffic light"
+        },
+        {
+            "subject": "traffic light",
+            "relationship": "in front of",
+            "object": "building"
+        },
+        {
+            "subject": "street sign 1",
+            "relationship": "in front of",
+            "object": "building"
+        },
+        {
+            "subject": "street sign 2",
+            "relationship": "in front of",
+            "object": "building"
+        },
+        {
+            "subject": "building",
+            "relationship": "visible from",
+            "object": "street level"
+        }
+    ]
+}

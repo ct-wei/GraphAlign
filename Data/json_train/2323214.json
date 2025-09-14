@@ -1,0 +1,97 @@
+{
+    "scene": "A person standing indoors holding an object with shelves and various items in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Person standing and holding an object",
+            "objects": [
+                {
+                    "name": "Person 1 (male)",
+                    "attribute": [
+                        "wearing a grey t-shirt with blue sleeves",
+                        "holding a white object",
+                        "smiling",
+                        "standing"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Background with shelves and various items",
+            "objects": [
+                {
+                    "name": "shelves",
+                    "attribute": [
+                        "wooden"
+                    ]
+                },
+                {
+                    "name": "various items",
+                    "attribute": [
+                        "assorted",
+                        "decorative"
+                    ]
+                },
+                {
+                    "name": "hats",
+                    "attribute": [
+                        "on shelves",
+                        "different styles"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Floor and lower wall area",
+            "objects": [
+                {
+                    "name": "floor",
+                    "attribute": [
+                        "covered with carpet",
+                        "beige color"
+                    ]
+                },
+                {
+                    "name": "wall",
+                    "attribute": [
+                        "brick texture"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Person 1 (male)",
+            "relationship": "wearing",
+            "object": "t-shirt"
+        },
+        {
+            "subject": "Person 1 (male)",
+            "relationship": "holding",
+            "object": "white object"
+        },
+        {
+            "subject": "Person 1 (male)",
+            "relationship": "standing on",
+            "object": "floor"
+        },
+        {
+            "subject": "shelves",
+            "relationship": "mounted on",
+            "object": "wall"
+        },
+        {
+            "subject": "hats",
+            "relationship": "resting on",
+            "object": "shelves"
+        },
+        {
+            "subject": "various items",
+            "relationship": "placed on",
+            "object": "shelves"
+        }
+    ]
+}

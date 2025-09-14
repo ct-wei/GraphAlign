@@ -1,0 +1,128 @@
+{
+    "scene": "Two elephants engage in play fighting in a grassy savannah with an egret in the foreground and a vast landscape in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Two elephants engaged in what appears to be a gentle tussle or play fight",
+            "objects": [
+                {
+                    "name": "elephant 1",
+                    "attribute": [
+                        "engaged in tussle",
+                        "facing elephant 2",
+                        "trunks intertwined",
+                        "tusks clashing",
+                        "spray of dust around feet",
+                        "in grassy savannah"
+                    ]
+                },
+                {
+                    "name": "elephant 2",
+                    "attribute": [
+                        "engaged in play fight",
+                        "facing elephant 1",
+                        "trunks intertwined",
+                        "tusks clashing lightly",
+                        "dust around feet",
+                        "in grassy savannah"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "A small white bird, possibly an egret, standing in the foreground",
+            "objects": [
+                {
+                    "name": "egret",
+                    "attribute": [
+                        "white",
+                        "small",
+                        "standing",
+                        "at a safe distance"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "A vast, open landscape under a soft, hazy sky",
+            "objects": [
+                {
+                    "name": "landscape",
+                    "attribute": [
+                        "vast",
+                        "open",
+                        "grassy"
+                    ]
+                },
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "soft",
+                        "hazy",
+                        "warm glow",
+                        "early morning or late afternoon light"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "elephant 1",
+            "relationship": "facing",
+            "object": "elephant 2"
+        },
+        {
+            "subject": "elephant 2",
+            "relationship": "facing",
+            "object": "elephant 1"
+        },
+        {
+            "subject": "elephant 1",
+            "relationship": "trunks intertwined with",
+            "object": "elephant 2"
+        },
+        {
+            "subject": "elephant 2",
+            "relationship": "tusks clashing with",
+            "object": "elephant 1"
+        },
+        {
+            "subject": "elephant 1",
+            "relationship": "creating dust at",
+            "object": "feet"
+        },
+        {
+            "subject": "elephant 2",
+            "relationship": "surrounded by",
+            "object": "dust"
+        },
+        {
+            "subject": "egret",
+            "relationship": "observing from a distance",
+            "object": "elephants"
+        },
+        {
+            "subject": "elephants",
+            "relationship": "in",
+            "object": "grassy savannah"
+        },
+        {
+            "subject": "egret",
+            "relationship": "standing on",
+            "object": "grass"
+        },
+        {
+            "subject": "grassy savannah",
+            "relationship": "part of",
+            "object": "landscape"
+        },
+        {
+            "subject": "landscape",
+            "relationship": "under",
+            "object": "sky"
+        }
+    ]
+}

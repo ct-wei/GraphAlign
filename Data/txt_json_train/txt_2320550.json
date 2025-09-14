@@ -1,0 +1,130 @@
+{
+    "scene": "Two skiers skiing on a snowy slope with a clear blue sky and a picturesque winter landscape.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Two skiers on a snowy slope",
+            "objects": [
+                {
+                    "name": "Skier 1 (male)",
+                    "attribute": [
+                        "skiing",
+                        "wearing helmet",
+                        "wearing goggles",
+                        "wearing ski suit"
+                    ]
+                },
+                {
+                    "name": "Skier 2 (male)",
+                    "attribute": [
+                        "skiing",
+                        "behind Skier 1",
+                        "wearing helmet",
+                        "wearing goggles",
+                        "wearing ski suit"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Snowy landscape with clear blue sky",
+            "objects": [
+                {
+                    "name": "snow",
+                    "attribute": [
+                        "white",
+                        "covering ground"
+                    ]
+                },
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "blue",
+                        "clear"
+                    ]
+                },
+                {
+                    "name": "trees",
+                    "attribute": [
+                        "frosted with white",
+                        "winter scene"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Distant terrain with frozen lake and forested land",
+            "objects": [
+                {
+                    "name": "frozen lake",
+                    "attribute": [
+                        "flat terrain"
+                    ]
+                },
+                {
+                    "name": "forest",
+                    "attribute": [
+                        "patches of trees",
+                        "snow-covered"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Boundary marker on the slope",
+            "objects": [
+                {
+                    "name": "boundary marker",
+                    "attribute": [
+                        "guiding skiers"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Skier 1 (male)",
+            "relationship": "ahead of",
+            "object": "Skier 2 (male)"
+        },
+        {
+            "subject": "Skier 1 (male)",
+            "relationship": "skiing on",
+            "object": "snow"
+        },
+        {
+            "subject": "Skier 2 (male)",
+            "relationship": "skiing on",
+            "object": "snow"
+        },
+        {
+            "subject": "snow",
+            "relationship": "surrounding",
+            "object": "trees"
+        },
+        {
+            "subject": "snow",
+            "relationship": "covering",
+            "object": "frozen lake"
+        },
+        {
+            "subject": "forest",
+            "relationship": "near",
+            "object": "frozen lake"
+        },
+        {
+            "subject": "boundary marker",
+            "relationship": "located on",
+            "object": "snowy slope"
+        },
+        {
+            "subject": "trees",
+            "relationship": "part of",
+            "object": "snowy landscape"
+        }
+    ]
+}

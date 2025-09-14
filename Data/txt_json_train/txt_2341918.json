@@ -1,0 +1,134 @@
+{
+    "scene": "A snowboarder performing a jump with a clear blue sky and pine tree background at a ski resort.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "a snowboarder mid-air during a jump",
+            "objects": [
+                {
+                    "name": "snowboarder (male)",
+                    "attribute": [
+                        "mid-air",
+                        "performing a trick",
+                        "blue jacket",
+                        "black pants",
+                        "bent legs",
+                        "one hand reaching towards the snowboard"
+                    ]
+                },
+                {
+                    "name": "snowboard",
+                    "attribute": [
+                        "red"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "snowy backdrop with pine trees and a ski lift",
+            "objects": [
+                {
+                    "name": "pine trees",
+                    "attribute": [
+                        "visible"
+                    ]
+                },
+                {
+                    "name": "ski lift",
+                    "attribute": [
+                        "visible"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "weather and slope conditions",
+            "objects": [
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "blue",
+                        "clear"
+                    ]
+                },
+                {
+                    "name": "slopes",
+                    "attribute": [
+                        "snow covered",
+                        "designated for jumps and tricks",
+                        "absence of other snowboarders or skiers"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "snowboarder (male)",
+            "relationship": "wearing",
+            "object": "blue jacket"
+        },
+        {
+            "subject": "snowboarder (male)",
+            "relationship": "wearing",
+            "object": "black pants"
+        },
+        {
+            "subject": "snowboarder (male)",
+            "relationship": "performing",
+            "object": "trick"
+        },
+        {
+            "subject": "snowboarder (male)",
+            "relationship": "above",
+            "object": "slopes"
+        },
+        {
+            "subject": "snowboarder (male)",
+            "relationship": "using",
+            "object": "snowboard"
+        },
+        {
+            "subject": "snowboard",
+            "relationship": "color",
+            "object": "red"
+        },
+        {
+            "subject": "ski lift",
+            "relationship": "located in",
+            "object": "ski resort"
+        },
+        {
+            "subject": "pine trees",
+            "relationship": "surrounding",
+            "object": "slopes"
+        },
+        {
+            "subject": "sky",
+            "relationship": "weather condition",
+            "object": "clear"
+        },
+        {
+            "subject": "sky",
+            "relationship": "color",
+            "object": "blue"
+        },
+        {
+            "subject": "slopes",
+            "relationship": "state",
+            "object": "snow covered"
+        },
+        {
+            "subject": "slopes",
+            "relationship": "purpose",
+            "object": "designated for jumps and tricks"
+        },
+        {
+            "subject": "slopes",
+            "relationship": "absence of",
+            "object": "other snowboarders or skiers"
+        }
+    ]
+}

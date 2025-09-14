@@ -1,0 +1,72 @@
+{
+    "scene": "A young baseball player in motion, preparing to throw the ball on a baseball field.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Baseball player mid-action.",
+            "objects": [
+                {
+                    "name": "baseball player (male)",
+                    "attribute": [
+                        "young",
+                        "wearing a baseball cap",
+                        "wearing a baseball uniform with pinstripes",
+                        "has a glove on the left hand",
+                        "focused expression"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Baseball field detailing.",
+            "objects": [
+                {
+                    "name": "baseball field",
+                    "attribute": [
+                        "dirt infield"
+                    ]
+                },
+                {
+                    "name": "grass",
+                    "attribute": [
+                        "green",
+                        "trimmed"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "baseball player (male)",
+            "relationship": "wearing",
+            "object": "baseball cap"
+        },
+        {
+            "subject": "baseball player (male)",
+            "relationship": "wearing",
+            "object": "baseball uniform"
+        },
+        {
+            "subject": "baseball player (male)",
+            "relationship": "has",
+            "object": "glove on the left hand"
+        },
+        {
+            "subject": "baseball player (male)",
+            "relationship": "standing on",
+            "object": "baseball field"
+        },
+        {
+            "subject": "baseball field",
+            "relationship": "bordered by",
+            "object": "grass"
+        },
+        {
+            "subject": "baseball player (male)",
+            "relationship": "preparing to throw",
+            "object": "ball"
+        }
+    ]
+}

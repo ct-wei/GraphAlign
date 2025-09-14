@@ -1,0 +1,125 @@
+{
+    "scene": "Interior view of a room with reflections in a mirror, decorated with various objects and wall hangings.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Mirror on the wall reflecting the interior",
+            "objects": [
+                {
+                    "name": "mirror",
+                    "attribute": [
+                        "reflective surface",
+                        "ornate frame",
+                        "wall-mounted"
+                    ]
+                },
+                {
+                    "name": "reflected lamp",
+                    "attribute": [
+                        "glowing",
+                        "hanging"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Wall hangings and a lamp",
+            "objects": [
+                {
+                    "name": "framed picture",
+                    "attribute": [
+                        "floral motif",
+                        "dark frame"
+                    ]
+                },
+                {
+                    "name": "lamp",
+                    "attribute": [
+                        "lit",
+                        "stained glass",
+                        "hanging"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Additional objects and fixtures in the room",
+            "objects": [
+                {
+                    "name": "wall",
+                    "attribute": [
+                        "wooden panels"
+                    ]
+                },
+                {
+                    "name": "curtain",
+                    "attribute": [
+                        "white",
+                        "sheer"
+                    ]
+                },
+                {
+                    "name": "wall plate decoration",
+                    "attribute": [
+                        "round",
+                        "decorative"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "mirror",
+            "relationship": "mounted on",
+            "object": "wall"
+        },
+        {
+            "subject": "reflected lamp",
+            "relationship": "reflected in",
+            "object": "mirror"
+        },
+        {
+            "subject": "lamp",
+            "relationship": "matches",
+            "object": "reflected lamp"
+        },
+        {
+            "subject": "lamp",
+            "relationship": "hanging from",
+            "object": "ceiling"
+        },
+        {
+            "subject": "wall",
+            "relationship": "supports",
+            "object": "framed picture"
+        },
+        {
+            "subject": "framed picture",
+            "relationship": "adjacent to",
+            "object": "wall plate decoration"
+        },
+        {
+            "subject": "mirror",
+            "relationship": "reflects",
+            "object": "curtain"
+        },
+        {
+            "subject": "wall",
+            "relationship": "supports",
+            "object": "wall plate decoration"
+        },
+        {
+            "subject": "wall plate decoration",
+            "relationship": "hung near",
+            "object": "mirror"
+        },
+        {
+            "subject": "curtain",
+            "relationship": "covers part of",
+            "object": "window"
+        }
+    ]
+}

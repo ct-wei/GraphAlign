@@ -1,0 +1,106 @@
+{
+    "scene": "A skateboarder performing a trick above a flight of stairs outside a building.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "The skateboarder in mid-air performing a trick",
+            "objects": [
+                {
+                    "name": "skateboarder (male)",
+                    "attribute": [
+                        "mid-air",
+                        "wearing dark clothing",
+                        "wearing a cap",
+                        "performing a skateboarding trick"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Skateboard with wheels up",
+            "objects": [
+                {
+                    "name": "skateboard",
+                    "attribute": [
+                        "black",
+                        "wheels up",
+                        "in motion"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Staircase and yellow poles",
+            "objects": [
+                {
+                    "name": "stairs",
+                    "attribute": [
+                        "concrete",
+                        "outdoor"
+                    ]
+                },
+                {
+                    "name": "yellow poles",
+                    "attribute": [
+                        "yellow",
+                        "metal"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Corridor and building",
+            "objects": [
+                {
+                    "name": "corridor",
+                    "attribute": [
+                        "covered",
+                        "tiled floor"
+                    ]
+                },
+                {
+                    "name": "building",
+                    "attribute": [
+                        "brick walls",
+                        "windows"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "skateboarder (male)",
+            "relationship": "above",
+            "object": "stairs"
+        },
+        {
+            "subject": "skateboarder (male)",
+            "relationship": "performing trick over",
+            "object": "skateboard"
+        },
+        {
+            "subject": "skateboard",
+            "relationship": "above",
+            "object": "stairs"
+        },
+        {
+            "subject": "yellow poles",
+            "relationship": "beside",
+            "object": "stairs"
+        },
+        {
+            "subject": "corridor",
+            "relationship": "adjacent to",
+            "object": "stairs"
+        },
+        {
+            "subject": "building",
+            "relationship": "encloses",
+            "object": "corridor"
+        }
+    ]
+}

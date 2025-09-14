@@ -1,0 +1,105 @@
+{
+    "scene": "Two male tennis players practicing on an outdoor court.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Foreground with a tennis player about to hit a ball",
+            "objects": [
+                {
+                    "name": "Player 1 (male)",
+                    "attribute": [
+                        "concentrated",
+                        "wearing red shirt",
+                        "wearing white shorts",
+                        "wearing white tennis shoes",
+                        "holding a tennis racket"
+                    ]
+                },
+                {
+                    "name": "tennis ball",
+                    "attribute": [
+                        "green",
+                        "in the air"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Background with another tennis player waiting",
+            "objects": [
+                {
+                    "name": "Player 2 (male)",
+                    "attribute": [
+                        "watching",
+                        "wearing red shirt",
+                        "wearing white shorts",
+                        "holding a tennis racket"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Tennis court surface and net",
+            "objects": [
+                {
+                    "name": "tennis court",
+                    "attribute": [
+                        "red",
+                        "lined"
+                    ]
+                },
+                {
+                    "name": "tennis net",
+                    "attribute": [
+                        "white",
+                        "netted"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Player 1 (male)",
+            "relationship": "wearing",
+            "object": "red shirt"
+        },
+        {
+            "subject": "Player 1 (male)",
+            "relationship": "about to hit",
+            "object": "tennis ball"
+        },
+        {
+            "subject": "Player 2 (male)",
+            "relationship": "wearing",
+            "object": "red shirt"
+        },
+        {
+            "subject": "Player 2 (male)",
+            "relationship": "standing behind",
+            "object": "Player 1 (male)"
+        },
+        {
+            "subject": "tennis net",
+            "relationship": "separating",
+            "object": "Player 1 (male) and Player 2 (male)"
+        },
+        {
+            "subject": "tennis court",
+            "relationship": "under",
+            "object": "tennis ball"
+        },
+        {
+            "subject": "tennis court",
+            "relationship": "under",
+            "object": "Player 1 (male)"
+        },
+        {
+            "subject": "tennis court",
+            "relationship": "under",
+            "object": "Player 2 (male)"
+        }
+    ]
+}

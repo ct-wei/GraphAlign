@@ -1,0 +1,117 @@
+{
+    "scene": "A man and a woman sitting on separate benches in a city environment with buildings and vehicles in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "A man sitting on a bench looking at his phone",
+            "objects": [
+                {
+                    "name": "man",
+                    "attribute": [
+                        "sitting",
+                        "wearing a white t-shirt",
+                        "wearing black pants",
+                        "looking at a phone"
+                    ]
+                },
+                {
+                    "name": "bench 1",
+                    "attribute": [
+                        "metal",
+                        "grey"
+                    ]
+                },
+                {
+                    "name": "phone",
+                    "attribute": [
+                        "held in hands",
+                        "black"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "A woman sitting on a bench in the shade",
+            "objects": [
+                {
+                    "name": "woman",
+                    "attribute": [
+                        "sitting",
+                        "wearing blue clothing"
+                    ]
+                },
+                {
+                    "name": "bench 2",
+                    "attribute": [
+                        "metal",
+                        "grey"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "City environment with buildings and vehicles",
+            "objects": [
+                {
+                    "name": "buildings",
+                    "attribute": [
+                        "various sizes",
+                        "commercial architecture"
+                    ]
+                },
+                {
+                    "name": "vehicles",
+                    "attribute": [
+                        "various types",
+                        "parked and moving"
+                    ]
+                },
+                {
+                    "name": "street",
+                    "attribute": [
+                        "paved"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "man",
+            "relationship": "sitting on",
+            "object": "bench 1"
+        },
+        {
+            "subject": "woman",
+            "relationship": "sitting on",
+            "object": "bench 2"
+        },
+        {
+            "subject": "man",
+            "relationship": "using",
+            "object": "phone"
+        },
+        {
+            "subject": "bench 1",
+            "relationship": "positioned on",
+            "object": "street"
+        },
+        {
+            "subject": "bench 2",
+            "relationship": "positioned on",
+            "object": "street"
+        },
+        {
+            "subject": "vehicles",
+            "relationship": "parked on",
+            "object": "street"
+        },
+        {
+            "subject": "vehicles",
+            "relationship": "moving on",
+            "object": "street"
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "scene": "A man and a woman happily eating doughnuts in a casual outdoor setting at night.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Man eating a doughnut",
+            "objects": [
+                {
+                    "name": "man",
+                    "attribute": [
+                        "wearing glasses",
+                        "short hair",
+                        "smiling",
+                        "holding a doughnut"
+                    ]
+                },
+                {
+                    "name": "doughnut 1",
+                    "attribute": [
+                        "appears to be glazed"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Woman eating a doughnut",
+            "objects": [
+                {
+                    "name": "woman",
+                    "attribute": [
+                        "long hair",
+                        "smiling",
+                        "holding a doughnut"
+                    ]
+                },
+                {
+                    "name": "doughnut 2",
+                    "attribute": [
+                        "appears to have chocolate icing"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Outdoor setting at night",
+            "objects": [
+                {
+                    "name": "background",
+                    "attribute": [
+                        "nighttime",
+                        "indistinct buildings"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "man",
+            "relationship": "eating",
+            "object": "doughnut 1"
+        },
+        {
+            "subject": "woman",
+            "relationship": "eating",
+            "object": "doughnut 2"
+        },
+        {
+            "subject": "man",
+            "relationship": "next to",
+            "object": "woman"
+        },
+        {
+            "subject": "woman",
+            "relationship": "next to",
+            "object": "man"
+        },
+        {
+            "subject": "doughnut 1",
+            "relationship": "held by",
+            "object": "man"
+        },
+        {
+            "subject": "doughnut 2",
+            "relationship": "held by",
+            "object": "woman"
+        },
+        {
+            "subject": "background",
+            "relationship": "surrounds",
+            "object": "man and woman"
+        }
+    ]
+}

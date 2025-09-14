@@ -1,0 +1,125 @@
+{
+    "scene": "A person is serving a tennis ball on an outdoor court with surrounding greenery and parked cars in the distance.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "A person serving a tennis ball",
+            "objects": [
+                {
+                    "name": "Player 1 (gender unspecified)",
+                    "attribute": [
+                        "mid-action",
+                        "wearing a bright green top",
+                        "shorts",
+                        "tennis shoes",
+                        "informal or recreational gameplay"
+                    ]
+                },
+                {
+                    "name": "tennis ball",
+                    "attribute": [
+                        "in motion"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Outdoor tennis court under bright, clear skies",
+            "objects": [
+                {
+                    "name": "tennis court",
+                    "attribute": [
+                        "outdoor",
+                        "enclosed by a fence"
+                    ]
+                },
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "bright",
+                        "clear"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Surroundings of the tennis court",
+            "objects": [
+                {
+                    "name": "greenery",
+                    "attribute": [
+                        "lush",
+                        "around the court"
+                    ]
+                },
+                {
+                    "name": "palm trees",
+                    "attribute": [
+                        "indicative of a warm, sunny locale"
+                    ]
+                },
+                {
+                    "name": "parked cars",
+                    "attribute": [
+                        "a few",
+                        "in the distance"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Player 1 (gender unspecified)",
+            "relationship": "wearing",
+            "object": "bright green top"
+        },
+        {
+            "subject": "Player 1 (gender unspecified)",
+            "relationship": "wearing",
+            "object": "shorts"
+        },
+        {
+            "subject": "Player 1 (gender unspecified)",
+            "relationship": "wearing",
+            "object": "tennis shoes"
+        },
+        {
+            "subject": "Player 1 (gender unspecified)",
+            "relationship": "serving",
+            "object": "tennis ball"
+        },
+        {
+            "subject": "tennis court",
+            "relationship": "enclosed by",
+            "object": "fence"
+        },
+        {
+            "subject": "tennis ball",
+            "relationship": "located in",
+            "object": "tennis court"
+        },
+        {
+            "subject": "tennis court",
+            "relationship": "under",
+            "object": "sky"
+        },
+        {
+            "subject": "greenery",
+            "relationship": "surrounds",
+            "object": "tennis court"
+        },
+        {
+            "subject": "palm trees",
+            "relationship": "part of",
+            "object": "greenery"
+        },
+        {
+            "subject": "parked cars",
+            "relationship": "visible from",
+            "object": "tennis court"
+        }
+    ]
+}

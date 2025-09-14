@@ -1,0 +1,155 @@
+{
+    "scene": "A baseball game in progress with a batter, catcher, and umpire on a dusty field while spectators watch.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "The batter ready to swing at an incoming ball.",
+            "objects": [
+                {
+                    "name": "batter (gender unspecified)",
+                    "attribute": [
+                        "wearing orange jersey",
+                        "wielding a bat",
+                        "wearing helmet",
+                        "concentrating"
+                    ]
+                },
+                {
+                    "name": "bat",
+                    "attribute": [
+                        "brown",
+                        "wooden"
+                    ]
+                },
+                {
+                    "name": "ball",
+                    "attribute": [
+                        "white with red stitches",
+                        "in motion"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "The catcher crouching behind the batter, ready to catch the ball.",
+            "objects": [
+                {
+                    "name": "catcher (gender unspecified)",
+                    "attribute": [
+                        "wearing protective gear",
+                        "crouching",
+                        "wearing mask",
+                        "paying attention to the ball"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "A focused umpire standing behind the catcher observing the game.",
+            "objects": [
+                {
+                    "name": "umpire (gender unspecified)",
+                    "attribute": [
+                        "wearing protective clothing",
+                        "holding hands behind back",
+                        "standing upright",
+                        "observing the game"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Spectators in the background watching the game.",
+            "objects": [
+                {
+                    "name": "spectator 1 (gender unspecified)",
+                    "attribute": [
+                        "sitting",
+                        "watching the game",
+                        "casual clothing"
+                    ]
+                },
+                {
+                    "name": "spectator 2 (gender unspecified)",
+                    "attribute": [
+                        "standing",
+                        "focused on the game",
+                        "hands on hips"
+                    ]
+                },
+                {
+                    "name": "fence",
+                    "attribute": [
+                        "metal",
+                        "chain-link"
+                    ]
+                },
+                {
+                    "name": "benches",
+                    "attribute": [
+                        "wooden or metal",
+                        "used for seating"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region5",
+            "description": "The field and its surface.",
+            "objects": [
+                {
+                    "name": "field",
+                    "attribute": [
+                        "dusty",
+                        "brown surface"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "batter (gender unspecified)",
+            "relationship": "swinging",
+            "object": "bat"
+        },
+        {
+            "subject": "ball",
+            "relationship": "approaching",
+            "object": "batter (gender unspecified)"
+        },
+        {
+            "subject": "catcher (gender unspecified)",
+            "relationship": "crouching behind",
+            "object": "batter (gender unspecified)"
+        },
+        {
+            "subject": "umpire (gender unspecified)",
+            "relationship": "standing behind",
+            "object": "catcher (gender unspecified)"
+        },
+        {
+            "subject": "spectator 1 (gender unspecified)",
+            "relationship": "watching",
+            "object": "game"
+        },
+        {
+            "subject": "spectator 2 (gender unspecified)",
+            "relationship": "focused on",
+            "object": "game"
+        },
+        {
+            "subject": "field",
+            "relationship": "supporting",
+            "object": "players"
+        },
+        {
+            "subject": "bat",
+            "relationship": "used by",
+            "object": "batter (gender unspecified)"
+        }
+    ]
+}

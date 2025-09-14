@@ -1,0 +1,124 @@
+{
+    "scene": "A tilted traffic light pole with functional signals in a snowy urban environment with parked cars and a colorful billboard.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "The traffic light pole tilted at an extreme angle off its base",
+            "objects": [
+                {
+                    "name": "traffic light pole",
+                    "attribute": [
+                        "tilted",
+                        "extreme angle",
+                        "metal"
+                    ]
+                },
+                {
+                    "name": "red signal",
+                    "attribute": [
+                        "illuminated",
+                        "functional"
+                    ]
+                },
+                {
+                    "name": "pedestrian signal",
+                    "attribute": [
+                        "showing red man",
+                        "functional",
+                        "indicating not to cross"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "The snowy urban environment with several parked cars",
+            "objects": [
+                {
+                    "name": "parked car 1",
+                    "attribute": [
+                        "snow-covered"
+                    ]
+                },
+                {
+                    "name": "parked car 2",
+                    "attribute": [
+                        "snow-covered"
+                    ]
+                },
+                {
+                    "name": "snow",
+                    "attribute": [
+                        "white",
+                        "covering ground",
+                        "recent snowfall"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background scenery with bare trees and a colorful billboard",
+            "objects": [
+                {
+                    "name": "bare tree 1",
+                    "attribute": [
+                        "leafless",
+                        "winter"
+                    ]
+                },
+                {
+                    "name": "bare tree 2",
+                    "attribute": [
+                        "leafless",
+                        "winter"
+                    ]
+                },
+                {
+                    "name": "billboard",
+                    "attribute": [
+                        "colorful",
+                        "illustrations"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "traffic light pole",
+            "relationship": "leaning over",
+            "object": "base"
+        },
+        {
+            "subject": "red signal",
+            "relationship": "part of",
+            "object": "traffic light pole"
+        },
+        {
+            "subject": "pedestrian signal",
+            "relationship": "part of",
+            "object": "traffic light pole"
+        },
+        {
+            "subject": "parked car 1",
+            "relationship": "covered by",
+            "object": "snow"
+        },
+        {
+            "subject": "parked car 2",
+            "relationship": "covered by",
+            "object": "snow"
+        },
+        {
+            "subject": "billboard",
+            "relationship": "located behind",
+            "object": "bare tree 1"
+        },
+        {
+            "subject": "billboard",
+            "relationship": "located behind",
+            "object": "bare tree 2"
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+{
+    "scene": "A small bathroom corner with various functional and decorative items.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Toilet area with a wooden seat cover and tissue box",
+            "objects": [
+                {
+                    "name": "toilet",
+                    "attribute": [
+                        "closed",
+                        "wooden seat cover"
+                    ]
+                },
+                {
+                    "name": "tissue box",
+                    "attribute": [
+                        "decorative motif"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Shower area with a camouflage-patterned curtain",
+            "objects": [
+                {
+                    "name": "shower curtain",
+                    "attribute": [
+                        "camouflage pattern",
+                        "partially visible"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Vanity cabinet with a countertop basin, towel, and small items",
+            "objects": [
+                {
+                    "name": "vanity cabinet",
+                    "attribute": [
+                        "wooden"
+                    ]
+                },
+                {
+                    "name": "basin",
+                    "attribute": [
+                        "countertop"
+                    ]
+                },
+                {
+                    "name": "hand towel",
+                    "attribute": [
+                        "resting on basin"
+                    ]
+                },
+                {
+                    "name": "small items",
+                    "attribute": [
+                        "decorative or functional"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Wooden rack holding reading materials next to the vanity",
+            "objects": [
+                {
+                    "name": "wooden rack",
+                    "attribute": [
+                        "holding reading materials"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region5",
+            "description": "Wall artwork and flooring",
+            "objects": [
+                {
+                    "name": "artwork",
+                    "attribute": [
+                        "framed",
+                        "vertical design",
+                        "multiple colors"
+                    ]
+                },
+                {
+                    "name": "flooring",
+                    "attribute": [
+                        "light color",
+                        "neutral"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "tissue box",
+            "relationship": "on top of",
+            "object": "toilet tank"
+        },
+        {
+            "subject": "shower curtain",
+            "relationship": "hides",
+            "object": "bathing area"
+        },
+        {
+            "subject": "hand towel",
+            "relationship": "rests upon",
+            "object": "basin"
+        },
+        {
+            "subject": "small items",
+            "relationship": "rests upon",
+            "object": "vanity cabinet"
+        },
+        {
+            "subject": "wooden rack",
+            "relationship": "adjacent to",
+            "object": "vanity cabinet"
+        },
+        {
+            "subject": "artwork",
+            "relationship": "mounted on",
+            "object": "wall"
+        },
+        {
+            "subject": "flooring",
+            "relationship": "complements",
+            "object": "overall bathroom aesthetic"
+        }
+    ]
+}

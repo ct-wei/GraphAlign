@@ -1,0 +1,108 @@
+{
+    "scene": "Two cave divers getting ready for an underwater exploration by entering a pit.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Cave diver being lowered into a pit",
+            "objects": [
+                {
+                    "name": "cave diver 1 (male)",
+                    "attribute": [
+                        "wearing wetsuit",
+                        "red helmet",
+                        "scuba gear",
+                        "fins",
+                        "descending"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Cave diver at ground level assisting the descent",
+            "objects": [
+                {
+                    "name": "cave diver 2 (male)",
+                    "attribute": [
+                        "wearing wetsuit",
+                        "black helmet",
+                        "scuba gear",
+                        "standing",
+                        "holding ropes"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Pit entrance to the cave for diving",
+            "objects": [
+                {
+                    "name": "pit",
+                    "attribute": [
+                        "dark",
+                        "round opening",
+                        "grass around"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Support setup around the pit",
+            "objects": [
+                {
+                    "name": "metal frame",
+                    "attribute": [
+                        "holds ropes",
+                        "metallic"
+                    ]
+                },
+                {
+                    "name": "ropes",
+                    "attribute": [
+                        "attached to the metal frame",
+                        "used for descending"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "cave diver 1 (male)",
+            "relationship": "wearing",
+            "object": "scuba gear"
+        },
+        {
+            "subject": "cave diver 1 (male)",
+            "relationship": "descending into",
+            "object": "pit"
+        },
+        {
+            "subject": "cave diver 1 (male)",
+            "relationship": "assisted by",
+            "object": "cave diver 2 (male)"
+        },
+        {
+            "subject": "cave diver 2 (male)",
+            "relationship": "holding",
+            "object": "ropes"
+        },
+        {
+            "subject": "ropes",
+            "relationship": "attached to",
+            "object": "metal frame"
+        },
+        {
+            "subject": "pit",
+            "relationship": "surrounded by",
+            "object": "grass"
+        },
+        {
+            "subject": "metal frame",
+            "relationship": "standing on",
+            "object": "ground"
+        }
+    ]
+}

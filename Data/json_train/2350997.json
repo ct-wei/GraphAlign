@@ -1,0 +1,114 @@
+{
+    "scene": "A person walking by a clock tower in a tropical setting with tuk-tuks and palm trees.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Clock tower",
+            "objects": [
+                {
+                    "name": "clock tower",
+                    "attribute": [
+                        "tall",
+                        "white",
+                        "digital clock"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Person walking",
+            "objects": [
+                {
+                    "name": "person",
+                    "attribute": [
+                        "walking",
+                        "casual clothing"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Tuk-tuks parked",
+            "objects": [
+                {
+                    "name": "tuk-tuk 1",
+                    "attribute": [
+                        "parked",
+                        "green and yellow"
+                    ]
+                },
+                {
+                    "name": "tuk-tuk 2",
+                    "attribute": [
+                        "parked",
+                        "red and white"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Palm trees surrounding the area",
+            "objects": [
+                {
+                    "name": "palm tree 1",
+                    "attribute": [
+                        "tall",
+                        "green fronds"
+                    ]
+                },
+                {
+                    "name": "palm tree 2",
+                    "attribute": [
+                        "tall",
+                        "green fronds"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "person",
+            "relationship": "walking by",
+            "object": "clock tower"
+        },
+        {
+            "subject": "clock tower",
+            "relationship": "surrounded by",
+            "object": "palm trees"
+        },
+        {
+            "subject": "tuk-tuk 1",
+            "relationship": "parked near",
+            "object": "clock tower"
+        },
+        {
+            "subject": "tuk-tuk 2",
+            "relationship": "parked near",
+            "object": "clock tower"
+        },
+        {
+            "subject": "person",
+            "relationship": "walking past",
+            "object": "tuk-tuk 1"
+        },
+        {
+            "subject": "person",
+            "relationship": "walking past",
+            "object": "tuk-tuk 2"
+        },
+        {
+            "subject": "palm tree 1",
+            "relationship": "near",
+            "object": "tuk-tuk 1"
+        },
+        {
+            "subject": "palm tree 2",
+            "relationship": "near",
+            "object": "tuk-tuk 2"
+        }
+    ]
+}

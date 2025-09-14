@@ -1,0 +1,74 @@
+{
+    "scene": "A young child talking on a cell phone while sitting in a train compartment.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "The child talking on the cell phone",
+            "objects": [
+                {
+                    "name": "child",
+                    "attribute": [
+                        "young",
+                        "blond curly hair",
+                        "sitting",
+                        "wearing a striped shirt"
+                    ]
+                },
+                {
+                    "name": "cell phone",
+                    "attribute": [
+                        "small",
+                        "silver"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Train compartment interior",
+            "objects": [
+                {
+                    "name": "seat",
+                    "attribute": [
+                        "upholstered",
+                        "patterned"
+                    ]
+                },
+                {
+                    "name": "window",
+                    "attribute": [
+                        "transparent",
+                        "reflective"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "child",
+            "relationship": "holding",
+            "object": "cell phone"
+        },
+        {
+            "subject": "child",
+            "relationship": "sitting on",
+            "object": "seat"
+        },
+        {
+            "subject": "cell phone",
+            "relationship": "next to",
+            "object": "child's face"
+        },
+        {
+            "subject": "seat",
+            "relationship": "adjacent to",
+            "object": "window"
+        },
+        {
+            "subject": "child",
+            "relationship": "in front of",
+            "object": "window"
+        }
+    ]
+}

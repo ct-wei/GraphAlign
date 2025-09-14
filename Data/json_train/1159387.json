@@ -1,0 +1,106 @@
+{
+    "scene": "A person performing a trick on a skateboard in an urban plaza.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Person skateboarding",
+            "objects": [
+                {
+                    "name": "Person (male)",
+                    "attribute": [
+                        "midair",
+                        "performing a trick",
+                        "wearing a white shirt",
+                        "wearing beige pants",
+                        "wearing shoes"
+                    ]
+                },
+                {
+                    "name": "Skateboard 1",
+                    "attribute": [
+                        "below the person",
+                        "four wheels",
+                        "wooden board"
+                    ]
+                },
+                {
+                    "name": "Skateboard 2",
+                    "attribute": [
+                        "on the ground",
+                        "upturned"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Urban plaza",
+            "objects": [
+                {
+                    "name": "Ground",
+                    "attribute": [
+                        "paved",
+                        "tan"
+                    ]
+                },
+                {
+                    "name": "Lampposts",
+                    "attribute": [
+                        "tall",
+                        "white"
+                    ]
+                },
+                {
+                    "name": "Buildings",
+                    "attribute": [
+                        "in the distance",
+                        "white"
+                    ]
+                },
+                {
+                    "name": "Cars",
+                    "attribute": [
+                        "parked in the background"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Person (male)",
+            "relationship": "above",
+            "object": "Skateboard 1"
+        },
+        {
+            "subject": "Person (male)",
+            "relationship": "performing trick on",
+            "object": "Skateboard 2"
+        },
+        {
+            "subject": "Skateboard 1",
+            "relationship": "above",
+            "object": "Ground"
+        },
+        {
+            "subject": "Skateboard 2",
+            "relationship": "on",
+            "object": "Ground"
+        },
+        {
+            "subject": "Lampposts",
+            "relationship": "erected on",
+            "object": "Ground"
+        },
+        {
+            "subject": "Cars",
+            "relationship": "parked on",
+            "object": "Ground"
+        },
+        {
+            "subject": "Ground",
+            "relationship": "in front of",
+            "object": "Buildings"
+        }
+    ]
+}

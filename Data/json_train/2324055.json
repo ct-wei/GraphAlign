@@ -1,0 +1,140 @@
+{
+    "scene": "Several individuals are snowboarding on a snowy mountain slope with mountain peaks in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Individuals snowboarding",
+            "objects": [
+                {
+                    "name": "snowboarder 1 (gender indeterminate)",
+                    "attribute": [
+                        "snowboarding",
+                        "wearing dark clothing",
+                        "upright",
+                        "facing downhill"
+                    ]
+                },
+                {
+                    "name": "snowboarder 2 (gender indeterminate)",
+                    "attribute": [
+                        "snowboarding",
+                        "wearing light clothing",
+                        "slightly bent forward",
+                        "facing downhill"
+                    ]
+                },
+                {
+                    "name": "snowboarder 3 (gender indeterminate)",
+                    "attribute": [
+                        "snowboarding",
+                        "wearing red and dark clothing",
+                        "upright",
+                        "facing downhill"
+                    ]
+                },
+                {
+                    "name": "snowboarder 4 (gender indeterminate)",
+                    "attribute": [
+                        "snowboarding",
+                        "wearing dark clothing",
+                        "bent forward",
+                        "facing downhill"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Snow covered mountain slope",
+            "objects": [
+                {
+                    "name": "snow",
+                    "attribute": [
+                        "white",
+                        "covering slope"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Mountain peaks in the background",
+            "objects": [
+                {
+                    "name": "mountain peaks",
+                    "attribute": [
+                        "covered in snow",
+                        "partially obscured by clouds"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "snowboarder 1 (gender indeterminate)",
+            "relationship": "is above",
+            "object": "snow"
+        },
+        {
+            "subject": "snowboarder 2 (gender indeterminate)",
+            "relationship": "is above",
+            "object": "snow"
+        },
+        {
+            "subject": "snowboarder 3 (gender indeterminate)",
+            "relationship": "is above",
+            "object": "snow"
+        },
+        {
+            "subject": "snowboarder 4 (gender indeterminate)",
+            "relationship": "is above",
+            "object": "snow"
+        },
+        {
+            "subject": "snowboarder 1 (gender indeterminate)",
+            "relationship": "is in front of",
+            "object": "mountain peaks"
+        },
+        {
+            "subject": "snowboarder 2 (gender indeterminate)",
+            "relationship": "is in front of",
+            "object": "mountain peaks"
+        },
+        {
+            "subject": "snowboarder 3 (gender indeterminate)",
+            "relationship": "is in front of",
+            "object": "mountain peaks"
+        },
+        {
+            "subject": "snowboarder 4 (gender indeterminate)",
+            "relationship": "is in front of",
+            "object": "mountain peaks"
+        },
+        {
+            "subject": "snow",
+            "relationship": "covers",
+            "object": "mountain slope"
+        },
+        {
+            "subject": "mountain peaks",
+            "relationship": "tower above",
+            "object": "mountain slope"
+        },
+        {
+            "subject": "snowboarder 1 (gender indeterminate)",
+            "relationship": "is near",
+            "object": "snowboarder 2 (gender indeterminate)"
+        },
+        {
+            "subject": "snowboarder 3 (gender indeterminate)",
+            "relationship": "is further downhill from",
+            "object": "snowboarder 2 (gender indeterminate)"
+        },
+        {
+            "subject": "snowboarder 4 (gender indeterminate)",
+            "relationship": "is further downhill from",
+            "object": "snowboarder 3 (gender indeterminate)"
+        }
+    ]
+}

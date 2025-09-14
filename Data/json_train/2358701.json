@@ -1,0 +1,107 @@
+{
+    "scene": "Several cows eating hay inside a barn.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Cows positioned along a feeding trough",
+            "objects": [
+                {
+                    "name": "Cow 1 (female)",
+                    "attribute": [
+                        "black and white",
+                        "tagged ear",
+                        "feeding"
+                    ]
+                },
+                {
+                    "name": "Cow 2 (female)",
+                    "attribute": [
+                        "brown and white",
+                        "tagged ear",
+                        "feeding"
+                    ]
+                },
+                {
+                    "name": "Cow 3 (female)",
+                    "attribute": [
+                        "black and brown",
+                        "tagged ear",
+                        "feeding"
+                    ]
+                },
+                {
+                    "name": "Cow 4 (female)",
+                    "attribute": [
+                        "black and white",
+                        "tagged ear",
+                        "feeding"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Interior of a barn with feeding trough",
+            "objects": [
+                {
+                    "name": "feeding trough",
+                    "attribute": [
+                        "metal",
+                        "linear"
+                    ]
+                },
+                {
+                    "name": "hay",
+                    "attribute": [
+                        "yellowish",
+                        "dried"
+                    ]
+                },
+                {
+                    "name": "barn wall",
+                    "attribute": [
+                        "brick",
+                        "partially lit by sunlight"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Cow 1 (female)",
+            "relationship": "eating",
+            "object": "hay"
+        },
+        {
+            "subject": "Cow 2 (female)",
+            "relationship": "eating",
+            "object": "hay"
+        },
+        {
+            "subject": "Cow 3 (female)",
+            "relationship": "eating",
+            "object": "hay"
+        },
+        {
+            "subject": "Cow 4 (female)",
+            "relationship": "eating",
+            "object": "hay"
+        },
+        {
+            "subject": "Cows",
+            "relationship": "next to each other",
+            "object": "feeding trough"
+        },
+        {
+            "subject": "feeding trough",
+            "relationship": "filled with",
+            "object": "hay"
+        },
+        {
+            "subject": "feeding trough",
+            "relationship": "adjacent to",
+            "object": "barn wall"
+        }
+    ]
+}

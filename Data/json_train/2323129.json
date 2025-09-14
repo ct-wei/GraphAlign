@@ -1,0 +1,102 @@
+{
+    "scene": "A model train set with a red caboose and other train cars in a miniature landscape.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Red caboose at the forefront of the train set",
+            "objects": [
+                {
+                    "name": "caboose",
+                    "attribute": [
+                        "red",
+                        "model",
+                        "detailed",
+                        "text 'SEABOARD' visible",
+                        "number 12303"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Train cars behind the caboose",
+            "objects": [
+                {
+                    "name": "boxcar 1",
+                    "attribute": [
+                        "brown",
+                        "model",
+                        "text 'PENNSYLVANIA 15723' visible"
+                    ]
+                },
+                {
+                    "name": "tank car",
+                    "attribute": [
+                        "black",
+                        "model",
+                        "cylindrical"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Miniature landscape around the train track",
+            "objects": [
+                {
+                    "name": "grass",
+                    "attribute": [
+                        "green",
+                        "model",
+                        "scattered"
+                    ]
+                },
+                {
+                    "name": "building",
+                    "attribute": [
+                        "model",
+                        "multi-story",
+                        "brick texture"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "caboose",
+            "relationship": "part of",
+            "object": "train set"
+        },
+        {
+            "subject": "boxcar 1",
+            "relationship": "part of",
+            "object": "train set"
+        },
+        {
+            "subject": "tank car",
+            "relationship": "part of",
+            "object": "train set"
+        },
+        {
+            "subject": "grass",
+            "relationship": "surrounding",
+            "object": "train track"
+        },
+        {
+            "subject": "building",
+            "relationship": "adjacent to",
+            "object": "train set"
+        },
+        {
+            "subject": "caboose",
+            "relationship": "in front of",
+            "object": "boxcar 1"
+        },
+        {
+            "subject": "boxcar 1",
+            "relationship": "in front of",
+            "object": "tank car"
+        }
+    ]
+}

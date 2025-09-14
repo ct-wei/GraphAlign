@@ -1,0 +1,103 @@
+{
+    "scene": "A zebra standing in an enclosure with grass and trees.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Zebra standing in an enclosure",
+            "objects": [
+                {
+                    "name": "Zebra 1",
+                    "attribute": [
+                        "black and white stripes",
+                        "upright ears",
+                        "standing",
+                        "visible mane"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Enclosure with grass, rocks, trees, and structural elements",
+            "objects": [
+                {
+                    "name": "Grass",
+                    "attribute": [
+                        "green",
+                        "patchy"
+                    ]
+                },
+                {
+                    "name": "Rocks",
+                    "attribute": [
+                        "light brown",
+                        "large"
+                    ]
+                },
+                {
+                    "name": "Trees",
+                    "attribute": [
+                        "green leaves",
+                        "thin trunk"
+                    ]
+                },
+                {
+                    "name": "Fence",
+                    "attribute": [
+                        "wooden",
+                        "vertical slats"
+                    ]
+                },
+                {
+                    "name": "Structure",
+                    "attribute": [
+                        "green roof",
+                        "rectangular"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Zebra 1",
+            "relationship": "standing on",
+            "object": "Grass"
+        },
+        {
+            "subject": "Zebra 1",
+            "relationship": "near",
+            "object": "Rocks"
+        },
+        {
+            "subject": "Zebra 1",
+            "relationship": "in front of",
+            "object": "Trees"
+        },
+        {
+            "subject": "Zebra 1",
+            "relationship": "enclosed by",
+            "object": "Fence"
+        },
+        {
+            "subject": "Grass",
+            "relationship": "surrounding",
+            "object": "Rocks"
+        },
+        {
+            "subject": "Trees",
+            "relationship": "behind",
+            "object": "Zebra 1"
+        },
+        {
+            "subject": "Fence",
+            "relationship": "part of",
+            "object": "Enclosure"
+        },
+        {
+            "subject": "Structure",
+            "relationship": "beyond",
+            "object": "Fence"
+        }
+    ]
+}

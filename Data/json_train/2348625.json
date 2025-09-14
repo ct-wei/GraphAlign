@@ -1,0 +1,97 @@
+{
+    "scene": "Busy street scene with various vehicles and pedestrians during the daytime.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Front area with cars and motorcycles",
+            "objects": [
+                {
+                    "name": "Car 1",
+                    "attribute": [
+                        "black",
+                        "sedan",
+                        "shiny surface"
+                    ]
+                },
+                {
+                    "name": "Motorcycle 1",
+                    "attribute": [
+                        "rider with helmet",
+                        "white",
+                        "compact"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Middle area with a bus amidst traffic",
+            "objects": [
+                {
+                    "name": "Bus 1",
+                    "attribute": [
+                        "yellow",
+                        "large",
+                        "number 707"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background area with traffic lights and pedestrians",
+            "objects": [
+                {
+                    "name": "Traffic Light 1",
+                    "attribute": [
+                        "red signal"
+                    ]
+                },
+                {
+                    "name": "Pedestrian 1",
+                    "attribute": [
+                        "crossing street"
+                    ]
+                },
+                {
+                    "name": "Pedestrian 2",
+                    "attribute": [
+                        "waiting to cross"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Car 1",
+            "relationship": "in front of",
+            "object": "Motorcycle 1"
+        },
+        {
+            "subject": "Motorcycle 1",
+            "relationship": "next to",
+            "object": "Car 1"
+        },
+        {
+            "subject": "Bus 1",
+            "relationship": "behind",
+            "object": "Cars"
+        },
+        {
+            "subject": "Pedestrian 1",
+            "relationship": "crossing in front of",
+            "object": "Motorcycle 1"
+        },
+        {
+            "subject": "Pedestrian 2",
+            "relationship": "waiting at",
+            "object": "Traffic Light 1"
+        },
+        {
+            "subject": "Traffic Light 1",
+            "relationship": "controlling",
+            "object": "Vehicular traffic"
+        }
+    ]
+}

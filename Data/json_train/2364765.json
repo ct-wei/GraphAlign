@@ -1,0 +1,74 @@
+{
+    "scene": "A woman pretending to surf on a drawn wave mural.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Woman posing with a surfing gesture",
+            "objects": [
+                {
+                    "name": "woman",
+                    "attribute": [
+                        "smiling",
+                        "female",
+                        "wearing grey top",
+                        "wearing black pants",
+                        "wearing black shoes",
+                        "pretending to surf",
+                        "raised left hand",
+                        "bent right leg"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Drawn wave mural making an illusion of surfing",
+            "objects": [
+                {
+                    "name": "wave mural",
+                    "attribute": [
+                        "blue",
+                        "white crest",
+                        "illusion of depth",
+                        "art"
+                    ]
+                },
+                {
+                    "name": "floor sign",
+                    "attribute": [
+                        "yellow",
+                        "arrow symbol",
+                        "pointing"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "woman",
+            "relationship": "standing on",
+            "object": "floor sign"
+        },
+        {
+            "subject": "floor sign",
+            "relationship": "part of",
+            "object": "wave mural"
+        },
+        {
+            "subject": "woman",
+            "relationship": "in front of",
+            "object": "wave mural"
+        },
+        {
+            "subject": "woman",
+            "relationship": "raising",
+            "object": "left hand"
+        },
+        {
+            "subject": "woman",
+            "relationship": "bending",
+            "object": "right leg"
+        }
+    ]
+}

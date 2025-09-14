@@ -1,0 +1,153 @@
+{
+    "scene": "People engage in water sports activities at a beach with kites flying in the sky.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Beach with individuals preparing for water sports",
+            "objects": [
+                {
+                    "name": "Person 1",
+                    "attribute": [
+                        "male",
+                        "wearing wetsuit",
+                        "holding kite"
+                    ]
+                },
+                {
+                    "name": "Person 2",
+                    "attribute": [
+                        "male",
+                        "wearing wetsuit",
+                        "near a kite"
+                    ]
+                },
+                {
+                    "name": "Person 3",
+                    "attribute": [
+                        "male",
+                        "wearing wetsuit"
+                    ]
+                },
+                {
+                    "name": "kite 1",
+                    "attribute": [
+                        "partially inflated",
+                        "black",
+                        "red",
+                        "green"
+                    ]
+                },
+                {
+                    "name": "kite 2",
+                    "attribute": [
+                        "deflated",
+                        "red"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Sandy beach area",
+            "objects": [
+                {
+                    "name": "sand",
+                    "attribute": [
+                        "white"
+                    ]
+                },
+                {
+                    "name": "kite in the sky",
+                    "attribute": [
+                        "flying",
+                        "red",
+                        "distant"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background with buildings and vegetation",
+            "objects": [
+                {
+                    "name": "buildings",
+                    "attribute": [
+                        "distant",
+                        "white",
+                        "red roofs"
+                    ]
+                },
+                {
+                    "name": "vegetation",
+                    "attribute": [
+                        "green",
+                        "sparse"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Person 1",
+            "relationship": "holding",
+            "object": "kite 1"
+        },
+        {
+            "subject": "Person 1",
+            "relationship": "standing on",
+            "object": "sand"
+        },
+        {
+            "subject": "Person 2",
+            "relationship": "standing near",
+            "object": "kite 2"
+        },
+        {
+            "subject": "Person 2",
+            "relationship": "standing on",
+            "object": "sand"
+        },
+        {
+            "subject": "Person 3",
+            "relationship": "standing on",
+            "object": "sand"
+        },
+        {
+            "subject": "kite 1",
+            "relationship": "resting on",
+            "object": "sand"
+        },
+        {
+            "subject": "kite 2",
+            "relationship": "resting on",
+            "object": "sand"
+        },
+        {
+            "subject": "kite in the sky",
+            "relationship": "floating above",
+            "object": "sand"
+        },
+        {
+            "subject": "sand",
+            "relationship": "extends to",
+            "object": "buildings"
+        },
+        {
+            "subject": "buildings",
+            "relationship": "behind",
+            "object": "Person 1"
+        },
+        {
+            "subject": "buildings",
+            "relationship": "behind",
+            "object": "Person 2"
+        },
+        {
+            "subject": "buildings",
+            "relationship": "behind",
+            "object": "Person 3"
+        }
+    ]
+}

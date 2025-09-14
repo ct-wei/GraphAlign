@@ -1,0 +1,114 @@
+{
+    "scene": "A vintage steam locomotive parked at a station.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Front part of the locomotive",
+            "objects": [
+                {
+                    "name": "locomotive front",
+                    "attribute": [
+                        "black",
+                        "metallic",
+                        "round headlamp",
+                        "number 7 emblem",
+                        "large smokestack"
+                    ]
+                },
+                {
+                    "name": "cowcatcher",
+                    "attribute": [
+                        "black",
+                        "striped",
+                        "metallic"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Wheels and side of the locomotive",
+            "objects": [
+                {
+                    "name": "wheels",
+                    "attribute": [
+                        "spoked",
+                        "metallic",
+                        "black with silver accents"
+                    ]
+                },
+                {
+                    "name": "side of locomotive",
+                    "attribute": [
+                        "black",
+                        "metallic",
+                        "gold and silver trim"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "The station platform and background",
+            "objects": [
+                {
+                    "name": "platform",
+                    "attribute": [
+                        "paved",
+                        "gray"
+                    ]
+                },
+                {
+                    "name": "building",
+                    "attribute": [
+                        "brick",
+                        "red",
+                        "historical appearance"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "locomotive front",
+            "relationship": "has",
+            "object": "number 7 emblem"
+        },
+        {
+            "subject": "locomotive front",
+            "relationship": "mounted on",
+            "object": "wheels"
+        },
+        {
+            "subject": "cowcatcher",
+            "relationship": "attached to",
+            "object": "locomotive front"
+        },
+        {
+            "subject": "side of locomotive",
+            "relationship": "decorated with",
+            "object": "gold and silver trim"
+        },
+        {
+            "subject": "wheels",
+            "relationship": "supporting",
+            "object": "side of locomotive"
+        },
+        {
+            "subject": "locomotive front",
+            "relationship": "in front of",
+            "object": "building"
+        },
+        {
+            "subject": "platform",
+            "relationship": "adjacent to",
+            "object": "building"
+        },
+        {
+            "subject": "side of locomotive",
+            "relationship": "parallel to",
+            "object": "platform"
+        }
+    ]
+}

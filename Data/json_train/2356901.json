@@ -1,0 +1,106 @@
+{
+    "scene": "A bathroom with a toilet, shower curtain, sink, and mirror.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Bathroom with toilet",
+            "objects": [
+                {
+                    "name": "toilet",
+                    "attribute": [
+                        "white",
+                        "ceramic",
+                        "with seat and lid"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Shower area with curtain",
+            "objects": [
+                {
+                    "name": "shower curtain",
+                    "attribute": [
+                        "patterned",
+                        "with rings",
+                        "hanging"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Sink and mirror section",
+            "objects": [
+                {
+                    "name": "sink",
+                    "attribute": [
+                        "white",
+                        "ceramic",
+                        "with faucet"
+                    ]
+                },
+                {
+                    "name": "mirror",
+                    "attribute": [
+                        "rectangular",
+                        "framed"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Wall and towel",
+            "objects": [
+                {
+                    "name": "towel",
+                    "attribute": [
+                        "green",
+                        "hanging"
+                    ]
+                },
+                {
+                    "name": "wall",
+                    "attribute": [
+                        "light blue",
+                        "painted"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "toilet",
+            "relationship": "adjoins",
+            "object": "wall"
+        },
+        {
+            "subject": "shower curtain",
+            "relationship": "covers",
+            "object": "shower area"
+        },
+        {
+            "subject": "sink",
+            "relationship": "mounted on",
+            "object": "counter"
+        },
+        {
+            "subject": "mirror",
+            "relationship": "hung above",
+            "object": "sink"
+        },
+        {
+            "subject": "towel",
+            "relationship": "hanging on",
+            "object": "towel rack"
+        },
+        {
+            "subject": "towel rack",
+            "relationship": "mounted on",
+            "object": "wall"
+        }
+    ]
+}

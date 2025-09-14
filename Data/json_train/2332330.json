@@ -1,0 +1,83 @@
+{
+    "scene": "A giraffe extends its neck to reach for food held by a person outside the fence at a zoo.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Giraffe extending its neck over a fence",
+            "objects": [
+                {
+                    "name": "giraffe",
+                    "attribute": [
+                        "long neck",
+                        "spotted pattern",
+                        "tan and white",
+                        "tall"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Person holding food",
+            "objects": [
+                {
+                    "name": "person",
+                    "attribute": [
+                        "wearing dark clothes"
+                    ]
+                },
+                {
+                    "name": "food",
+                    "attribute": [
+                        "held by person"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Fence area",
+            "objects": [
+                {
+                    "name": "fence",
+                    "attribute": [
+                        "metal",
+                        "barrier"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "giraffe",
+            "relationship": "reaching for",
+            "object": "food"
+        },
+        {
+            "subject": "giraffe",
+            "relationship": "leaning over",
+            "object": "fence"
+        },
+        {
+            "subject": "person",
+            "relationship": "holding",
+            "object": "food"
+        },
+        {
+            "subject": "person",
+            "relationship": "standing behind",
+            "object": "fence"
+        },
+        {
+            "subject": "food",
+            "relationship": "being held by",
+            "object": "person"
+        },
+        {
+            "subject": "fence",
+            "relationship": "separates",
+            "object": "giraffe from person"
+        }
+    ]
+}

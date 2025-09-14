@@ -1,0 +1,97 @@
+{
+    "scene": "A man riding a horse-drawn cart on a street.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "A man on a horse-drawn cart",
+            "objects": [
+                {
+                    "name": "man",
+                    "attribute": [
+                        "wearing a red shirt",
+                        "wearing a cap",
+                        "riding the cart"
+                    ]
+                },
+                {
+                    "name": "horse-drawn cart",
+                    "attribute": [
+                        "blue",
+                        "wooden",
+                        "carrying goods"
+                    ]
+                },
+                {
+                    "name": "horse 1",
+                    "attribute": [
+                        "brown",
+                        "equipped with harness"
+                    ]
+                },
+                {
+                    "name": "horse 2",
+                    "attribute": [
+                        "white with spots",
+                        "equipped with harness"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Street with buildings",
+            "objects": [
+                {
+                    "name": "street",
+                    "attribute": [
+                        "paved"
+                    ]
+                },
+                {
+                    "name": "buildings",
+                    "attribute": [
+                        "various colors",
+                        "commercial"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "man",
+            "relationship": "riding",
+            "object": "horse-drawn cart"
+        },
+        {
+            "subject": "horse-drawn cart",
+            "relationship": "pulled by",
+            "object": "horse 1"
+        },
+        {
+            "subject": "horse-drawn cart",
+            "relationship": "pulled by",
+            "object": "horse 2"
+        },
+        {
+            "subject": "horse 1",
+            "relationship": "on",
+            "object": "street"
+        },
+        {
+            "subject": "horse 2",
+            "relationship": "on",
+            "object": "street"
+        },
+        {
+            "subject": "horse-drawn cart",
+            "relationship": "on",
+            "object": "street"
+        },
+        {
+            "subject": "street",
+            "relationship": "adjacent to",
+            "object": "buildings"
+        }
+    ]
+}

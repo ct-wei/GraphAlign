@@ -1,0 +1,98 @@
+{
+    "scene": "A youth baseball game in progress with a batter, catcher, umpire, and spectators.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Foreground of the baseball game",
+            "objects": [
+                {
+                    "name": "batter (male)",
+                    "attribute": [
+                        "swinging",
+                        "wearing orange jersey",
+                        "playing baseball"
+                    ]
+                },
+                {
+                    "name": "catcher (male)",
+                    "attribute": [
+                        "squatting",
+                        "wearing protective gear",
+                        "anticipating"
+                    ]
+                },
+                {
+                    "name": "umpire (male)",
+                    "attribute": [
+                        "standing",
+                        "observing",
+                        "ready to make a call"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Background with spectators",
+            "objects": [
+                {
+                    "name": "spectator 1",
+                    "attribute": [
+                        "watching",
+                        "behind fence"
+                    ]
+                },
+                {
+                    "name": "spectator 2",
+                    "attribute": [
+                        "watching",
+                        "behind fence"
+                    ]
+                },
+                {
+                    "name": "chain-link fence",
+                    "attribute": [
+                        "separating players from spectators"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "batter (male)",
+            "relationship": "swinging at",
+            "object": "pitch"
+        },
+        {
+            "subject": "catcher (male)",
+            "relationship": "squatting behind",
+            "object": "home plate"
+        },
+        {
+            "subject": "umpire (male)",
+            "relationship": "observing",
+            "object": "batter (male)"
+        },
+        {
+            "subject": "umpire (male)",
+            "relationship": "ready to",
+            "object": "make a call"
+        },
+        {
+            "subject": "spectator 1",
+            "relationship": "watching",
+            "object": "game"
+        },
+        {
+            "subject": "spectator 2",
+            "relationship": "watching",
+            "object": "game"
+        },
+        {
+            "subject": "chain-link fence",
+            "relationship": "separating",
+            "object": "players from spectators"
+        }
+    ]
+}

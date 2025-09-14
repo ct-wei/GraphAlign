@@ -1,0 +1,161 @@
+{
+    "scene": "A person sitting at a dining table with various dishes prepared for a meal.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Person sitting at the dining table",
+            "objects": [
+                {
+                    "name": "Person 1 (male)",
+                    "attribute": [
+                        "wearing glasses",
+                        "white T-shirt",
+                        "sitting"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Dining table with an assortment of dishes",
+            "objects": [
+                {
+                    "name": "salad",
+                    "attribute": [
+                        "green",
+                        "in a blue bowl"
+                    ]
+                },
+                {
+                    "name": "grilled vegetables",
+                    "attribute": [
+                        "various colors",
+                        "in a pan"
+                    ]
+                },
+                {
+                    "name": "mixed fruit",
+                    "attribute": [
+                        "colorful",
+                        "in a bowl"
+                    ]
+                },
+                {
+                    "name": "sauce",
+                    "attribute": [
+                        "dark purple",
+                        "in a container"
+                    ]
+                },
+                {
+                    "name": "plates",
+                    "attribute": [
+                        "white",
+                        "empty"
+                    ]
+                },
+                {
+                    "name": "bottle",
+                    "attribute": [
+                        "dark",
+                        "tall"
+                    ]
+                },
+                {
+                    "name": "cutlery",
+                    "attribute": [
+                        "metallic"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background environment including wall and stuff",
+            "objects": [
+                {
+                    "name": "wall",
+                    "attribute": [
+                        "patterned"
+                    ]
+                },
+                {
+                    "name": "window",
+                    "attribute": [
+                        "reflective"
+                    ]
+                },
+                {
+                    "name": "bookshelf",
+                    "attribute": [
+                        "filled with books"
+                    ]
+                },
+                {
+                    "name": "guitar",
+                    "attribute": [
+                        "brown",
+                        "leaning against wall"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Person 1 (male)",
+            "relationship": "sitting at",
+            "object": "dining table"
+        },
+        {
+            "subject": "salad",
+            "relationship": "placed on",
+            "object": "dining table"
+        },
+        {
+            "subject": "grilled vegetables",
+            "relationship": "placed on",
+            "object": "dining table"
+        },
+        {
+            "subject": "mixed fruit",
+            "relationship": "placed on",
+            "object": "dining table"
+        },
+        {
+            "subject": "sauce",
+            "relationship": "placed on",
+            "object": "dining table"
+        },
+        {
+            "subject": "plates",
+            "relationship": "set on",
+            "object": "dining table"
+        },
+        {
+            "subject": "bottle",
+            "relationship": "placed on",
+            "object": "dining table"
+        },
+        {
+            "subject": "cutlery",
+            "relationship": "set on",
+            "object": "dining table"
+        },
+        {
+            "subject": "dining table",
+            "relationship": "in front of",
+            "object": "wall"
+        },
+        {
+            "subject": "guitar",
+            "relationship": "leaning against",
+            "object": "wall"
+        },
+        {
+            "subject": "bookshelf",
+            "relationship": "adjacent to",
+            "object": "window"
+        }
+    ]
+}

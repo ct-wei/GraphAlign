@@ -1,0 +1,118 @@
+{
+    "scene": "A white food truck named 'The Lucky Taco' parked next to a sidewalk with an 'OPEN' sign in front of it, surrounded by wet ground, greenery, other vehicles, and a building under an overcast sky.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "White food truck with branding",
+            "objects": [
+                {
+                    "name": "food truck",
+                    "attribute": [
+                        "white",
+                        "branded with 'The Lucky Taco'",
+                        "parked"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Vibrant pink 'OPEN' sign with hours and taco image",
+            "objects": [
+                {
+                    "name": "sign",
+                    "attribute": [
+                        "pink",
+                        "displays 'OPEN' and taco image",
+                        "hours 'Tues-Sun 12-8 pm'"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Surrounding environment",
+            "objects": [
+                {
+                    "name": "sidewalk",
+                    "attribute": [
+                        "next to food truck"
+                    ]
+                },
+                {
+                    "name": "wet ground",
+                    "attribute": [
+                        "suggests recent rain"
+                    ]
+                },
+                {
+                    "name": "greenery",
+                    "attribute": [
+                        "around"
+                    ]
+                },
+                {
+                    "name": "parked vehicles",
+                    "attribute": [
+                        "various",
+                        "in the background"
+                    ]
+                },
+                {
+                    "name": "building",
+                    "attribute": [
+                        "urban or suburban setting",
+                        "in the background"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "food truck",
+            "relationship": "has",
+            "object": "branding 'The Lucky Taco'"
+        },
+        {
+            "subject": "food truck",
+            "relationship": "parked next to",
+            "object": "sidewalk"
+        },
+        {
+            "subject": "sign",
+            "relationship": "in front of",
+            "object": "food truck"
+        },
+        {
+            "subject": "sign",
+            "relationship": "indicates",
+            "object": "operational times of food truck"
+        },
+        {
+            "subject": "ground",
+            "relationship": "wet from",
+            "object": "recent rain"
+        },
+        {
+            "subject": "greenery",
+            "relationship": "surrounds",
+            "object": "food truck and sidewalk"
+        },
+        {
+            "subject": "parked vehicles",
+            "relationship": "located behind",
+            "object": "food truck"
+        },
+        {
+            "subject": "building",
+            "relationship": "suggests",
+            "object": "urban or suburban setting"
+        },
+        {
+            "subject": "sky",
+            "relationship": "overcast",
+            "object": "weather"
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+    "scene": "A person playing tennis on a sunlit court, surrounded by a fence and a nearby building.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Person about to hit a tennis ball",
+            "objects": [
+                {
+                    "name": "Player 1 (male)",
+                    "attribute": [
+                        "mid-action",
+                        "wearing red visor",
+                        "red shirt",
+                        "white shorts",
+                        "white tennis shoes",
+                        "holding racquet"
+                    ]
+                },
+                {
+                    "name": "tennis ball",
+                    "attribute": [
+                        "small",
+                        "yellow"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Tennis court with green synthetic turf and white boundary lines",
+            "objects": [
+                {
+                    "name": "tennis court",
+                    "attribute": [
+                        "green synthetic turf",
+                        "white boundary lines",
+                        "enclosed by tall wire fence"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background with red-tiled rooftop and clear sky",
+            "objects": [
+                {
+                    "name": "red-tiled rooftop",
+                    "attribute": [
+                        "visible over fence"
+                    ]
+                },
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "clear",
+                        "bright sunlight"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Player 1 (male)",
+            "relationship": "wearing",
+            "object": "red visor"
+        },
+        {
+            "subject": "Player 1 (male)",
+            "relationship": "wearing",
+            "object": "red shirt"
+        },
+        {
+            "subject": "Player 1 (male)",
+            "relationship": "wearing",
+            "object": "white shorts"
+        },
+        {
+            "subject": "Player 1 (male)",
+            "relationship": "wearing",
+            "object": "white tennis shoes"
+        },
+        {
+            "subject": "Player 1 (male)",
+            "relationship": "about to hit",
+            "object": "tennis ball"
+        },
+        {
+            "subject": "tennis ball",
+            "relationship": "on",
+            "object": "tennis court"
+        },
+        {
+            "subject": "tennis court",
+            "relationship": "enclosed by",
+            "object": "tall wire fence"
+        },
+        {
+            "subject": "red-tiled rooftop",
+            "relationship": "over",
+            "object": "tall wire fence"
+        },
+        {
+            "subject": "sky",
+            "relationship": "providing",
+            "object": "bright sunlight"
+        }
+    ]
+}

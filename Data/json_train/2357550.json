@@ -1,0 +1,120 @@
+{
+    "scene": "Two men carrying a bull through a street with onlookers and shops in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Two men carrying a bull",
+            "objects": [
+                {
+                    "name": "man 1",
+                    "attribute": [
+                        "wearing a jacket",
+                        "dark hair",
+                        "carrying a pole"
+                    ]
+                },
+                {
+                    "name": "man 2",
+                    "attribute": [
+                        "wearing a t-shirt",
+                        "dark hair",
+                        "carrying a pole"
+                    ]
+                },
+                {
+                    "name": "bull",
+                    "attribute": [
+                        "large",
+                        "dark coat",
+                        "horns"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "A street with onlookers and shops",
+            "objects": [
+                {
+                    "name": "street",
+                    "attribute": [
+                        "dusty"
+                    ]
+                },
+                {
+                    "name": "onlooker 1",
+                    "attribute": [
+                        "walking",
+                        "wearing colorful clothes"
+                    ]
+                },
+                {
+                    "name": "onlooker 2",
+                    "attribute": [
+                        "walking",
+                        "wearing jeans"
+                    ]
+                },
+                {
+                    "name": "shop",
+                    "attribute": [
+                        "colorful",
+                        "street-side"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "man 1",
+            "relationship": "carrying",
+            "object": "bull"
+        },
+        {
+            "subject": "man 2",
+            "relationship": "carrying",
+            "object": "bull"
+        },
+        {
+            "subject": "bull",
+            "relationship": "carried by",
+            "object": "man 1"
+        },
+        {
+            "subject": "bull",
+            "relationship": "carried by",
+            "object": "man 2"
+        },
+        {
+            "subject": "man 1",
+            "relationship": "in front of",
+            "object": "shop"
+        },
+        {
+            "subject": "man 2",
+            "relationship": "in front of",
+            "object": "shop"
+        },
+        {
+            "subject": "bull",
+            "relationship": "in front of",
+            "object": "shop"
+        },
+        {
+            "subject": "onlooker 1",
+            "relationship": "walking past",
+            "object": "shop"
+        },
+        {
+            "subject": "onlooker 2",
+            "relationship": "walking past",
+            "object": "shop"
+        },
+        {
+            "subject": "street",
+            "relationship": "in front of",
+            "object": "shop"
+        }
+    ]
+}

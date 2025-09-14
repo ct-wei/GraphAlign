@@ -1,0 +1,142 @@
+{
+    "scene": "A person standing in a living room with furniture and a television on.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Person standing in the living room",
+            "objects": [
+                {
+                    "name": "Person (male)",
+                    "attribute": [
+                        "smiling",
+                        "wearing glasses",
+                        "black t-shirt with graphics",
+                        "blue jeans",
+                        "standing"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Living room furniture and electronics",
+            "objects": [
+                {
+                    "name": "television",
+                    "attribute": [
+                        "on",
+                        "flat screen",
+                        "showing a scene"
+                    ]
+                },
+                {
+                    "name": "sofa 1",
+                    "attribute": [
+                        "beige",
+                        "cushioned"
+                    ]
+                },
+                {
+                    "name": "sofa 2",
+                    "attribute": [
+                        "beige",
+                        "cushioned"
+                    ]
+                },
+                {
+                    "name": "coffee table",
+                    "attribute": [
+                        "wooden",
+                        "rectangular"
+                    ]
+                },
+                {
+                    "name": "television stand",
+                    "attribute": [
+                        "black",
+                        "with shelves"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Room decorations and window",
+            "objects": [
+                {
+                    "name": "curtains",
+                    "attribute": [
+                        "dark",
+                        "hung up"
+                    ]
+                },
+                {
+                    "name": "wall art",
+                    "attribute": [
+                        "framed",
+                        "hung on wall"
+                    ]
+                },
+                {
+                    "name": "toys",
+                    "attribute": [
+                        "on the floor",
+                        "colorful"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Person (male)",
+            "relationship": "standing on",
+            "object": "carpet"
+        },
+        {
+            "subject": "Person (male)",
+            "relationship": "facing",
+            "object": "television"
+        },
+        {
+            "subject": "television",
+            "relationship": "sitting on",
+            "object": "television stand"
+        },
+        {
+            "subject": "sofa 1",
+            "relationship": "facing",
+            "object": "television"
+        },
+        {
+            "subject": "sofa 2",
+            "relationship": "adjacent to",
+            "object": "sofa 1"
+        },
+        {
+            "subject": "sofa 1",
+            "relationship": "aligned with",
+            "object": "coffee table"
+        },
+        {
+            "subject": "coffee table",
+            "relationship": "in front of",
+            "object": "sofa 1"
+        },
+        {
+            "subject": "wall art",
+            "relationship": "hanging on",
+            "object": "wall"
+        },
+        {
+            "subject": "curtains",
+            "relationship": "covering",
+            "object": "window"
+        },
+        {
+            "subject": "toys",
+            "relationship": "scattered on",
+            "object": "carpet"
+        }
+    ]
+}

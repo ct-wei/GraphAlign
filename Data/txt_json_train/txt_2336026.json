@@ -1,0 +1,101 @@
+{
+    "scene": "A white Ford Super Duty pickup truck parked outdoors on a sunny day.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "White Ford Super Duty pickup truck",
+            "objects": [
+                {
+                    "name": "Ford truck",
+                    "attribute": [
+                        "white",
+                        "Super Duty",
+                        "FX4 marking on the rear side panel",
+                        "4x4 off-road package",
+                        "crew cab configuration",
+                        "bed cap over cargo area",
+                        "dirt and marks visible on bodywork",
+                        "parked"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Outdoor environment with trees and other vehicles in the background",
+            "objects": [
+                {
+                    "name": "pavement",
+                    "attribute": [
+                        "paved surface"
+                    ]
+                },
+                {
+                    "name": "trees",
+                    "attribute": [
+                        "background",
+                        "various shades of green"
+                    ]
+                },
+                {
+                    "name": "other vehicles",
+                    "attribute": [
+                        "background"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Ford truck",
+            "relationship": "marked with",
+            "object": "FX4"
+        },
+        {
+            "subject": "Ford truck",
+            "relationship": "has",
+            "object": "4x4 off-road package"
+        },
+        {
+            "subject": "Ford truck",
+            "relationship": "has",
+            "object": "crew cab configuration"
+        },
+        {
+            "subject": "Ford truck",
+            "relationship": "has",
+            "object": "bed cap"
+        },
+        {
+            "subject": "Ford truck",
+            "relationship": "shows",
+            "object": "signs of use"
+        },
+        {
+            "subject": "Ford truck",
+            "relationship": "parked on",
+            "object": "pavement"
+        },
+        {
+            "subject": "pavement",
+            "relationship": "surrounded by",
+            "object": "trees"
+        },
+        {
+            "subject": "pavement",
+            "relationship": "near",
+            "object": "other vehicles"
+        },
+        {
+            "subject": "Ford truck",
+            "relationship": "in the presence of",
+            "object": "trees"
+        },
+        {
+            "subject": "Ford truck",
+            "relationship": "in the presence of",
+            "object": "other vehicles"
+        }
+    ]
+}

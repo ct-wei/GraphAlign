@@ -1,0 +1,116 @@
+{
+    "scene": "An arrangement of a blue vase, a decorative pot, and a tall vase with pink flowers on a wooden surface outdoors.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Blue vase on the left",
+            "objects": [
+                {
+                    "name": "blue vase",
+                    "attribute": [
+                        "matte",
+                        "ceramic",
+                        "blue",
+                        "empty"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Decorative pot with dried flowers in the center",
+            "objects": [
+                {
+                    "name": "decorative pot",
+                    "attribute": [
+                        "ceramic",
+                        "patterned with faces and stars",
+                        "white with blue details"
+                    ]
+                },
+                {
+                    "name": "dried flowers",
+                    "attribute": [
+                        "brown",
+                        "wilted"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Tall vase with pink flowers on the right",
+            "objects": [
+                {
+                    "name": "tall vase",
+                    "attribute": [
+                        "glass",
+                        "tall",
+                        "blue with purple swirls"
+                    ]
+                },
+                {
+                    "name": "pink flowers",
+                    "attribute": [
+                        "vibrant pink",
+                        "fresh",
+                        "blooming"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Wooden surface and backdrop",
+            "objects": [
+                {
+                    "name": "wooden surface",
+                    "attribute": [
+                        "brown",
+                        "flat"
+                    ]
+                },
+                {
+                    "name": "backdrop",
+                    "attribute": [
+                        "green",
+                        "vegetation",
+                        "outdoor"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "blue vase",
+            "relationship": "placed on",
+            "object": "wooden surface"
+        },
+        {
+            "subject": "decorative pot",
+            "relationship": "placed on",
+            "object": "wooden surface"
+        },
+        {
+            "subject": "decorative pot",
+            "relationship": "contains",
+            "object": "dried flowers"
+        },
+        {
+            "subject": "tall vase",
+            "relationship": "placed on",
+            "object": "wooden surface"
+        },
+        {
+            "subject": "tall vase",
+            "relationship": "contains",
+            "object": "pink flowers"
+        },
+        {
+            "subject": "wooden surface",
+            "relationship": "in front of",
+            "object": "backdrop"
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "scene": "A cozy domestic scene with a woman blowing out candles on a birthday cake and a curious cat looking on.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "A woman leaning to blow out birthday cake candles",
+            "objects": [
+                {
+                    "name": "Woman",
+                    "attribute": [
+                        "long hair",
+                        "leaning",
+                        "female"
+                    ]
+                },
+                {
+                    "name": "Birthday cake",
+                    "attribute": [
+                        "chocolate",
+                        "adorned with lit candles"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "A curious cat looking at the birthday cake",
+            "objects": [
+                {
+                    "name": "Cat",
+                    "attribute": [
+                        "curious",
+                        "looking"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "A living room setting with household items",
+            "objects": [
+                {
+                    "name": "Coffee table",
+                    "attribute": [
+                        "with birthday cake"
+                    ]
+                },
+                {
+                    "name": "Household items",
+                    "attribute": [
+                        "various",
+                        "creating a lived-in atmosphere"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Sunlight filtering in through a window",
+            "objects": [
+                {
+                    "name": "Window",
+                    "attribute": [
+                        "letting in sunlight"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Woman",
+            "relationship": "blowing out candles on",
+            "object": "Birthday cake"
+        },
+        {
+            "subject": "Cat",
+            "relationship": "looking at",
+            "object": "Birthday cake"
+        },
+        {
+            "subject": "Birthday cake",
+            "relationship": "sitting on",
+            "object": "Coffee table"
+        },
+        {
+            "subject": "Coffee table",
+            "relationship": "in",
+            "object": "living room"
+        },
+        {
+            "subject": "Household items",
+            "relationship": "filling",
+            "object": "living room"
+        },
+        {
+            "subject": "Window",
+            "relationship": "letting in",
+            "object": "sunlight"
+        },
+        {
+            "subject": "Sunlight",
+            "relationship": "giving",
+            "object": "living room a warm and inviting feel"
+        }
+    ]
+}

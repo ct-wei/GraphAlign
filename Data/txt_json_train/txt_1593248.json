@@ -1,0 +1,116 @@
+{
+    "scene": "A casual social gathering in a domestic kitchen.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Woman in the foreground holding a photo book",
+            "objects": [
+                {
+                    "name": "Woman 1",
+                    "attribute": [
+                        "smiling",
+                        "long blonde hair",
+                        "wearing glasses",
+                        "mustard cardigan",
+                        "patterned blouse"
+                    ]
+                },
+                {
+                    "name": "Photo book",
+                    "attribute": [
+                        "large",
+                        "titled THE OLSON'S"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Man in green striped polo shirt",
+            "objects": [
+                {
+                    "name": "Man 1",
+                    "attribute": [
+                        "thoughtful expression",
+                        "hand on chin",
+                        "green striped polo shirt"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Woman in the background looking down towards a table with food",
+            "objects": [
+                {
+                    "name": "Woman 2",
+                    "attribute": [
+                        "looking down",
+                        "at table"
+                    ]
+                },
+                {
+                    "name": "Table",
+                    "attribute": [
+                        "food spread"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Counter with dishes",
+            "objects": [
+                {
+                    "name": "Counter",
+                    "attribute": [
+                        "dishes",
+                        "hint of meal or potluck"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Woman 1",
+            "relationship": "holding",
+            "object": "Photo book"
+        },
+        {
+            "subject": "Man 1",
+            "relationship": "standing next to",
+            "object": "Woman 1"
+        },
+        {
+            "subject": "Woman 2",
+            "relationship": "looking at",
+            "object": "Table"
+        },
+        {
+            "subject": "Counter",
+            "relationship": "has",
+            "object": "dishes"
+        },
+        {
+            "subject": "Table",
+            "relationship": "covered with",
+            "object": "food spread"
+        },
+        {
+            "subject": "Woman 1",
+            "relationship": "standing in",
+            "object": "kitchen"
+        },
+        {
+            "subject": "Man 1",
+            "relationship": "standing in",
+            "object": "kitchen"
+        },
+        {
+            "subject": "Woman 2",
+            "relationship": "standing in",
+            "object": "kitchen"
+        }
+    ]
+}

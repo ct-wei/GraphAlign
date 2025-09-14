@@ -1,0 +1,89 @@
+{
+    "scene": "A pizza with a slice being lifted by a pizza cutter.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Most of the pizza remaining on the surface",
+            "objects": [
+                {
+                    "name": "pizza base",
+                    "attribute": [
+                        "baked",
+                        "golden brown"
+                    ]
+                },
+                {
+                    "name": "cheese",
+                    "attribute": [
+                        "melted",
+                        "yellow",
+                        "bubbly"
+                    ]
+                },
+                {
+                    "name": "toppings",
+                    "attribute": [
+                        "mixed",
+                        "herbs sprinkled"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "The pizza slice partially separated from the rest",
+            "objects": [
+                {
+                    "name": "slice 1",
+                    "attribute": [
+                        "baked",
+                        "golden brown",
+                        "cheese melted",
+                        "toppings mixed"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "The pizza cutter interacting with the pizza",
+            "objects": [
+                {
+                    "name": "pizza cutter",
+                    "attribute": [
+                        "metallic",
+                        "shiny",
+                        "with handle"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "slice 1",
+            "relationship": "being lifted by",
+            "object": "pizza cutter"
+        },
+        {
+            "subject": "slice 1",
+            "relationship": "separated from",
+            "object": "pizza base"
+        },
+        {
+            "subject": "cheese",
+            "relationship": "on top of",
+            "object": "pizza base"
+        },
+        {
+            "subject": "toppings",
+            "relationship": "sprinkled on",
+            "object": "cheese"
+        },
+        {
+            "subject": "pizza cutter",
+            "relationship": "resting on",
+            "object": "slice 1"
+        }
+    ]
+}

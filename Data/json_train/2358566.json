@@ -1,0 +1,74 @@
+{
+    "scene": "A red car is parked on a gravel surface with a bird flying in front.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "A red car parked",
+            "objects": [
+                {
+                    "name": "car",
+                    "attribute": [
+                        "red",
+                        "parked",
+                        "four wheels",
+                        "shiny surface",
+                        "front grille",
+                        "headlights"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "A bird flying",
+            "objects": [
+                {
+                    "name": "bird",
+                    "attribute": [
+                        "mid-flight",
+                        "wings spread",
+                        "brown and white feathers"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Gravel surface and natural background",
+            "objects": [
+                {
+                    "name": "gravel",
+                    "attribute": [
+                        "gray",
+                        "uneven surface"
+                    ]
+                },
+                {
+                    "name": "vegetation",
+                    "attribute": [
+                        "green",
+                        "various shades",
+                        "wild"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "car",
+            "relationship": "parked on",
+            "object": "gravel"
+        },
+        {
+            "subject": "bird",
+            "relationship": "flying in front of",
+            "object": "car"
+        },
+        {
+            "subject": "gravel",
+            "relationship": "surrounded by",
+            "object": "vegetation"
+        }
+    ]
+}

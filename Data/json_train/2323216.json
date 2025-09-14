@@ -1,0 +1,131 @@
+{
+    "scene": "Commercial airplanes parked at an airport gate with ground service equipment and mountains in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Commercial airplanes parked at the gate",
+            "objects": [
+                {
+                    "name": "Airplane 1",
+                    "attribute": [
+                        "white",
+                        "commercial airliner",
+                        "multiple windows",
+                        "red and white tail"
+                    ]
+                },
+                {
+                    "name": "Airplane 2",
+                    "attribute": [
+                        "partially visible",
+                        "white",
+                        "commercial airliner",
+                        "red and white tail"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Airport gate area with ground service equipment",
+            "objects": [
+                {
+                    "name": "Ground service bus 1",
+                    "attribute": [
+                        "white",
+                        "parked"
+                    ]
+                },
+                {
+                    "name": "Stairs 1",
+                    "attribute": [
+                        "yellow",
+                        "adjacent to airplane"
+                    ]
+                },
+                {
+                    "name": "Cargo vehicles",
+                    "attribute": [
+                        "yellow",
+                        "near airplane"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Mountains in the background",
+            "objects": [
+                {
+                    "name": "Mountains",
+                    "attribute": [
+                        "snow-capped",
+                        "distant"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Airplane 1",
+            "relationship": "parked next to",
+            "object": "Airplane 2"
+        },
+        {
+            "subject": "Airplane 1",
+            "relationship": "serviced by",
+            "object": "Stairs 1"
+        },
+        {
+            "subject": "Airplane 1",
+            "relationship": "near",
+            "object": "Ground service bus 1"
+        },
+        {
+            "subject": "Airplane 1",
+            "relationship": "near",
+            "object": "Cargo vehicles"
+        },
+        {
+            "subject": "Airplane 2",
+            "relationship": "near",
+            "object": "Cargo vehicles"
+        },
+        {
+            "subject": "Airplane 1",
+            "relationship": "in front of",
+            "object": "Mountains"
+        },
+        {
+            "subject": "Airplane 2",
+            "relationship": "in front of",
+            "object": "Mountains"
+        },
+        {
+            "subject": "Ground service bus 1",
+            "relationship": "positioned at",
+            "object": "Airport gate"
+        },
+        {
+            "subject": "Stairs 1",
+            "relationship": "attached to",
+            "object": "Airplane 1"
+        },
+        {
+            "subject": "Cargo vehicles",
+            "relationship": "positioned near",
+            "object": "Airplane 1"
+        },
+        {
+            "subject": "Cargo vehicles",
+            "relationship": "positioned near",
+            "object": "Airplane 2"
+        },
+        {
+            "subject": "Mountains",
+            "relationship": "behind",
+            "object": "airport gate area"
+        }
+    ]
+}

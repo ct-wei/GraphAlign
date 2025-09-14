@@ -1,0 +1,113 @@
+{
+    "scene": "A cluttered countertop with various kitchen and decorative items giving a sense of a homey and lived-in environment.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Foreground with primarily focused items",
+            "objects": [
+                {
+                    "name": "Sunkist orange soda",
+                    "attribute": [
+                        "placed on wooden chopping board"
+                    ]
+                },
+                {
+                    "name": "blue kitchen utensil",
+                    "attribute": [
+                        "resembling tongs",
+                        "in packaging"
+                    ]
+                },
+                {
+                    "name": "brown mug",
+                    "attribute": [
+                        "with word Paris printed on it"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Background with various kitchen and decorative items",
+            "objects": [
+                {
+                    "name": "red wall clock",
+                    "attribute": [
+                        "hanging"
+                    ]
+                },
+                {
+                    "name": "sailing ship model",
+                    "attribute": [
+                        "small"
+                    ]
+                },
+                {
+                    "name": "picture frames",
+                    "attribute": [
+                        "multiple"
+                    ]
+                },
+                {
+                    "name": "condiments",
+                    "attribute": [
+                        "various"
+                    ]
+                },
+                {
+                    "name": "teapot",
+                    "attribute": [
+                        "present"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Sunkist orange soda",
+            "relationship": "placed on",
+            "object": "wooden chopping board"
+        },
+        {
+            "subject": "blue kitchen utensil",
+            "relationship": "next to",
+            "object": "Sunkist orange soda"
+        },
+        {
+            "subject": "brown mug",
+            "relationship": "next to",
+            "object": "blue kitchen utensil"
+        },
+        {
+            "subject": "brown mug",
+            "relationship": "has",
+            "object": "word Paris"
+        },
+        {
+            "subject": "red wall clock",
+            "relationship": "hanging on",
+            "object": "wall"
+        },
+        {
+            "subject": "sailing ship model",
+            "relationship": "placed on",
+            "object": "countertop"
+        },
+        {
+            "subject": "picture frames",
+            "relationship": "placed on",
+            "object": "countertop"
+        },
+        {
+            "subject": "condiments",
+            "relationship": "placed on",
+            "object": "countertop"
+        },
+        {
+            "subject": "teapot",
+            "relationship": "placed on",
+            "object": "countertop"
+        }
+    ]
+}

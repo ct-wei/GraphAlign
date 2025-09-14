@@ -1,0 +1,114 @@
+{
+    "scene": "Two skiers are preparing to descend a snowy slope, with a scenic view of trees and a lake in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Skiers at the top of a snowy slope",
+            "objects": [
+                {
+                    "name": "Skier 1 (gender not visible)",
+                    "attribute": [
+                        "wearing ski gear",
+                        "wearing helmet",
+                        "wearing goggles",
+                        "skis attached"
+                    ]
+                },
+                {
+                    "name": "Skier 2 (gender not visible)",
+                    "attribute": [
+                        "wearing ski gear",
+                        "wearing helmet",
+                        "wearing goggles",
+                        "skis attached"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "A panoramic view of trees and a lake in the distance",
+            "objects": [
+                {
+                    "name": "trees",
+                    "attribute": [
+                        "snow-covered",
+                        "various sizes"
+                    ]
+                },
+                {
+                    "name": "lake",
+                    "attribute": [
+                        "frozen",
+                        "blue"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Snowy slope",
+            "objects": [
+                {
+                    "name": "slope",
+                    "attribute": [
+                        "snow-covered",
+                        "downhill"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Skier 1",
+            "relationship": "standing on",
+            "object": "slope"
+        },
+        {
+            "subject": "Skier 2",
+            "relationship": "standing on",
+            "object": "slope"
+        },
+        {
+            "subject": "Skier 1",
+            "relationship": "next to",
+            "object": "Skier 2"
+        },
+        {
+            "subject": "Skier 1",
+            "relationship": "facing",
+            "object": "downhill"
+        },
+        {
+            "subject": "Skier 2",
+            "relationship": "facing",
+            "object": "downhill"
+        },
+        {
+            "subject": "slope",
+            "relationship": "adjacent to",
+            "object": "trees"
+        },
+        {
+            "subject": "trees",
+            "relationship": "surrounding",
+            "object": "lake"
+        },
+        {
+            "subject": "Skier 1",
+            "relationship": "overlooking",
+            "object": "lake"
+        },
+        {
+            "subject": "Skier 2",
+            "relationship": "overlooking",
+            "object": "lake"
+        },
+        {
+            "subject": "slope",
+            "relationship": "above",
+            "object": "lake"
+        }
+    ]
+}

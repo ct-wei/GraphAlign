@@ -1,0 +1,145 @@
+{
+    "scene": "A living room with various items of furniture and personal belongings.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Seating area with furniture and a ceiling fan",
+            "objects": [
+                {
+                    "name": "sofa 1",
+                    "attribute": [
+                        "patterned",
+                        "pillows",
+                        "covered with blanket"
+                    ]
+                },
+                {
+                    "name": "armchair",
+                    "attribute": [
+                        "plaid",
+                        "cushioned"
+                    ]
+                },
+                {
+                    "name": "ceiling fan",
+                    "attribute": [
+                        "with lights",
+                        "metallic finish"
+                    ]
+                },
+                {
+                    "name": "table",
+                    "attribute": [
+                        "wooden",
+                        "rectangular"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Working space with electronics and shelves",
+            "objects": [
+                {
+                    "name": "computer",
+                    "attribute": [
+                        "desktop",
+                        "on table"
+                    ]
+                },
+                {
+                    "name": "monitor",
+                    "attribute": [
+                        "flat-screen",
+                        "on table"
+                    ]
+                },
+                {
+                    "name": "shelves",
+                    "attribute": [
+                        "wooden",
+                        "decorated with items"
+                    ]
+                },
+                {
+                    "name": "wall decoration",
+                    "attribute": [
+                        "hanging"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Wall area with photographs and door",
+            "objects": [
+                {
+                    "name": "photographs",
+                    "attribute": [
+                        "framed",
+                        "mounted on wall"
+                    ]
+                },
+                {
+                    "name": "door",
+                    "attribute": [
+                        "white",
+                        "closed"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "sofa 1",
+            "relationship": "adjacent to",
+            "object": "armchair"
+        },
+        {
+            "subject": "sofa 1",
+            "relationship": "under",
+            "object": "ceiling fan"
+        },
+        {
+            "subject": "armchair",
+            "relationship": "next to",
+            "object": "table"
+        },
+        {
+            "subject": "table",
+            "relationship": "supports",
+            "object": "computer"
+        },
+        {
+            "subject": "table",
+            "relationship": "supports",
+            "object": "monitor"
+        },
+        {
+            "subject": "wall decoration",
+            "relationship": "hanging above",
+            "object": "shelves"
+        },
+        {
+            "subject": "photographs",
+            "relationship": "mounted on",
+            "object": "wall"
+        },
+        {
+            "subject": "door",
+            "relationship": "located on",
+            "object": "wall"
+        },
+        {
+            "subject": "computer",
+            "relationship": "placed on",
+            "object": "table"
+        },
+        {
+            "subject": "photographs",
+            "relationship": "near",
+            "object": "door"
+        }
+    ]
+}

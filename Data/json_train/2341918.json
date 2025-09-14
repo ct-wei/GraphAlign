@@ -1,0 +1,95 @@
+{
+    "scene": "A snowboarder performing a jump on a snow-covered slope with trees and ski lifts in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Snowboarder in mid-air performing a jump",
+            "objects": [
+                {
+                    "name": "snowboarder (male)",
+                    "attribute": [
+                        "mid-air",
+                        "wearing a blue jacket",
+                        "red snowboard",
+                        "wearing a helmet",
+                        "wearing goggles"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Snow-covered slope",
+            "objects": [
+                {
+                    "name": "snow",
+                    "attribute": [
+                        "white"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background with trees and ski lifts",
+            "objects": [
+                {
+                    "name": "trees",
+                    "attribute": [
+                        "green",
+                        "snow-covered"
+                    ]
+                },
+                {
+                    "name": "ski lifts",
+                    "attribute": [
+                        "metallic structures",
+                        "above ground"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "snowboarder (male)",
+            "relationship": "performing jump on",
+            "object": "snow"
+        },
+        {
+            "subject": "snowboarder (male)",
+            "relationship": "above",
+            "object": "snow"
+        },
+        {
+            "subject": "snow",
+            "relationship": "covering",
+            "object": "slope"
+        },
+        {
+            "subject": "trees",
+            "relationship": "surrounding",
+            "object": "slope"
+        },
+        {
+            "subject": "ski lifts",
+            "relationship": "above",
+            "object": "slope"
+        },
+        {
+            "subject": "ski lifts",
+            "relationship": "adjacent to",
+            "object": "trees"
+        },
+        {
+            "subject": "snowboarder (male)",
+            "relationship": "wearing",
+            "object": "blue jacket"
+        },
+        {
+            "subject": "snowboarder (male)",
+            "relationship": "using",
+            "object": "red snowboard"
+        }
+    ]
+}

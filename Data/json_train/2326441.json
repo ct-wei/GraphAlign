@@ -1,0 +1,105 @@
+{
+    "scene": "A variety of freshly cut fruits in a fruit salad.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Cut fruits at the foreground",
+            "objects": [
+                {
+                    "name": "banana slices",
+                    "attribute": [
+                        "circular",
+                        "yellowish-white"
+                    ]
+                },
+                {
+                    "name": "kiwi slices",
+                    "attribute": [
+                        "circular",
+                        "green",
+                        "black seeds"
+                    ]
+                },
+                {
+                    "name": "grape",
+                    "attribute": [
+                        "spherical",
+                        "green"
+                    ]
+                },
+                {
+                    "name": "apple piece",
+                    "attribute": [
+                        "wedge-shaped",
+                        "red and green"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Cut fruits at the middle",
+            "objects": [
+                {
+                    "name": "grape 2",
+                    "attribute": [
+                        "spherical",
+                        "red"
+                    ]
+                },
+                {
+                    "name": "apple piece 2",
+                    "attribute": [
+                        "wedge-shaped",
+                        "yellow-green"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Cut fruits at the background",
+            "objects": [
+                {
+                    "name": "unknown fruit pieces",
+                    "attribute": [
+                        "irregular shapes",
+                        "various colors"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "banana slices",
+            "relationship": "next to",
+            "object": "kiwi slices"
+        },
+        {
+            "subject": "grape",
+            "relationship": "adjacent to",
+            "object": "apple piece"
+        },
+        {
+            "subject": "kiwi slices",
+            "relationship": "on top of",
+            "object": "unknown fruit pieces"
+        },
+        {
+            "subject": "apple piece",
+            "relationship": "near",
+            "object": "grape 2"
+        },
+        {
+            "subject": "grape 2",
+            "relationship": "next to",
+            "object": "apple piece 2"
+        },
+        {
+            "subject": "apple piece 2",
+            "relationship": "above",
+            "object": "unknown fruit pieces"
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "scene": "A plate of food consisting of chicken, waffles, pineapple, and a wedge of quiche on a transparent glass table.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "A piece of fried chicken and a chicken tender",
+            "objects": [
+                {
+                    "name": "fried chicken drumstick",
+                    "attribute": [
+                        "golden brown",
+                        "breaded",
+                        "fried"
+                    ]
+                },
+                {
+                    "name": "chicken tender",
+                    "attribute": [
+                        "golden brown",
+                        "breaded",
+                        "fried"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Belgian waffle with pieces of butter on top",
+            "objects": [
+                {
+                    "name": "Belgian waffle",
+                    "attribute": [
+                        "golden brown",
+                        "grid pattern",
+                        "buttered"
+                    ]
+                },
+                {
+                    "name": "butter pieces",
+                    "attribute": [
+                        "white",
+                        "cubed"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Chopped pineapple pieces",
+            "objects": [
+                {
+                    "name": "pineapple pieces",
+                    "attribute": [
+                        "yellow",
+                        "cubed"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "A wedge of quiche",
+            "objects": [
+                {
+                    "name": "quiche wedge",
+                    "attribute": [
+                        "triangular",
+                        "baked",
+                        "contains spinach"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "fried chicken drumstick",
+            "relationship": "next to",
+            "object": "chicken tender"
+        },
+        {
+            "subject": "Belgian waffle",
+            "relationship": "topped with",
+            "object": "butter pieces"
+        },
+        {
+            "subject": "Belgian waffle",
+            "relationship": "adjacent to",
+            "object": "pineapple pieces"
+        },
+        {
+            "subject": "Belgian waffle",
+            "relationship": "adjacent to",
+            "object": "quiche wedge"
+        },
+        {
+            "subject": "pineapple pieces",
+            "relationship": "next to",
+            "object": "fried chicken drumstick"
+        },
+        {
+            "subject": "pineapple pieces",
+            "relationship": "next to",
+            "object": "quiche wedge"
+        },
+        {
+            "subject": "quiche wedge",
+            "relationship": "next to",
+            "object": "chicken tender"
+        }
+    ]
+}

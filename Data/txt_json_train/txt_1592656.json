@@ -1,0 +1,138 @@
+{
+    "scene": "A white coach bus named PARTAS is traveling on a road in a tropical setting with lush greenery and local transportation.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Daytime street scene with a white coach bus",
+            "objects": [
+                {
+                    "name": "coach bus",
+                    "attribute": [
+                        "white",
+                        "named PARTAS",
+                        "prominently occupying foreground",
+                        "traveling on the road"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Tropical location with lush greenery",
+            "objects": [
+                {
+                    "name": "greenery",
+                    "attribute": [
+                        "lush"
+                    ]
+                },
+                {
+                    "name": "buildings",
+                    "attribute": [
+                        "tropical style"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Roadside with a tricycle, a motorcycle, and a waiting shed",
+            "objects": [
+                {
+                    "name": "tricycle",
+                    "attribute": [
+                        "common transportation",
+                        "parked"
+                    ]
+                },
+                {
+                    "name": "motorcycle",
+                    "attribute": [
+                        "white",
+                        "near waiting shed"
+                    ]
+                },
+                {
+                    "name": "waiting shed",
+                    "attribute": [
+                        "near motorcycle"
+                    ]
+                },
+                {
+                    "name": "person",
+                    "attribute": [
+                        "on motorcycle",
+                        "near waiting shed"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Weather indication and power lines",
+            "objects": [
+                {
+                    "name": "road",
+                    "attribute": [
+                        "dry"
+                    ]
+                },
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "clear",
+                        "partially visible"
+                    ]
+                },
+                {
+                    "name": "power lines",
+                    "attribute": [
+                        "stretching across frame"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "coach bus",
+            "relationship": "travels on",
+            "object": "road"
+        },
+        {
+            "subject": "coach bus",
+            "relationship": "positioned in",
+            "object": "region1"
+        },
+        {
+            "subject": "greenery",
+            "relationship": "surrounds",
+            "object": "buildings"
+        },
+        {
+            "subject": "tricycle",
+            "relationship": "parked on",
+            "object": "roadside"
+        },
+        {
+            "subject": "motorcycle",
+            "relationship": "positioned at",
+            "object": "waiting shed"
+        },
+        {
+            "subject": "person",
+            "relationship": "on",
+            "object": "motorcycle"
+        },
+        {
+            "subject": "road",
+            "relationship": "indicates",
+            "object": "fair weather"
+        },
+        {
+            "subject": "power lines",
+            "relationship": "stretch across",
+            "object": "region4"
+        }
+    ]
+}

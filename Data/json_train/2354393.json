@@ -1,0 +1,108 @@
+{
+    "scene": "A busy outdoor market scene with a person sitting on top of a vehicle's roof rack surrounded by standing people",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Person sitting on top of a vehicle's roof rack",
+            "objects": [
+                {
+                    "name": "Person",
+                    "attribute": [
+                        "sitting",
+                        "blue shirt",
+                        "dark pants",
+                        "adult",
+                        "male"
+                    ]
+                },
+                {
+                    "name": "Vehicle",
+                    "attribute": [
+                        "white",
+                        "roof rack"
+                    ]
+                },
+                {
+                    "name": "Luggage",
+                    "attribute": [
+                        "various sizes",
+                        "stacked"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Group of people standing around in a market",
+            "objects": [
+                {
+                    "name": "Person 1",
+                    "attribute": [
+                        "adult"
+                    ]
+                },
+                {
+                    "name": "Person 2",
+                    "attribute": [
+                        "adult"
+                    ]
+                },
+                {
+                    "name": "Sign",
+                    "attribute": [
+                        "blue",
+                        "text"
+                    ]
+                },
+                {
+                    "name": "Building",
+                    "attribute": [
+                        "under construction"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Person",
+            "relationship": "sitting on top of",
+            "object": "Vehicle"
+        },
+        {
+            "subject": "Person",
+            "relationship": "above",
+            "object": "Luggage"
+        },
+        {
+            "subject": "Person 1",
+            "relationship": "standing near",
+            "object": "Vehicle"
+        },
+        {
+            "subject": "Person 2",
+            "relationship": "standing near",
+            "object": "Vehicle"
+        },
+        {
+            "subject": "Sign",
+            "relationship": "attached to",
+            "object": "Building"
+        },
+        {
+            "subject": "Person",
+            "relationship": "in front of",
+            "object": "Sign"
+        },
+        {
+            "subject": "Vehicle",
+            "relationship": "in front of",
+            "object": "Building"
+        },
+        {
+            "subject": "Luggage",
+            "relationship": "on top of",
+            "object": "Vehicle"
+        }
+    ]
+}

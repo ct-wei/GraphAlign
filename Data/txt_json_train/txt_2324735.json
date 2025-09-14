@@ -1,0 +1,117 @@
+{
+    "scene": "A collection of hairdressing tools artistically arranged on a textured wooden board with a distressed finish, possibly within a creative space.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Rustic, textured, vertical wooden board with distressed dark brown and gold finish",
+            "objects": [
+                {
+                    "name": "wooden board",
+                    "attribute": [
+                        "rustic",
+                        "textured",
+                        "vertical",
+                        "distressed dark brown and gold finish"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Collection of hairdressing tools arranged on the board",
+            "objects": [
+                {
+                    "name": "watch",
+                    "attribute": [
+                        "black strap"
+                    ]
+                },
+                {
+                    "name": "scissors 1",
+                    "attribute": [
+                        "metallic",
+                        "sharp"
+                    ]
+                },
+                {
+                    "name": "scissors 2",
+                    "attribute": [
+                        "metallic",
+                        "sharp"
+                    ]
+                },
+                {
+                    "name": "scissors 3",
+                    "attribute": [
+                        "metallic",
+                        "sharp"
+                    ]
+                },
+                {
+                    "name": "tool 1",
+                    "attribute": [
+                        "thin-handled",
+                        "possibly a comb or clip"
+                    ]
+                },
+                {
+                    "name": "tool 2",
+                    "attribute": [
+                        "thin-handled",
+                        "possibly a comb or clip"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Wooden platform at the bottom",
+            "objects": [
+                {
+                    "name": "wooden platform",
+                    "attribute": [
+                        "brown",
+                        "horizontal"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "watch",
+            "relationship": "placed on",
+            "object": "wooden board"
+        },
+        {
+            "subject": "scissors 1",
+            "relationship": "placed on",
+            "object": "wooden board"
+        },
+        {
+            "subject": "scissors 2",
+            "relationship": "placed on",
+            "object": "wooden board"
+        },
+        {
+            "subject": "scissors 3",
+            "relationship": "placed on",
+            "object": "wooden board"
+        },
+        {
+            "subject": "tool 1",
+            "relationship": "placed on",
+            "object": "wooden board"
+        },
+        {
+            "subject": "tool 2",
+            "relationship": "placed on",
+            "object": "wooden board"
+        },
+        {
+            "subject": "wooden platform",
+            "relationship": "supports",
+            "object": "wooden board"
+        }
+    ]
+}

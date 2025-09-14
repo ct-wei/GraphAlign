@@ -1,0 +1,119 @@
+{
+    "scene": "A woman blowing out candles on a birthday cake with a cat watching and various items on the table.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Woman blowing out candles on a birthday cake",
+            "objects": [
+                {
+                    "name": "woman",
+                    "attribute": [
+                        "bending over",
+                        "casual clothing"
+                    ]
+                },
+                {
+                    "name": "birthday cake",
+                    "attribute": [
+                        "chocolate",
+                        "lit candles"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Cat watching the woman",
+            "objects": [
+                {
+                    "name": "cat",
+                    "attribute": [
+                        "gray",
+                        "attentive"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Assorted items on the table",
+            "objects": [
+                {
+                    "name": "glass of water",
+                    "attribute": [
+                        "transparent",
+                        "half full"
+                    ]
+                },
+                {
+                    "name": "folding glasses",
+                    "attribute": [
+                        "colored",
+                        "on table"
+                    ]
+                },
+                {
+                    "name": "hat",
+                    "attribute": [
+                        "gray",
+                        "inverted"
+                    ]
+                },
+                {
+                    "name": "remote controller",
+                    "attribute": [
+                        "black",
+                        "on table"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "woman",
+            "relationship": "blowing out",
+            "object": "candles on the birthday cake"
+        },
+        {
+            "subject": "cat",
+            "relationship": "watching",
+            "object": "woman"
+        },
+        {
+            "subject": "birthday cake",
+            "relationship": "on",
+            "object": "table"
+        },
+        {
+            "subject": "glass of water",
+            "relationship": "next to",
+            "object": "birthday cake"
+        },
+        {
+            "subject": "folding glasses",
+            "relationship": "on",
+            "object": "table"
+        },
+        {
+            "subject": "hat",
+            "relationship": "on",
+            "object": "table"
+        },
+        {
+            "subject": "remote controller",
+            "relationship": "on",
+            "object": "table"
+        },
+        {
+            "subject": "birthday cake",
+            "relationship": "in front of",
+            "object": "woman"
+        },
+        {
+            "subject": "cat",
+            "relationship": "on",
+            "object": "floor"
+        }
+    ]
+}

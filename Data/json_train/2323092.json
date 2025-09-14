@@ -1,0 +1,128 @@
+{
+    "scene": "A vintage interior space with a piano on the left, a pathway leading to another room, and a fireplace on the right.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "A piano area with a chair and reading material",
+            "objects": [
+                {
+                    "name": "piano",
+                    "attribute": [
+                        "vintage",
+                        "black",
+                        "upright"
+                    ]
+                },
+                {
+                    "name": "music stand",
+                    "attribute": [
+                        "attached to piano",
+                        "with sheet music"
+                    ]
+                },
+                {
+                    "name": "chair",
+                    "attribute": [
+                        "upholstered",
+                        "patterned"
+                    ]
+                },
+                {
+                    "name": "reading material",
+                    "attribute": [
+                        "on chair"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "A pathway with a rug leading to another room",
+            "objects": [
+                {
+                    "name": "rug",
+                    "attribute": [
+                        "patterned",
+                        "rectangular"
+                    ]
+                },
+                {
+                    "name": "doorway",
+                    "attribute": [
+                        "leading to next room",
+                        "white frame"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "A fireplace with decorations and lighting",
+            "objects": [
+                {
+                    "name": "fireplace",
+                    "attribute": [
+                        "brick",
+                        "unlit"
+                    ]
+                },
+                {
+                    "name": "wall lights",
+                    "attribute": [
+                        "dual",
+                        "wall-mounted"
+                    ]
+                },
+                {
+                    "name": "decorations",
+                    "attribute": [
+                        "on mantlepiece",
+                        "assorted"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "piano",
+            "relationship": "adjoined by",
+            "object": "music stand"
+        },
+        {
+            "subject": "chair",
+            "relationship": "adjacent to",
+            "object": "piano"
+        },
+        {
+            "subject": "reading material",
+            "relationship": "placed on",
+            "object": "chair"
+        },
+        {
+            "subject": "rug",
+            "relationship": "lays on",
+            "object": "floor"
+        },
+        {
+            "subject": "doorway",
+            "relationship": "connects to",
+            "object": "next room"
+        },
+        {
+            "subject": "fireplace",
+            "relationship": "flanked by",
+            "object": "wall lights"
+        },
+        {
+            "subject": "decorations",
+            "relationship": "resting on",
+            "object": "mantlepiece"
+        },
+        {
+            "subject": "mantlepiece",
+            "relationship": "part of",
+            "object": "fireplace"
+        }
+    ]
+}

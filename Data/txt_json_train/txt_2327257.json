@@ -1,0 +1,85 @@
+{
+    "scene": "Two people posing playfully with donuts at night.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Young woman playfully posing with a donut",
+            "objects": [
+                {
+                    "name": "Woman",
+                    "attribute": [
+                        "young",
+                        "messenger bag",
+                        "chocolate frosted donut",
+                        "biting"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Young man playfully posing with a donut",
+            "objects": [
+                {
+                    "name": "Man",
+                    "attribute": [
+                        "young",
+                        "glasses",
+                        "yellowish shirt",
+                        "glazed donut",
+                        "about to bite"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Nighttime casual outing atmosphere",
+            "objects": [
+                {
+                    "name": "artificial lighting",
+                    "attribute": [
+                        "dim"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Woman",
+            "relationship": "biting into",
+            "object": "chocolate frosted donut"
+        },
+        {
+            "subject": "Man",
+            "relationship": "about to bite",
+            "object": "glazed donut"
+        },
+        {
+            "subject": "Woman",
+            "relationship": "wearing",
+            "object": "messenger bag"
+        },
+        {
+            "subject": "Man",
+            "relationship": "wearing",
+            "object": "yellowish shirt"
+        },
+        {
+            "subject": "Man",
+            "relationship": "wearing",
+            "object": "glasses"
+        },
+        {
+            "subject": "artificial lighting",
+            "relationship": "illuminates",
+            "object": "Woman"
+        },
+        {
+            "subject": "artificial lighting",
+            "relationship": "illuminates",
+            "object": "Man"
+        }
+    ]
+}

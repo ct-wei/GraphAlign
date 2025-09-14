@@ -1,0 +1,86 @@
+{
+    "scene": "A swimming pool area with people relaxing, surrounded by palm trees and a hotel building.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Swimming pool area with people",
+            "objects": [
+                {
+                    "name": "person 1",
+                    "attribute": [
+                        "male",
+                        "swimming",
+                        "blue swimwear"
+                    ]
+                },
+                {
+                    "name": "person 2",
+                    "attribute": [
+                        "female",
+                        "sitting",
+                        "reddish outfit",
+                        "under umbrella"
+                    ]
+                },
+                {
+                    "name": "swimming pool",
+                    "attribute": [
+                        "blue water"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Hotel building fa\u00e7ade and palm trees",
+            "objects": [
+                {
+                    "name": "hotel building",
+                    "attribute": [
+                        "multi-story",
+                        "striped pattern"
+                    ]
+                },
+                {
+                    "name": "palm trees",
+                    "attribute": [
+                        "tall",
+                        "green"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "person 1",
+            "relationship": "swimming in",
+            "object": "swimming pool"
+        },
+        {
+            "subject": "person 2",
+            "relationship": "sitting by",
+            "object": "swimming pool"
+        },
+        {
+            "subject": "swimming pool",
+            "relationship": "adjacent to",
+            "object": "hotel building"
+        },
+        {
+            "subject": "palm trees",
+            "relationship": "surrounding",
+            "object": "swimming pool"
+        },
+        {
+            "subject": "hotel building",
+            "relationship": "sheltering",
+            "object": "person 2"
+        },
+        {
+            "subject": "palm trees",
+            "relationship": "located near",
+            "object": "hotel building"
+        }
+    ]
+}

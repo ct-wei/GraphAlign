@@ -1,0 +1,101 @@
+{
+    "scene": "A person takes a photograph by the sea with birds observed in the foreground and background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Person standing taking a photograph",
+            "objects": [
+                {
+                    "name": "person",
+                    "attribute": [
+                        "male",
+                        "standing",
+                        "photographing",
+                        "silhouette",
+                        "wearing shorts"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Birds present around the scene",
+            "objects": [
+                {
+                    "name": "bird 1",
+                    "attribute": [
+                        "perched",
+                        "silhouette"
+                    ]
+                },
+                {
+                    "name": "bird 2",
+                    "attribute": [
+                        "perched",
+                        "silhouette"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Sky with clouds and sea in the horizon",
+            "objects": [
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "cloudy"
+                    ]
+                },
+                {
+                    "name": "sea",
+                    "attribute": [
+                        "calm"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "person",
+            "relationship": "photographing",
+            "object": "sea"
+        },
+        {
+            "subject": "bird 1",
+            "relationship": "perched on",
+            "object": "pole"
+        },
+        {
+            "subject": "bird 2",
+            "relationship": "perched on",
+            "object": "building"
+        },
+        {
+            "subject": "person",
+            "relationship": "standing on",
+            "object": "building"
+        },
+        {
+            "subject": "person",
+            "relationship": "near",
+            "object": "bird 2"
+        },
+        {
+            "subject": "sky",
+            "relationship": "above",
+            "object": "sea"
+        },
+        {
+            "subject": "bird 1",
+            "relationship": "in the foreground of",
+            "object": "person"
+        },
+        {
+            "subject": "bird 2",
+            "relationship": "in the background of",
+            "object": "person"
+        }
+    ]
+}

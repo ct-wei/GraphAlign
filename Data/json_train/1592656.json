@@ -1,0 +1,97 @@
+{
+    "scene": "A bus driving on a road with a motorcyclist and other structures by the roadside.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "A bus on the road",
+            "objects": [
+                {
+                    "name": "bus",
+                    "attribute": [
+                        "white",
+                        "blue and red stripes",
+                        "multiple windows",
+                        "four wheels"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "A motorcyclist behind the bus",
+            "objects": [
+                {
+                    "name": "motorcyclist",
+                    "attribute": [
+                        "wearing a helmet",
+                        "riding a motorcycle"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Roadside structures and vegetation",
+            "objects": [
+                {
+                    "name": "roadside shelter",
+                    "attribute": [
+                        "wooden",
+                        "single-story"
+                    ]
+                },
+                {
+                    "name": "vegetation",
+                    "attribute": [
+                        "green",
+                        "various types"
+                    ]
+                },
+                {
+                    "name": "utility pole",
+                    "attribute": [
+                        "tall",
+                        "electrical wires"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "bus",
+            "relationship": "driving on",
+            "object": "road"
+        },
+        {
+            "subject": "motorcyclist",
+            "relationship": "driving behind",
+            "object": "bus"
+        },
+        {
+            "subject": "motorcyclist",
+            "relationship": "on",
+            "object": "road"
+        },
+        {
+            "subject": "roadside shelter",
+            "relationship": "standing by",
+            "object": "road"
+        },
+        {
+            "subject": "utility pole",
+            "relationship": "beside",
+            "object": "road"
+        },
+        {
+            "subject": "vegetation",
+            "relationship": "growing next to",
+            "object": "roadside shelter"
+        },
+        {
+            "subject": "utility pole",
+            "relationship": "supporting",
+            "object": "electrical wires"
+        }
+    ]
+}

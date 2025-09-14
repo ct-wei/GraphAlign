@@ -1,0 +1,111 @@
+{
+    "scene": "A beaded giraffe figurine standing next to three orange spherical ornaments on a flat surface with a yellow vertical structure in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Beaded giraffe figurine standing on a flat surface",
+            "objects": [
+                {
+                    "name": "giraffe figurine",
+                    "attribute": [
+                        "beaded",
+                        "multicolored",
+                        "standing",
+                        "artificial"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Three orange spherical ornaments on a flat surface",
+            "objects": [
+                {
+                    "name": "ornament 1",
+                    "attribute": [
+                        "orange",
+                        "spherical",
+                        "shiny"
+                    ]
+                },
+                {
+                    "name": "ornament 2",
+                    "attribute": [
+                        "orange",
+                        "spherical",
+                        "shiny"
+                    ]
+                },
+                {
+                    "name": "ornament 3",
+                    "attribute": [
+                        "orange",
+                        "spherical",
+                        "shiny"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "A yellow vertical structure in the background",
+            "objects": [
+                {
+                    "name": "vertical structure",
+                    "attribute": [
+                        "yellow",
+                        "tall",
+                        "vertical"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "giraffe figurine",
+            "relationship": "standing on",
+            "object": "flat surface"
+        },
+        {
+            "subject": "ornament 1",
+            "relationship": "resting on",
+            "object": "flat surface"
+        },
+        {
+            "subject": "ornament 2",
+            "relationship": "resting on",
+            "object": "flat surface"
+        },
+        {
+            "subject": "ornament 3",
+            "relationship": "resting on",
+            "object": "flat surface"
+        },
+        {
+            "subject": "giraffe figurine",
+            "relationship": "next to",
+            "object": "ornament 1"
+        },
+        {
+            "subject": "ornament 1",
+            "relationship": "adjacent to",
+            "object": "ornament 2"
+        },
+        {
+            "subject": "ornament 2",
+            "relationship": "adjacent to",
+            "object": "ornament 3"
+        },
+        {
+            "subject": "vertical structure",
+            "relationship": "behind",
+            "object": "giraffe figurine"
+        },
+        {
+            "subject": "vertical structure",
+            "relationship": "behind",
+            "object": "ornaments"
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+    "scene": "A male player is serving a tennis ball on an outdoor tennis court with surrounding vegetation.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Outdoor tennis court with a male player serving",
+            "objects": [
+                {
+                    "name": "male player",
+                    "attribute": [
+                        "green shirt",
+                        "white shorts",
+                        "wearing a cap",
+                        "holding a tennis racket",
+                        "in motion"
+                    ]
+                },
+                {
+                    "name": "tennis court",
+                    "attribute": [
+                        "green",
+                        "white boundary lines"
+                    ]
+                },
+                {
+                    "name": "tennis net",
+                    "attribute": [
+                        "white",
+                        "netted"
+                    ]
+                },
+                {
+                    "name": "tennis ball",
+                    "attribute": [
+                        "in motion",
+                        "yellow"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Surrounding vegetation with palm trees and bushes",
+            "objects": [
+                {
+                    "name": "palm trees",
+                    "attribute": [
+                        "tall",
+                        "green leaves"
+                    ]
+                },
+                {
+                    "name": "bushes",
+                    "attribute": [
+                        "green",
+                        "near tennis court"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "male player",
+            "relationship": "wearing",
+            "object": "green shirt"
+        },
+        {
+            "subject": "male player",
+            "relationship": "wearing",
+            "object": "white shorts"
+        },
+        {
+            "subject": "male player",
+            "relationship": "wearing",
+            "object": "cap"
+        },
+        {
+            "subject": "male player",
+            "relationship": "holding",
+            "object": "tennis racket"
+        },
+        {
+            "subject": "male player",
+            "relationship": "standing on",
+            "object": "tennis court"
+        },
+        {
+            "subject": "tennis ball",
+            "relationship": "being hit by",
+            "object": "male player"
+        },
+        {
+            "subject": "tennis court",
+            "relationship": "has",
+            "object": "tennis net"
+        },
+        {
+            "subject": "palm trees",
+            "relationship": "surrounding",
+            "object": "tennis court"
+        },
+        {
+            "subject": "bushes",
+            "relationship": "beside",
+            "object": "tennis court"
+        }
+    ]
+}

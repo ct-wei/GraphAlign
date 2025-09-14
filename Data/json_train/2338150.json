@@ -1,0 +1,82 @@
+{
+    "scene": "Two zebras grazing in a sandy area with a structure in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Two zebras grazing",
+            "objects": [
+                {
+                    "name": "Zebra 1",
+                    "attribute": [
+                        "striped",
+                        "white and black",
+                        "grazing",
+                        "equine shape"
+                    ]
+                },
+                {
+                    "name": "Zebra 2",
+                    "attribute": [
+                        "striped",
+                        "white and black",
+                        "grazing",
+                        "equine shape"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "A sandy area with a structure",
+            "objects": [
+                {
+                    "name": "sand",
+                    "attribute": [
+                        "beige",
+                        "grainy",
+                        "ground"
+                    ]
+                },
+                {
+                    "name": "structure",
+                    "attribute": [
+                        "wooden",
+                        "shelter-like"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Zebra 1",
+            "relationship": "next to",
+            "object": "Zebra 2"
+        },
+        {
+            "subject": "Zebra 1",
+            "relationship": "on",
+            "object": "sand"
+        },
+        {
+            "subject": "Zebra 2",
+            "relationship": "on",
+            "object": "sand"
+        },
+        {
+            "subject": "sand",
+            "relationship": "in front of",
+            "object": "structure"
+        },
+        {
+            "subject": "Zebra 1",
+            "relationship": "in front of",
+            "object": "structure"
+        },
+        {
+            "subject": "Zebra 2",
+            "relationship": "in front of",
+            "object": "structure"
+        }
+    ]
+}

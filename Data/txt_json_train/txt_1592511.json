@@ -1,0 +1,117 @@
+{
+    "scene": "Two motorcyclists riding on a sunny day on a winding mountain road surrounded by natural scenery.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Mountain road with motorcyclists",
+            "objects": [
+                {
+                    "name": "Motorcyclist 1",
+                    "attribute": [
+                        "riding",
+                        "in right lane"
+                    ]
+                },
+                {
+                    "name": "Motorcyclist 2",
+                    "attribute": [
+                        "riding",
+                        "in right lane"
+                    ]
+                },
+                {
+                    "name": "Road",
+                    "attribute": [
+                        "winding",
+                        "visible signs of wear",
+                        "cracking",
+                        "white dashed lines"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Natural surroundings",
+            "objects": [
+                {
+                    "name": "Rocky hillside",
+                    "attribute": [
+                        "to the right of the road"
+                    ]
+                },
+                {
+                    "name": "Low stone wall",
+                    "attribute": [
+                        "to the left of the road"
+                    ]
+                },
+                {
+                    "name": "Valley",
+                    "attribute": [
+                        "beyond stone wall",
+                        "with distant trees"
+                    ]
+                },
+                {
+                    "name": "Sky",
+                    "attribute": [
+                        "clear"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Motorcyclist 1",
+            "relationship": "riding with",
+            "object": "Motorcyclist 2"
+        },
+        {
+            "subject": "Motorcyclist 1",
+            "relationship": "in",
+            "object": "right lane"
+        },
+        {
+            "subject": "Motorcyclist 2",
+            "relationship": "in",
+            "object": "right lane"
+        },
+        {
+            "subject": "Road",
+            "relationship": "bordered by",
+            "object": "Rocky hillside"
+        },
+        {
+            "subject": "Road",
+            "relationship": "bordered by",
+            "object": "Low stone wall"
+        },
+        {
+            "subject": "Low stone wall",
+            "relationship": "separates",
+            "object": "Road from Valley"
+        },
+        {
+            "subject": "Valley",
+            "relationship": "contains",
+            "object": "distant trees"
+        },
+        {
+            "subject": "Sky",
+            "relationship": "overshadows",
+            "object": "entire scene"
+        },
+        {
+            "subject": "Motorcyclist 1",
+            "relationship": "surrounded by",
+            "object": "natural setting"
+        },
+        {
+            "subject": "Motorcyclist 2",
+            "relationship": "surrounded by",
+            "object": "natural setting"
+        }
+    ]
+}

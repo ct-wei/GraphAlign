@@ -1,0 +1,128 @@
+{
+    "scene": "An older man preparing food in a cozy kitchen.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Older man standing in the kitchen",
+            "objects": [
+                {
+                    "name": "Man",
+                    "attribute": [
+                        "older adult",
+                        "smiling",
+                        "wearing glasses",
+                        "plaid shirt"
+                    ]
+                },
+                {
+                    "name": "Knife",
+                    "attribute": [
+                        "held by man"
+                    ]
+                },
+                {
+                    "name": "Bread",
+                    "attribute": [
+                        "loaf",
+                        "on counter"
+                    ]
+                },
+                {
+                    "name": "Butter",
+                    "attribute": [
+                        "on counter"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Domestic items in the kitchen",
+            "objects": [
+                {
+                    "name": "Coffee pot",
+                    "attribute": [
+                        "on counter"
+                    ]
+                },
+                {
+                    "name": "Hot sauce bottle",
+                    "attribute": [
+                        "on counter"
+                    ]
+                },
+                {
+                    "name": "Salt container",
+                    "attribute": [
+                        "on counter"
+                    ]
+                },
+                {
+                    "name": "Utensil holder",
+                    "attribute": [
+                        "contains kitchen utensils",
+                        "on counter"
+                    ]
+                },
+                {
+                    "name": "Calendar",
+                    "attribute": [
+                        "on wall"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Man",
+            "relationship": "holding",
+            "object": "Knife"
+        },
+        {
+            "subject": "Man",
+            "relationship": "standing in",
+            "object": "kitchen"
+        },
+        {
+            "subject": "Knife",
+            "relationship": "used for",
+            "object": "Bread"
+        },
+        {
+            "subject": "Bread",
+            "relationship": "next to",
+            "object": "Butter"
+        },
+        {
+            "subject": "Coffee pot",
+            "relationship": "resting on",
+            "object": "counter"
+        },
+        {
+            "subject": "Hot sauce bottle",
+            "relationship": "resting on",
+            "object": "counter"
+        },
+        {
+            "subject": "Salt container",
+            "relationship": "resting on",
+            "object": "counter"
+        },
+        {
+            "subject": "Utensil holder",
+            "relationship": "resting on",
+            "object": "counter"
+        },
+        {
+            "subject": "Calendar",
+            "relationship": "hanging on",
+            "object": "wall"
+        },
+        {
+            "subject": "Man",
+            "relationship": "smiling at",
+            "object": "camera"
+        }
+    ]
+}

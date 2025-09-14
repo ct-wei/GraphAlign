@@ -1,0 +1,61 @@
+{
+    "scene": "A person taking a photo with a smartphone",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Person holding a smartphone",
+            "objects": [
+                {
+                    "name": "Person",
+                    "attribute": [
+                        "partially visible",
+                        "wearing cloth on upper body",
+                        "holding a smartphone"
+                    ]
+                },
+                {
+                    "name": "Smartphone",
+                    "attribute": [
+                        "black color",
+                        "handheld device"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Background",
+            "objects": [
+                {
+                    "name": "Room elements",
+                    "attribute": [
+                        "blurry",
+                        "indoor environment"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Person",
+            "relationship": "holding",
+            "object": "Smartphone"
+        },
+        {
+            "subject": "Smartphone",
+            "relationship": "being used by",
+            "object": "Person"
+        },
+        {
+            "subject": "Person",
+            "relationship": "standing in",
+            "object": "Room elements"
+        },
+        {
+            "subject": "Room elements",
+            "relationship": "surround",
+            "object": "Person"
+        }
+    ]
+}

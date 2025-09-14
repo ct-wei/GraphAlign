@@ -1,0 +1,113 @@
+{
+    "scene": "A group of people boarding a bus on a sunny day with clear skies.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Group of people boarding a bus",
+            "objects": [
+                {
+                    "name": "Person 1 (male)",
+                    "attribute": [
+                        "wearing dark jacket",
+                        "dark pants",
+                        "carrying a bag",
+                        "walking"
+                    ]
+                },
+                {
+                    "name": "Person 2 (female)",
+                    "attribute": [
+                        "wearing a hijab",
+                        "light-colored clothing",
+                        "walking"
+                    ]
+                },
+                {
+                    "name": "Person 3 (male)",
+                    "attribute": [
+                        "wearing a red hoodie",
+                        "dark pants",
+                        "walking"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Yellow bus in the scene",
+            "objects": [
+                {
+                    "name": "bus",
+                    "attribute": [
+                        "yellow",
+                        "long",
+                        "articulated"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Traffic scene including a car",
+            "objects": [
+                {
+                    "name": "car",
+                    "attribute": [
+                        "silver",
+                        "stationary"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Clear sky",
+            "objects": [
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "blue",
+                        "clear"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Person 1 (male)",
+            "relationship": "boarding",
+            "object": "bus"
+        },
+        {
+            "subject": "Person 2 (female)",
+            "relationship": "following",
+            "object": "Person 1 (male)"
+        },
+        {
+            "subject": "Person 3 (male)",
+            "relationship": "ahead of",
+            "object": "Person 2 (female)"
+        },
+        {
+            "subject": "car",
+            "relationship": "stationary behind",
+            "object": "bus"
+        },
+        {
+            "subject": "bus",
+            "relationship": "parked at",
+            "object": "bus stop"
+        },
+        {
+            "subject": "People",
+            "relationship": "walking towards",
+            "object": "bus"
+        },
+        {
+            "subject": "sky",
+            "relationship": "above",
+            "object": "entire scene"
+        }
+    ]
+}

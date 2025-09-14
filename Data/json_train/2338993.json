@@ -1,0 +1,133 @@
+{
+    "scene": "A person playing tennis on an outdoor court.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Tennis player on the court",
+            "objects": [
+                {
+                    "name": "Player 1 (male)",
+                    "attribute": [
+                        "wearing a red cap",
+                        "white tennis outfit",
+                        "holding a tennis racket",
+                        "preparing to hit a tennis ball",
+                        "sporty"
+                    ]
+                },
+                {
+                    "name": "tennis racket",
+                    "attribute": [
+                        "held by Player 1"
+                    ]
+                },
+                {
+                    "name": "tennis ball",
+                    "attribute": [
+                        "yellow",
+                        "in motion",
+                        "near Player 1"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Tennis court with markings and nets",
+            "objects": [
+                {
+                    "name": "tennis court",
+                    "attribute": [
+                        "green with white markings"
+                    ]
+                },
+                {
+                    "name": "net",
+                    "attribute": [
+                        "partially visible",
+                        "white"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Surroundings of the tennis court",
+            "objects": [
+                {
+                    "name": "fence",
+                    "attribute": [
+                        "metal",
+                        "chain-linked"
+                    ]
+                },
+                {
+                    "name": "building",
+                    "attribute": [
+                        "with a red tiled roof",
+                        "in the background"
+                    ]
+                },
+                {
+                    "name": "vegetation",
+                    "attribute": [
+                        "green",
+                        "bushes and trees in the background"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Player 1 (male)",
+            "relationship": "wearing",
+            "object": "red cap"
+        },
+        {
+            "subject": "Player 1 (male)",
+            "relationship": "holding",
+            "object": "tennis racket"
+        },
+        {
+            "subject": "Player 1 (male)",
+            "relationship": "preparing to hit",
+            "object": "tennis ball"
+        },
+        {
+            "subject": "tennis racket",
+            "relationship": "used by",
+            "object": "Player 1 (male)"
+        },
+        {
+            "subject": "tennis ball",
+            "relationship": "near",
+            "object": "Player 1 (male)"
+        },
+        {
+            "subject": "tennis court",
+            "relationship": "marked for",
+            "object": "tennis game"
+        },
+        {
+            "subject": "net",
+            "relationship": "part of",
+            "object": "tennis court"
+        },
+        {
+            "subject": "fence",
+            "relationship": "surrounding",
+            "object": "tennis court"
+        },
+        {
+            "subject": "building",
+            "relationship": "located behind",
+            "object": "tennis court"
+        },
+        {
+            "subject": "vegetation",
+            "relationship": "growing behind",
+            "object": "fence"
+        }
+    ]
+}

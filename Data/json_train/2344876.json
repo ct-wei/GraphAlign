@@ -1,0 +1,81 @@
+{
+    "scene": "A single giraffe standing in a savannah-like environment with sparse trees and shrubs.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "The giraffe standing in the savannah",
+            "objects": [
+                {
+                    "name": "giraffe",
+                    "attribute": [
+                        "tall",
+                        "spotted pattern",
+                        "long neck",
+                        "brown and white coloration",
+                        "standing"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "The savannah environment with sparse vegetation",
+            "objects": [
+                {
+                    "name": "ground",
+                    "attribute": [
+                        "dry",
+                        "yellow-brown color"
+                    ]
+                },
+                {
+                    "name": "trees",
+                    "attribute": [
+                        "sparse",
+                        "green",
+                        "medium height"
+                    ]
+                },
+                {
+                    "name": "shrubs",
+                    "attribute": [
+                        "small",
+                        "green"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "giraffe",
+            "relationship": "standing on",
+            "object": "ground"
+        },
+        {
+            "subject": "ground",
+            "relationship": "surrounds",
+            "object": "trees"
+        },
+        {
+            "subject": "ground",
+            "relationship": "surrounds",
+            "object": "shrubs"
+        },
+        {
+            "subject": "giraffe",
+            "relationship": "taller than",
+            "object": "trees"
+        },
+        {
+            "subject": "giraffe",
+            "relationship": "taller than",
+            "object": "shrubs"
+        },
+        {
+            "subject": "trees",
+            "relationship": "scattered among",
+            "object": "shrubs"
+        }
+    ]
+}

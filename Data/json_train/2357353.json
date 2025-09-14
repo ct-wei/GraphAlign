@@ -1,0 +1,108 @@
+{
+    "scene": "A man and a woman sitting on a bench in front of a marina at dusk.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "A man and a woman sitting on a bench",
+            "objects": [
+                {
+                    "name": "man",
+                    "attribute": [
+                        "sitting",
+                        "wearing a hoodie",
+                        "facing right"
+                    ]
+                },
+                {
+                    "name": "woman",
+                    "attribute": [
+                        "sitting",
+                        "wearing a patterned jacket",
+                        "facing right"
+                    ]
+                },
+                {
+                    "name": "bench",
+                    "attribute": [
+                        "wooden",
+                        "brown"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Marina with boats and water illuminated by lights at dusk",
+            "objects": [
+                {
+                    "name": "water",
+                    "attribute": [
+                        "reflective",
+                        "rippled"
+                    ]
+                },
+                {
+                    "name": "boats",
+                    "attribute": [
+                        "multiple",
+                        "moored"
+                    ]
+                },
+                {
+                    "name": "lights",
+                    "attribute": [
+                        "yellow",
+                        "glowing"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "man",
+            "relationship": "sitting next to",
+            "object": "woman"
+        },
+        {
+            "subject": "woman",
+            "relationship": "sitting next to",
+            "object": "man"
+        },
+        {
+            "subject": "man",
+            "relationship": "sitting on",
+            "object": "bench"
+        },
+        {
+            "subject": "woman",
+            "relationship": "sitting on",
+            "object": "bench"
+        },
+        {
+            "subject": "bench",
+            "relationship": "in front of",
+            "object": "water"
+        },
+        {
+            "subject": "boats",
+            "relationship": "floating on",
+            "object": "water"
+        },
+        {
+            "subject": "lights",
+            "relationship": "reflecting on",
+            "object": "water"
+        },
+        {
+            "subject": "man",
+            "relationship": "facing",
+            "object": "water"
+        },
+        {
+            "subject": "woman",
+            "relationship": "facing",
+            "object": "water"
+        }
+    ]
+}

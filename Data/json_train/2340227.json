@@ -1,0 +1,89 @@
+{
+    "scene": "Two elephants engaging in what appears to be a playful interaction in a grassy savanna with a lone egret nearby.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Two elephants interacting",
+            "objects": [
+                {
+                    "name": "Elephant 1",
+                    "attribute": [
+                        "gray",
+                        "large",
+                        "tusks",
+                        "dust covered",
+                        "facing Elephant 2"
+                    ]
+                },
+                {
+                    "name": "Elephant 2",
+                    "attribute": [
+                        "gray",
+                        "large",
+                        "tusks",
+                        "dust covered",
+                        "facing Elephant 1"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "A grassy area with a lone egret",
+            "objects": [
+                {
+                    "name": "grass",
+                    "attribute": [
+                        "green",
+                        "flat"
+                    ]
+                },
+                {
+                    "name": "Egret",
+                    "attribute": [
+                        "white",
+                        "standing",
+                        "has feathers"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Elephant 1",
+            "relationship": "facing",
+            "object": "Elephant 2"
+        },
+        {
+            "subject": "Elephant 1",
+            "relationship": "touching tusks with",
+            "object": "Elephant 2"
+        },
+        {
+            "subject": "Elephant 2",
+            "relationship": "facing",
+            "object": "Elephant 1"
+        },
+        {
+            "subject": "Elephant 1",
+            "relationship": "standing on",
+            "object": "grass"
+        },
+        {
+            "subject": "Elephant 2",
+            "relationship": "standing on",
+            "object": "grass"
+        },
+        {
+            "subject": "Egret",
+            "relationship": "standing next to",
+            "object": "Elephant 2"
+        },
+        {
+            "subject": "Egret",
+            "relationship": "on",
+            "object": "grass"
+        }
+    ]
+}

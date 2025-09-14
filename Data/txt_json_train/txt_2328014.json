@@ -1,0 +1,82 @@
+{
+    "scene": "A neglected and deteriorating toilet area with a high-level cistern and peeling wall paint",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Toilet and cistern",
+            "objects": [
+                {
+                    "name": "toilet",
+                    "attribute": [
+                        "worn",
+                        "grimy"
+                    ]
+                },
+                {
+                    "name": "cistern",
+                    "attribute": [
+                        "high-level",
+                        "equipped with two metal taps",
+                        "old or industrial style"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Wall in disrepair",
+            "objects": [
+                {
+                    "name": "wall",
+                    "attribute": [
+                        "peeling paint",
+                        "stains",
+                        "neglected"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "toilet",
+            "relationship": "positioned below",
+            "object": "cistern"
+        },
+        {
+            "subject": "cistern",
+            "relationship": "affixed to",
+            "object": "wall"
+        },
+        {
+            "subject": "wall",
+            "relationship": "surrounds",
+            "object": "toilet"
+        },
+        {
+            "subject": "wall",
+            "relationship": "displays",
+            "object": "peeling paint"
+        },
+        {
+            "subject": "wall",
+            "relationship": "exhibits",
+            "object": "stains"
+        },
+        {
+            "subject": "toilet",
+            "relationship": "shows signs of",
+            "object": "neglect and deterioration"
+        },
+        {
+            "subject": "cistern",
+            "relationship": "hints at",
+            "object": "older or industrial settings"
+        },
+        {
+            "subject": "toilet area",
+            "relationship": "lacks",
+            "object": "maintenance or cleaning"
+        }
+    ]
+}

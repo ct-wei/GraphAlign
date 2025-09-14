@@ -1,0 +1,126 @@
+{
+    "scene": "A dynamic scene capturing a skateboarder in mid-trick with a bronze statue and another person in the background at a historic site or public square.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Skateboarder performing a trick off stone steps",
+            "objects": [
+                {
+                    "name": "skateboarder",
+                    "attribute": [
+                        "in motion",
+                        "leaping",
+                        "obscured face",
+                        "dynamic blur",
+                        "mid-trick"
+                    ]
+                },
+                {
+                    "name": "skateboard",
+                    "attribute": [
+                        "used in trick"
+                    ]
+                },
+                {
+                    "name": "stone steps",
+                    "attribute": [
+                        "architecture element",
+                        "jumping off point"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "A bronze statue on a pedestal",
+            "objects": [
+                {
+                    "name": "bronze statue",
+                    "attribute": [
+                        "still",
+                        "artwork",
+                        "atop pedestal"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Another person in the far background interacting passively",
+            "objects": [
+                {
+                    "name": "person",
+                    "attribute": [
+                        "standing",
+                        "passive interaction",
+                        "in the background"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Historic site or public square setting",
+            "objects": [
+                {
+                    "name": "architecture",
+                    "attribute": [
+                        "historic style"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "skateboarder",
+            "relationship": "leaping off",
+            "object": "stone steps"
+        },
+        {
+            "subject": "skateboarder",
+            "relationship": "performing",
+            "object": "trick"
+        },
+        {
+            "subject": "skateboard",
+            "relationship": "used by",
+            "object": "skateboarder"
+        },
+        {
+            "subject": "bronze statue",
+            "relationship": "standing on",
+            "object": "pedestal"
+        },
+        {
+            "subject": "bronze statue",
+            "relationship": "contrasting with",
+            "object": "motion of skateboarder"
+        },
+        {
+            "subject": "person",
+            "relationship": "observing",
+            "object": "skateboarder"
+        },
+        {
+            "subject": "person",
+            "relationship": "standing in",
+            "object": "public square"
+        },
+        {
+            "subject": "architecture",
+            "relationship": "surrounding",
+            "object": "skateboarder"
+        },
+        {
+            "subject": "architecture",
+            "relationship": "background to",
+            "object": "bronze statue"
+        },
+        {
+            "subject": "architecture",
+            "relationship": "location of",
+            "object": "stone steps"
+        }
+    ]
+}

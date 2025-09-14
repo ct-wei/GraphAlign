@@ -1,0 +1,124 @@
+{
+    "scene": "Two zebras grazing in an enclosure with a third zebra in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Two zebras side by side grazing",
+            "objects": [
+                {
+                    "name": "zebra 1",
+                    "attribute": [
+                        "grazing",
+                        "black and white striped",
+                        "standing"
+                    ]
+                },
+                {
+                    "name": "zebra 2",
+                    "attribute": [
+                        "grazing",
+                        "black and white striped",
+                        "standing"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Enclosure environment",
+            "objects": [
+                {
+                    "name": "ground",
+                    "attribute": [
+                        "sandy"
+                    ]
+                },
+                {
+                    "name": "branches",
+                    "attribute": [
+                        "scattered",
+                        "potential food"
+                    ]
+                },
+                {
+                    "name": "shade structure",
+                    "attribute": [
+                        "provides shade"
+                    ]
+                },
+                {
+                    "name": "fence",
+                    "attribute": [
+                        "boundary of enclosure"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background with a third zebra",
+            "objects": [
+                {
+                    "name": "zebra 3",
+                    "attribute": [
+                        "partially visible",
+                        "under shade",
+                        "black and white striped"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "zebra 1",
+            "relationship": "next to",
+            "object": "zebra 2"
+        },
+        {
+            "subject": "zebra 1",
+            "relationship": "grazing on",
+            "object": "ground"
+        },
+        {
+            "subject": "zebra 2",
+            "relationship": "grazing on",
+            "object": "ground"
+        },
+        {
+            "subject": "zebra 1",
+            "relationship": "surrounded by",
+            "object": "fence"
+        },
+        {
+            "subject": "zebra 2",
+            "relationship": "surrounded by",
+            "object": "fence"
+        },
+        {
+            "subject": "zebra 3",
+            "relationship": "under",
+            "object": "shade structure"
+        },
+        {
+            "subject": "zebra 1",
+            "relationship": "in the same enclosure as",
+            "object": "zebra 3"
+        },
+        {
+            "subject": "zebra 2",
+            "relationship": "in the same enclosure as",
+            "object": "zebra 3"
+        },
+        {
+            "subject": "zebra 1",
+            "relationship": "may be nibbling on",
+            "object": "branches"
+        },
+        {
+            "subject": "zebra 2",
+            "relationship": "may be nibbling on",
+            "object": "branches"
+        }
+    ]
+}

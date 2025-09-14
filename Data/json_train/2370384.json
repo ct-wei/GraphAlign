@@ -1,0 +1,121 @@
+{
+    "scene": "A cat sitting on a white and blue chair surrounded by fallen leaves with a background of trees and shrubs.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Cat sitting on a chair",
+            "objects": [
+                {
+                    "name": "cat",
+                    "attribute": [
+                        "white and grey",
+                        "striped",
+                        "sitting",
+                        "alert",
+                        "green eyes",
+                        "domestic"
+                    ]
+                },
+                {
+                    "name": "chair",
+                    "attribute": [
+                        "white and blue",
+                        "metal",
+                        "outdoor",
+                        "weathered"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Fallen leaves and ground below the chair",
+            "objects": [
+                {
+                    "name": "leaves",
+                    "attribute": [
+                        "fallen",
+                        "yellow",
+                        "brown",
+                        "various sizes"
+                    ]
+                },
+                {
+                    "name": "ground",
+                    "attribute": [
+                        "covered by leaves"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background of trees and shrubs",
+            "objects": [
+                {
+                    "name": "trees",
+                    "attribute": [
+                        "green",
+                        "tall",
+                        "foliage"
+                    ]
+                },
+                {
+                    "name": "shrubs",
+                    "attribute": [
+                        "green",
+                        "bushy",
+                        "understory"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "cat",
+            "relationship": "sitting on",
+            "object": "chair"
+        },
+        {
+            "subject": "chair",
+            "relationship": "surrounded by",
+            "object": "leaves"
+        },
+        {
+            "subject": "leaves",
+            "relationship": "on",
+            "object": "ground"
+        },
+        {
+            "subject": "cat",
+            "relationship": "surrounded by",
+            "object": "leaves"
+        },
+        {
+            "subject": "ground",
+            "relationship": "in front of",
+            "object": "trees"
+        },
+        {
+            "subject": "ground",
+            "relationship": "in front of",
+            "object": "shrubs"
+        },
+        {
+            "subject": "trees",
+            "relationship": "behind",
+            "object": "shrubs"
+        },
+        {
+            "subject": "cat",
+            "relationship": "in front of",
+            "object": "trees"
+        },
+        {
+            "subject": "cat",
+            "relationship": "in front of",
+            "object": "shrubs"
+        }
+    ]
+}

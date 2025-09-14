@@ -1,0 +1,76 @@
+{
+    "scene": "A parked pickup truck in a parking lot with trees and a clear sky in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "The parked pickup truck",
+            "objects": [
+                {
+                    "name": "pickup truck",
+                    "attribute": [
+                        "white",
+                        "4x4",
+                        "Super Duty",
+                        "dirty",
+                        "parked"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Parking lot ground",
+            "objects": [
+                {
+                    "name": "parking lot",
+                    "attribute": [
+                        "concrete",
+                        "parking lines"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background with trees and clear sky",
+            "objects": [
+                {
+                    "name": "trees",
+                    "attribute": [
+                        "various shades of green",
+                        "leafy"
+                    ]
+                },
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "clear",
+                        "blue"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "pickup truck",
+            "relationship": "parked on",
+            "object": "parking lot"
+        },
+        {
+            "subject": "pickup truck",
+            "relationship": "in front of",
+            "object": "trees"
+        },
+        {
+            "subject": "trees",
+            "relationship": "under",
+            "object": "sky"
+        },
+        {
+            "subject": "parking lot",
+            "relationship": "surrounded by",
+            "object": "trees"
+        }
+    ]
+}

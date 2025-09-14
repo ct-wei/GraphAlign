@@ -1,0 +1,109 @@
+{
+    "scene": "Two motorcyclists riding on a mountain road with rocky terrain and sparse vegetation on the sides.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Mountain road with two motorcyclists",
+            "objects": [
+                {
+                    "name": "motorcyclist 1",
+                    "attribute": [
+                        "male",
+                        "riding",
+                        "motorcycle outfit",
+                        "helmet"
+                    ]
+                },
+                {
+                    "name": "motorcyclist 2",
+                    "attribute": [
+                        "male",
+                        "riding behind",
+                        "motorcycle outfit",
+                        "helmet"
+                    ]
+                },
+                {
+                    "name": "road",
+                    "attribute": [
+                        "gray",
+                        "asphalt",
+                        "dividing line"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Rocky terrain with sparse vegetation",
+            "objects": [
+                {
+                    "name": "rocks",
+                    "attribute": [
+                        "gray",
+                        "jagged"
+                    ]
+                },
+                {
+                    "name": "vegetation",
+                    "attribute": [
+                        "sparse",
+                        "green"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "motorcyclist 1",
+            "relationship": "riding on",
+            "object": "road"
+        },
+        {
+            "subject": "motorcyclist 2",
+            "relationship": "riding behind",
+            "object": "motorcyclist 1"
+        },
+        {
+            "subject": "motorcyclist 1",
+            "relationship": "wearing",
+            "object": "motorcycle outfit"
+        },
+        {
+            "subject": "motorcyclist 1",
+            "relationship": "wearing",
+            "object": "helmet"
+        },
+        {
+            "subject": "motorcyclist 2",
+            "relationship": "wearing",
+            "object": "motorcycle outfit"
+        },
+        {
+            "subject": "motorcyclist 2",
+            "relationship": "wearing",
+            "object": "helmet"
+        },
+        {
+            "subject": "road",
+            "relationship": "runs through",
+            "object": "rocky terrain"
+        },
+        {
+            "subject": "road",
+            "relationship": "flanked by",
+            "object": "vegetation"
+        },
+        {
+            "subject": "vegetation",
+            "relationship": "growing on",
+            "object": "rocks"
+        },
+        {
+            "subject": "motorcyclist 2",
+            "relationship": "riding on",
+            "object": "road"
+        }
+    ]
+}

@@ -1,0 +1,139 @@
+{
+    "scene": "A white bench in front of a blooming meadow with variety of trees.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Front area with a bench",
+            "objects": [
+                {
+                    "name": "bench",
+                    "attribute": [
+                        "white",
+                        "wooden",
+                        "empty"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Blooming meadow with yellow flowers",
+            "objects": [
+                {
+                    "name": "flower",
+                    "attribute": [
+                        "yellow",
+                        "small",
+                        "numerous"
+                    ]
+                },
+                {
+                    "name": "grass",
+                    "attribute": [
+                        "green",
+                        "lush"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background with various trees",
+            "objects": [
+                {
+                    "name": "tree 1",
+                    "attribute": [
+                        "green leaves",
+                        "medium height"
+                    ]
+                },
+                {
+                    "name": "tree 2",
+                    "attribute": [
+                        "flowering",
+                        "white blossoms"
+                    ]
+                },
+                {
+                    "name": "tree 3",
+                    "attribute": [
+                        "red leaves",
+                        "small"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "bench",
+            "relationship": "placed on",
+            "object": "ground"
+        },
+        {
+            "subject": "bench",
+            "relationship": "in front of",
+            "object": "flower"
+        },
+        {
+            "subject": "bench",
+            "relationship": "in front of",
+            "object": "grass"
+        },
+        {
+            "subject": "bench",
+            "relationship": "facing",
+            "object": "tree 1"
+        },
+        {
+            "subject": "bench",
+            "relationship": "facing",
+            "object": "tree 2"
+        },
+        {
+            "subject": "bench",
+            "relationship": "facing",
+            "object": "tree 3"
+        },
+        {
+            "subject": "flower",
+            "relationship": "surrounded by",
+            "object": "grass"
+        },
+        {
+            "subject": "flower",
+            "relationship": "in front of",
+            "object": "tree 1"
+        },
+        {
+            "subject": "flower",
+            "relationship": "in front of",
+            "object": "tree 2"
+        },
+        {
+            "subject": "flower",
+            "relationship": "in front of",
+            "object": "tree 3"
+        },
+        {
+            "subject": "grass",
+            "relationship": "covering",
+            "object": "ground"
+        },
+        {
+            "subject": "grass",
+            "relationship": "in front of",
+            "object": "tree 1"
+        },
+        {
+            "subject": "grass",
+            "relationship": "in front of",
+            "object": "tree 2"
+        },
+        {
+            "subject": "grass",
+            "relationship": "in front of",
+            "object": "tree 3"
+        }
+    ]
+}

@@ -1,0 +1,117 @@
+{
+    "scene": "The interior of a bar with a patron, beverages, and vintage decor.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Individual seated at bar",
+            "objects": [
+                {
+                    "name": "Patron (gender unknown)",
+                    "attribute": [
+                        "seated",
+                        "facing away from camera",
+                        "reading newspaper or menu"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Bar counter with beer taps and containers",
+            "objects": [
+                {
+                    "name": "Beer taps",
+                    "attribute": [
+                        "various types"
+                    ]
+                },
+                {
+                    "name": "Promotional materials",
+                    "attribute": [
+                        "assorted"
+                    ]
+                },
+                {
+                    "name": "Alcohol containers",
+                    "attribute": [
+                        "lined up",
+                        "suggesting a wide selection"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Decorative elements present",
+            "objects": [
+                {
+                    "name": "Vintage beer cans",
+                    "attribute": [
+                        "decorative"
+                    ]
+                },
+                {
+                    "name": "Vintage signs",
+                    "attribute": [
+                        "nostalgic ambiance"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Wall-mounted television with visual entertainment",
+            "objects": [
+                {
+                    "name": "Television",
+                    "attribute": [
+                        "mounted on wall",
+                        "showing entertainment"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Patron (gender unknown)",
+            "relationship": "seated at",
+            "object": "Bar counter"
+        },
+        {
+            "subject": "Beer taps",
+            "relationship": "placed behind",
+            "object": "Bar counter"
+        },
+        {
+            "subject": "Promotional materials",
+            "relationship": "displayed behind",
+            "object": "Bar counter"
+        },
+        {
+            "subject": "Alcohol containers",
+            "relationship": "lined up behind",
+            "object": "Bar counter"
+        },
+        {
+            "subject": "Vintage beer cans",
+            "relationship": "add to",
+            "object": "nostalgic ambiance"
+        },
+        {
+            "subject": "Vintage signs",
+            "relationship": "add to",
+            "object": "nostalgic ambiance"
+        },
+        {
+            "subject": "Television",
+            "relationship": "mounted on",
+            "object": "back wall"
+        },
+        {
+            "subject": "Bar counter",
+            "relationship": "illuminated by",
+            "object": "natural light"
+        }
+    ]
+}

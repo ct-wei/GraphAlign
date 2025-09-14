@@ -1,0 +1,116 @@
+{
+    "scene": "An outdoor urban setting with two individuals seated on benches, with a clear blue sky and quiet street scene.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Foreground with a man seated on a metal bench",
+            "objects": [
+                {
+                    "name": "man",
+                    "attribute": [
+                        "male",
+                        "engrossed in smartphone",
+                        "wearing white T-shirt",
+                        "wearing black pants",
+                        "wearing black shoes",
+                        "holding smartphone with both hands"
+                    ]
+                },
+                {
+                    "name": "metal bench 1",
+                    "attribute": [
+                        "occupied by man"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Background with another individual seated on a bench and a street scene",
+            "objects": [
+                {
+                    "name": "individual",
+                    "attribute": [
+                        "seated on bench"
+                    ]
+                },
+                {
+                    "name": "metal bench 2",
+                    "attribute": [
+                        "occupied by individual"
+                    ]
+                },
+                {
+                    "name": "buildings",
+                    "attribute": [
+                        "classic architecture"
+                    ]
+                },
+                {
+                    "name": "vehicles",
+                    "attribute": [
+                        "several"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Sky and natural lighting conditions",
+            "objects": [
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "clear",
+                        "blue"
+                    ]
+                },
+                {
+                    "name": "sun",
+                    "attribute": [
+                        "sunny day",
+                        "low in the sky",
+                        "morning or late afternoon"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "man",
+            "relationship": "seated on",
+            "object": "metal bench 1"
+        },
+        {
+            "subject": "individual",
+            "relationship": "seated on",
+            "object": "metal bench 2"
+        },
+        {
+            "subject": "man",
+            "relationship": "focused on",
+            "object": "smartphone"
+        },
+        {
+            "subject": "sky",
+            "relationship": "indicative of",
+            "object": "time of day"
+        },
+        {
+            "subject": "sun",
+            "relationship": "casting shadows on",
+            "object": "ground"
+        },
+        {
+            "subject": "vehicles",
+            "relationship": "parked on",
+            "object": "street"
+        },
+        {
+            "subject": "buildings",
+            "relationship": "surround",
+            "object": "street scene"
+        }
+    ]
+}

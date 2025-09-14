@@ -1,0 +1,83 @@
+{
+    "scene": "A person taking a picture with an iPhone in an indoor setting",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Person holding an iPhone",
+            "objects": [
+                {
+                    "name": "Person",
+                    "attribute": [
+                        "unknown gender",
+                        "hands visible",
+                        "wearing a ring"
+                    ]
+                },
+                {
+                    "name": "iPhone",
+                    "attribute": [
+                        "rear camera visible",
+                        "Apple logo",
+                        "text 'iPhone'",
+                        "being held"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Indoor setting with shelves",
+            "objects": [
+                {
+                    "name": "Shelves",
+                    "attribute": [
+                        "holding various items",
+                        "background element"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Person",
+            "relationship": "holding",
+            "object": "iPhone"
+        },
+        {
+            "subject": "iPhone",
+            "relationship": "covering",
+            "object": "Person's face"
+        },
+        {
+            "subject": "Person",
+            "relationship": "wearing",
+            "object": "Ring on left hand's ring finger"
+        },
+        {
+            "subject": "Person",
+            "relationship": "standing in",
+            "object": "Indoor setting"
+        },
+        {
+            "subject": "Shelves",
+            "relationship": "located in",
+            "object": "Indoor setting"
+        },
+        {
+            "subject": "Shelves",
+            "relationship": "containing",
+            "object": "Various items"
+        },
+        {
+            "subject": "iPhone",
+            "relationship": "displaying",
+            "object": "Apple logo and text 'iPhone'"
+        },
+        {
+            "subject": "iPhone",
+            "relationship": "equipped with",
+            "object": "Rear camera"
+        }
+    ]
+}

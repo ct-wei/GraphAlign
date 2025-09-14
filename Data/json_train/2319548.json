@@ -1,0 +1,98 @@
+{
+    "scene": "A street corner with a traffic light and street signs against a historic brick building and clear sky.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Traffic light and street signs at the street corner",
+            "objects": [
+                {
+                    "name": "traffic light",
+                    "attribute": [
+                        "yellow",
+                        "hanging",
+                        "off"
+                    ]
+                },
+                {
+                    "name": "One Way sign",
+                    "attribute": [
+                        "white lettering",
+                        "blue background"
+                    ]
+                },
+                {
+                    "name": "Houston St sign",
+                    "attribute": [
+                        "white lettering",
+                        "blue background"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "A historic brick building with architectural details",
+            "objects": [
+                {
+                    "name": "building",
+                    "attribute": [
+                        "red brick",
+                        "arched windows",
+                        "turret",
+                        "old-fashioned architecture"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Clear blue sky",
+            "objects": [
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "clear",
+                        "blue"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "traffic light",
+            "relationship": "mounted on",
+            "object": "building"
+        },
+        {
+            "subject": "One Way sign",
+            "relationship": "adjacent to",
+            "object": "Houston St sign"
+        },
+        {
+            "subject": "One Way sign",
+            "relationship": "attached to",
+            "object": "traffic light"
+        },
+        {
+            "subject": "Houston St sign",
+            "relationship": "below",
+            "object": "One Way sign"
+        },
+        {
+            "subject": "Houston St sign",
+            "relationship": "attached to",
+            "object": "traffic light"
+        },
+        {
+            "subject": "building",
+            "relationship": "under",
+            "object": "sky"
+        },
+        {
+            "subject": "traffic light",
+            "relationship": "in front of",
+            "object": "sky"
+        }
+    ]
+}

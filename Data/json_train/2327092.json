@@ -1,0 +1,111 @@
+{
+    "scene": "A baseball batter, catcher, and umpire during a game.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Baseball batter preparing to hit the ball",
+            "objects": [
+                {
+                    "name": "batter (male)",
+                    "attribute": [
+                        "wearing red jersey",
+                        "white pants",
+                        "black helmet",
+                        "holding a bat"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Baseball catcher in position to catch the ball",
+            "objects": [
+                {
+                    "name": "catcher (male)",
+                    "attribute": [
+                        "wearing black and white uniform",
+                        "crouching",
+                        "wearing a catcher's mask",
+                        "wearing a mitt"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Umpire observing the game",
+            "objects": [
+                {
+                    "name": "umpire (male)",
+                    "attribute": [
+                        "wearing black uniform",
+                        "standing behind the catcher",
+                        "watching the pitch"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Baseball field elements",
+            "objects": [
+                {
+                    "name": "home plate",
+                    "attribute": [
+                        "white",
+                        "pentagonal shape"
+                    ]
+                },
+                {
+                    "name": "baseball",
+                    "attribute": [
+                        "small",
+                        "white with red stitching"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "batter (male)",
+            "relationship": "standing at",
+            "object": "home plate"
+        },
+        {
+            "subject": "batter (male)",
+            "relationship": "facing",
+            "object": "catcher (male)"
+        },
+        {
+            "subject": "catcher (male)",
+            "relationship": "crouching behind",
+            "object": "home plate"
+        },
+        {
+            "subject": "umpire (male)",
+            "relationship": "standing behind",
+            "object": "catcher (male)"
+        },
+        {
+            "subject": "baseball",
+            "relationship": "approaching",
+            "object": "batter (male)"
+        },
+        {
+            "subject": "catcher (male)",
+            "relationship": "ready to catch",
+            "object": "baseball"
+        },
+        {
+            "subject": "batter (male)",
+            "relationship": "holding",
+            "object": "bat"
+        },
+        {
+            "subject": "umpire (male)",
+            "relationship": "watching",
+            "object": "baseball"
+        }
+    ]
+}

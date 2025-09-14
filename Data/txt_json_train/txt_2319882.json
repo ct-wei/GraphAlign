@@ -1,0 +1,113 @@
+{
+    "scene": "A tranquil maritime scene with a white boat, an overturned dinghy, and a striped lighthouse.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "White boat with two masts anchored in calm waters",
+            "objects": [
+                {
+                    "name": "white boat",
+                    "attribute": [
+                        "white",
+                        "two masts",
+                        "anchored",
+                        "in calm waters"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "An overturned grey dinghy floating near the shore",
+            "objects": [
+                {
+                    "name": "grey dinghy",
+                    "attribute": [
+                        "overturned",
+                        "floating",
+                        "near the shore"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "A lighthouse with distinctive red and white stripes hinting at a coastal location",
+            "objects": [
+                {
+                    "name": "lighthouse",
+                    "attribute": [
+                        "distinctive",
+                        "red and white stripes",
+                        "coastal location"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Clear skies suggesting fair weather",
+            "objects": [
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "clear",
+                        "fair weather"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "white boat",
+            "relationship": "anchored in",
+            "object": "calm waters"
+        },
+        {
+            "subject": "grey dinghy",
+            "relationship": "floating near",
+            "object": "shore"
+        },
+        {
+            "subject": "lighthouse",
+            "relationship": "located at",
+            "object": "coastal location"
+        },
+        {
+            "subject": "sky",
+            "relationship": "suggesting",
+            "object": "fair weather"
+        },
+        {
+            "subject": "white boat",
+            "relationship": "share the scene with",
+            "object": "grey dinghy"
+        },
+        {
+            "subject": "white boat",
+            "relationship": "in proximity to",
+            "object": "lighthouse"
+        },
+        {
+            "subject": "grey dinghy",
+            "relationship": "in proximity to",
+            "object": "lighthouse"
+        },
+        {
+            "subject": "white boat",
+            "relationship": "under",
+            "object": "sky"
+        },
+        {
+            "subject": "grey dinghy",
+            "relationship": "under",
+            "object": "sky"
+        },
+        {
+            "subject": "lighthouse",
+            "relationship": "under",
+            "object": "sky"
+        }
+    ]
+}

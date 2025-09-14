@@ -1,0 +1,81 @@
+{
+    "scene": "A person is sitting back-to-back with their reflection on a reflective surface in an urban setting at night.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Person sitting back-to-back",
+            "objects": [
+                {
+                    "name": "Person 1",
+                    "attribute": [
+                        "sitting",
+                        "long hair",
+                        "dark clothing",
+                        "female"
+                    ]
+                },
+                {
+                    "name": "Reflective surface",
+                    "attribute": [
+                        "vertical",
+                        "shiny"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Urban background setting at night",
+            "objects": [
+                {
+                    "name": "Street",
+                    "attribute": [
+                        "paved"
+                    ]
+                },
+                {
+                    "name": "Traffic light",
+                    "attribute": [
+                        "tall",
+                        "lit",
+                        "multiple lights"
+                    ]
+                },
+                {
+                    "name": "Buildings",
+                    "attribute": [
+                        "commercial",
+                        "illuminated signs"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Person 1",
+            "relationship": "sitting on",
+            "object": "Street"
+        },
+        {
+            "subject": "Person 1",
+            "relationship": "leaning against",
+            "object": "Reflective surface"
+        },
+        {
+            "subject": "Reflective surface",
+            "relationship": "in front of",
+            "object": "Buildings"
+        },
+        {
+            "subject": "Traffic light",
+            "relationship": "beside",
+            "object": "Reflective surface"
+        },
+        {
+            "subject": "Street",
+            "relationship": "in front of",
+            "object": "Buildings"
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "scene": "A person is snowboarding down a snowy slope with trees in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Person snowboarding down a slope",
+            "objects": [
+                {
+                    "name": "snowboarder (gender unspecified)",
+                    "attribute": [
+                        "wearing snowboard boots",
+                        "wearing snowboard clothing",
+                        "wearing a helmet",
+                        "wearing goggles",
+                        "in motion"
+                    ]
+                },
+                {
+                    "name": "snowboard",
+                    "attribute": [
+                        "attached to snowboarder's feet"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Snowy slope",
+            "objects": [
+                {
+                    "name": "snow",
+                    "attribute": [
+                        "white",
+                        "powdery",
+                        "covering slope"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background with trees",
+            "objects": [
+                {
+                    "name": "trees",
+                    "attribute": [
+                        "snow-covered",
+                        "evergreen",
+                        "sparsely distributed"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "snowboarder",
+            "relationship": "riding on",
+            "object": "snowboard"
+        },
+        {
+            "subject": "snowboard",
+            "relationship": "on top of",
+            "object": "snow"
+        },
+        {
+            "subject": "snowboarder",
+            "relationship": "descending",
+            "object": "snowy slope"
+        },
+        {
+            "subject": "snow",
+            "relationship": "covering",
+            "object": "slope"
+        },
+        {
+            "subject": "trees",
+            "relationship": "surrounding",
+            "object": "slope"
+        },
+        {
+            "subject": "snowboarder",
+            "relationship": "in front of",
+            "object": "trees"
+        },
+        {
+            "subject": "snow",
+            "relationship": "beneath",
+            "object": "trees"
+        }
+    ]
+}

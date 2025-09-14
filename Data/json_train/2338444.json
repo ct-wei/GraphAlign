@@ -1,0 +1,93 @@
+{
+    "scene": "A bedroom with a bed covered in a quilt, a side table with a lamp, a doll, and various items including papers on the floor.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Bed with a quilt",
+            "objects": [
+                {
+                    "name": "bed",
+                    "attribute": [
+                        "large",
+                        "with headboard",
+                        "covered"
+                    ]
+                },
+                {
+                    "name": "quilt",
+                    "attribute": [
+                        "patterned",
+                        "with stars and stripes"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Side table with lamp and doll",
+            "objects": [
+                {
+                    "name": "side table",
+                    "attribute": [
+                        "wooden",
+                        "with drawer"
+                    ]
+                },
+                {
+                    "name": "lamp",
+                    "attribute": [
+                        "tall",
+                        "with shade"
+                    ]
+                },
+                {
+                    "name": "doll",
+                    "attribute": [
+                        "small",
+                        "sitting"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Floor with various items",
+            "objects": [
+                {
+                    "name": "paper",
+                    "attribute": [
+                        "white",
+                        "scattered"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "quilt",
+            "relationship": "covering",
+            "object": "bed"
+        },
+        {
+            "subject": "doll",
+            "relationship": "on",
+            "object": "side table"
+        },
+        {
+            "subject": "lamp",
+            "relationship": "on",
+            "object": "side table"
+        },
+        {
+            "subject": "paper",
+            "relationship": "on",
+            "object": "floor"
+        },
+        {
+            "subject": "side table",
+            "relationship": "next to",
+            "object": "bed"
+        }
+    ]
+}

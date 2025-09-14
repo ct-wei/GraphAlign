@@ -1,0 +1,99 @@
+{
+    "scene": "Close-up of a mixed fruit salad containing various fruits.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Mixed fruit salad",
+            "objects": [
+                {
+                    "name": "banana slices",
+                    "attribute": [
+                        "sliced",
+                        "yellow"
+                    ]
+                },
+                {
+                    "name": "apple slices with red skin",
+                    "attribute": [
+                        "sliced",
+                        "red skin"
+                    ]
+                },
+                {
+                    "name": "apple slices with green skin",
+                    "attribute": [
+                        "sliced",
+                        "green skin"
+                    ]
+                },
+                {
+                    "name": "kiwifruit slices",
+                    "attribute": [
+                        "sliced",
+                        "green",
+                        "black seeds"
+                    ]
+                },
+                {
+                    "name": "green grapes",
+                    "attribute": [
+                        "whole",
+                        "green"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "banana slices",
+            "relationship": "mixed with",
+            "object": "apple slices with red skin"
+        },
+        {
+            "subject": "banana slices",
+            "relationship": "mixed with",
+            "object": "apple slices with green skin"
+        },
+        {
+            "subject": "banana slices",
+            "relationship": "mixed with",
+            "object": "kiwifruit slices"
+        },
+        {
+            "subject": "banana slices",
+            "relationship": "mixed with",
+            "object": "green grapes"
+        },
+        {
+            "subject": "apple slices with red skin",
+            "relationship": "mixed with",
+            "object": "apple slices with green skin"
+        },
+        {
+            "subject": "apple slices with red skin",
+            "relationship": "mixed with",
+            "object": "kiwifruit slices"
+        },
+        {
+            "subject": "apple slices with red skin",
+            "relationship": "mixed with",
+            "object": "green grapes"
+        },
+        {
+            "subject": "apple slices with green skin",
+            "relationship": "mixed with",
+            "object": "kiwifruit slices"
+        },
+        {
+            "subject": "apple slices with green skin",
+            "relationship": "mixed with",
+            "object": "green grapes"
+        },
+        {
+            "subject": "kiwifruit slices",
+            "relationship": "mixed with",
+            "object": "green grapes"
+        }
+    ]
+}

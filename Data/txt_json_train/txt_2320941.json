@@ -1,0 +1,120 @@
+{
+    "scene": "A casual social gathering indoors with three individuals enjoying their time together.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Foreground with man standing",
+            "objects": [
+                {
+                    "name": "Man 1 (male)",
+                    "attribute": [
+                        "holding remote control",
+                        "wearing short-sleeved checkered shirt",
+                        "wearing shorts",
+                        "wearing cap"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Background with seated man and woman",
+            "objects": [
+                {
+                    "name": "Man 2 (male)",
+                    "attribute": [
+                        "seated",
+                        "smiling"
+                    ]
+                },
+                {
+                    "name": "Woman 1 (female)",
+                    "attribute": [
+                        "seated",
+                        "smiling"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Room ambience",
+            "objects": [
+                {
+                    "name": "Fan",
+                    "attribute": [
+                        "on the floor"
+                    ]
+                },
+                {
+                    "name": "String lights",
+                    "attribute": [
+                        "adorns upper part of walls"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Man 1 (male)",
+            "relationship": "holding",
+            "object": "remote control"
+        },
+        {
+            "subject": "Man 2 (male)",
+            "relationship": "observing",
+            "object": "Man 1 (male)"
+        },
+        {
+            "subject": "Woman 1 (female)",
+            "relationship": "observing",
+            "object": "Man 1 (male)"
+        },
+        {
+            "subject": "Man 1 (male)",
+            "relationship": "dressed in",
+            "object": "short-sleeved checkered shirt"
+        },
+        {
+            "subject": "Man 1 (male)",
+            "relationship": "dressed in",
+            "object": "shorts"
+        },
+        {
+            "subject": "Man 1 (male)",
+            "relationship": "wearing",
+            "object": "cap"
+        },
+        {
+            "subject": "Man 2 (male)",
+            "relationship": "engaging in conversation with",
+            "object": "Woman 1 (female)"
+        },
+        {
+            "subject": "Man 1 (male)",
+            "relationship": "standing in",
+            "object": "region1"
+        },
+        {
+            "subject": "Man 2 (male)",
+            "relationship": "seated in",
+            "object": "region2"
+        },
+        {
+            "subject": "Woman 1 (female)",
+            "relationship": "seated in",
+            "object": "region2"
+        },
+        {
+            "subject": "Fan",
+            "relationship": "placed on",
+            "object": "floor"
+        },
+        {
+            "subject": "String lights",
+            "relationship": "adorn",
+            "object": "upper part of walls"
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "scene": "A giraffe extending its neck sideways towards a person's hand in a zoo setting.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Giraffe extending its neck sideways",
+            "objects": [
+                {
+                    "name": "giraffe",
+                    "attribute": [
+                        "long neck",
+                        "spotted coat",
+                        "sideways"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Person's hand outstretched",
+            "objects": [
+                {
+                    "name": "person (gender unknown)",
+                    "attribute": [
+                        "outstretched hand"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Zoo or wildlife park setting with metal fencing and concrete structures",
+            "objects": [
+                {
+                    "name": "metal fencing",
+                    "attribute": [
+                        "metal"
+                    ]
+                },
+                {
+                    "name": "concrete structures",
+                    "attribute": [
+                        "concrete"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "giraffe",
+            "relationship": "extending neck towards",
+            "object": "person (gender unknown)"
+        },
+        {
+            "subject": "giraffe",
+            "relationship": "contained by",
+            "object": "metal fencing"
+        },
+        {
+            "subject": "person (gender unknown)",
+            "relationship": "standing behind",
+            "object": "metal fencing"
+        },
+        {
+            "subject": "giraffe",
+            "relationship": "in front of",
+            "object": "concrete structures"
+        },
+        {
+            "subject": "metal fencing",
+            "relationship": "attached to",
+            "object": "concrete structures"
+        },
+        {
+            "subject": "person (gender unknown)",
+            "relationship": "interacting with",
+            "object": "giraffe"
+        }
+    ]
+}

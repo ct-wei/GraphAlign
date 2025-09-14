@@ -1,0 +1,107 @@
+{
+    "scene": "A zebra standing near a leafless tree in a grassy enclosure with a green metal structure in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "The zebra in the grassy enclosure",
+            "objects": [
+                {
+                    "name": "zebra",
+                    "attribute": [
+                        "black and white stripes",
+                        "calm",
+                        "looking off to the side"
+                    ]
+                },
+                {
+                    "name": "grass",
+                    "attribute": [
+                        "green"
+                    ]
+                },
+                {
+                    "name": "bushes",
+                    "attribute": [
+                        "patches",
+                        "sparse"
+                    ]
+                },
+                {
+                    "name": "rocks",
+                    "attribute": [
+                        "few",
+                        "scattered on the ground"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "The area around the zebra with a leafless tree, fence wire, and green metal structure",
+            "objects": [
+                {
+                    "name": "leafless tree",
+                    "attribute": [
+                        "thin",
+                        "near zebra"
+                    ]
+                },
+                {
+                    "name": "fence wire",
+                    "attribute": [
+                        "attached to tree"
+                    ]
+                },
+                {
+                    "name": "green metal structure",
+                    "attribute": [
+                        "background",
+                        "possible shelter or building"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "zebra",
+            "relationship": "standing near",
+            "object": "leafless tree"
+        },
+        {
+            "subject": "zebra",
+            "relationship": "enclosed by",
+            "object": "fence wire"
+        },
+        {
+            "subject": "zebra",
+            "relationship": "in front of",
+            "object": "green metal structure"
+        },
+        {
+            "subject": "leafless tree",
+            "relationship": "attached to",
+            "object": "fence wire"
+        },
+        {
+            "subject": "fence wire",
+            "relationship": "suggesting",
+            "object": "fenced area"
+        },
+        {
+            "subject": "green metal structure",
+            "relationship": "part of",
+            "object": "well-maintained habitat"
+        },
+        {
+            "subject": "bushes",
+            "relationship": "scattered in",
+            "object": "grassy enclosure"
+        },
+        {
+            "subject": "rocks",
+            "relationship": "scattered on",
+            "object": "ground"
+        }
+    ]
+}

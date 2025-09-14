@@ -1,0 +1,119 @@
+{
+    "scene": "A leaned traffic light at a snowy intersection with parked cars and billboards in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "A leaned traffic light structure",
+            "objects": [
+                {
+                    "name": "traffic light",
+                    "attribute": [
+                        "black",
+                        "three lights",
+                        "red light on",
+                        "tilted"
+                    ]
+                },
+                {
+                    "name": "traffic light pole",
+                    "attribute": [
+                        "metal",
+                        "bent",
+                        "partly buried in snow"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "A snowy intersection with parked cars",
+            "objects": [
+                {
+                    "name": "car 1",
+                    "attribute": [
+                        "silver",
+                        "parked"
+                    ]
+                },
+                {
+                    "name": "car 2",
+                    "attribute": [
+                        "dark color",
+                        "parked"
+                    ]
+                },
+                {
+                    "name": "snow",
+                    "attribute": [
+                        "white",
+                        "covering ground"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background with billboards and trees",
+            "objects": [
+                {
+                    "name": "billboard 1",
+                    "attribute": [
+                        "colorful",
+                        "advertising"
+                    ]
+                },
+                {
+                    "name": "billboard 2",
+                    "attribute": [
+                        "text visible",
+                        "blue background"
+                    ]
+                },
+                {
+                    "name": "trees",
+                    "attribute": [
+                        "bare branches",
+                        "snow-covered"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "traffic light",
+            "relationship": "mounted on",
+            "object": "traffic light pole"
+        },
+        {
+            "subject": "traffic light pole",
+            "relationship": "leaning towards",
+            "object": "car 2"
+        },
+        {
+            "subject": "traffic light pole",
+            "relationship": "partly buried in",
+            "object": "snow"
+        },
+        {
+            "subject": "car 1",
+            "relationship": "parked in",
+            "object": "snow"
+        },
+        {
+            "subject": "car 2",
+            "relationship": "parked in",
+            "object": "snow"
+        },
+        {
+            "subject": "billboard 1",
+            "relationship": "visible behind",
+            "object": "trees"
+        },
+        {
+            "subject": "billboard 2",
+            "relationship": "visible behind",
+            "object": "trees"
+        }
+    ]
+}

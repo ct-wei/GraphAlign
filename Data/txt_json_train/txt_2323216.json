@@ -1,0 +1,98 @@
+{
+    "scene": "Airport tarmac with two Austrian Airlines aircraft, ground support vehicles, and a scenic mountain backdrop.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Two Austrian Airlines aircraft with red and white liveries",
+            "objects": [
+                {
+                    "name": "Aircraft 1",
+                    "attribute": "smaller jet, red and white livery, connected to airport bus"
+                },
+                {
+                    "name": "Aircraft 2",
+                    "attribute": "larger aircraft, red and white livery, for longer-haul flights"
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Ground support vehicles near the planes",
+            "objects": [
+                {
+                    "name": "Baggage cart 1",
+                    "attribute": "positioned for loading or unloading"
+                },
+                {
+                    "name": "Conveyor belt loader",
+                    "attribute": "positioned for loading or unloading"
+                },
+                {
+                    "name": "Airport bus",
+                    "attribute": "likely for passenger transfer"
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background scenery",
+            "objects": [
+                {
+                    "name": "Sky",
+                    "attribute": "clear"
+                },
+                {
+                    "name": "Mountain range",
+                    "attribute": "vague, in the distance"
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Aircraft 1",
+            "relationship": "connected to",
+            "object": "Airport bus"
+        },
+        {
+            "subject": "Aircraft 2",
+            "relationship": "longer-haul",
+            "object": "flights"
+        },
+        {
+            "subject": "Baggage cart 1",
+            "relationship": "positioned near",
+            "object": "Aircraft 1"
+        },
+        {
+            "subject": "Baggage cart 1",
+            "relationship": "positioned near",
+            "object": "Aircraft 2"
+        },
+        {
+            "subject": "Conveyor belt loader",
+            "relationship": "positioned near",
+            "object": "Aircraft 1"
+        },
+        {
+            "subject": "Conveyor belt loader",
+            "relationship": "positioned near",
+            "object": "Aircraft 2"
+        },
+        {
+            "subject": "Sky",
+            "relationship": "background of",
+            "object": "Airport tarmac"
+        },
+        {
+            "subject": "Mountain range",
+            "relationship": "background behind",
+            "object": "Airport tarmac"
+        },
+        {
+            "subject": "Airport bus",
+            "relationship": "near",
+            "object": "Aircraft 1"
+        }
+    ]
+}

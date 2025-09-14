@@ -1,0 +1,107 @@
+{
+    "scene": "A food truck parked by the sidewalk next to an open sign and a bus stop, with vehicles in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Food truck parked by the sidewalk",
+            "objects": [
+                {
+                    "name": "food truck",
+                    "attribute": [
+                        "white",
+                        "mobile eatery",
+                        "service window open",
+                        "parked"
+                    ]
+                },
+                {
+                    "name": "sidewalk",
+                    "attribute": [
+                        "gray",
+                        "concrete"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Signage and bus stop",
+            "objects": [
+                {
+                    "name": "open sign",
+                    "attribute": [
+                        "pink",
+                        "readable text",
+                        "freestanding"
+                    ]
+                },
+                {
+                    "name": "bus stop",
+                    "attribute": [
+                        "blue",
+                        "public transportation marker"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background with vehicles and vegetation",
+            "objects": [
+                {
+                    "name": "car 1",
+                    "attribute": [
+                        "color not distinct",
+                        "parked"
+                    ]
+                },
+                {
+                    "name": "car 2",
+                    "attribute": [
+                        "color not distinct",
+                        "parked"
+                    ]
+                },
+                {
+                    "name": "vegetation",
+                    "attribute": [
+                        "green",
+                        "lush"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "food truck",
+            "relationship": "parked on",
+            "object": "sidewalk"
+        },
+        {
+            "subject": "open sign",
+            "relationship": "placed in front of",
+            "object": "food truck"
+        },
+        {
+            "subject": "bus stop",
+            "relationship": "adjacent to",
+            "object": "food truck"
+        },
+        {
+            "subject": "car 1",
+            "relationship": "parked behind",
+            "object": "food truck"
+        },
+        {
+            "subject": "car 2",
+            "relationship": "parked near",
+            "object": "car 1"
+        },
+        {
+            "subject": "vegetation",
+            "relationship": "growing beside",
+            "object": "sidewalk"
+        }
+    ]
+}

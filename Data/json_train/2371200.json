@@ -1,0 +1,138 @@
+{
+    "scene": "A busy street view outside a cafe with people walking by and others sitting and interacting.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "People sitting on a bench outside a cafe",
+            "objects": [
+                {
+                    "name": "Person 1 (male)",
+                    "attribute": [
+                        "sitting",
+                        "wearing a hat",
+                        "holding a drink",
+                        "engaged in eating"
+                    ]
+                },
+                {
+                    "name": "Person 2 (female)",
+                    "attribute": [
+                        "sitting",
+                        "wearing a red hat",
+                        "looking at a phone"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "People walking by the cafe",
+            "objects": [
+                {
+                    "name": "Pedestrian 1",
+                    "attribute": [
+                        "walking",
+                        "carrying a bag"
+                    ]
+                },
+                {
+                    "name": "Pedestrian 2",
+                    "attribute": [
+                        "walking",
+                        "using a phone"
+                    ]
+                },
+                {
+                    "name": "Pedestrian 3",
+                    "attribute": [
+                        "walking"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Street elements and cafe storefront",
+            "objects": [
+                {
+                    "name": "bench",
+                    "attribute": [
+                        "stone material"
+                    ]
+                },
+                {
+                    "name": "red telephone box",
+                    "attribute": [
+                        "iconic",
+                        "red color"
+                    ]
+                },
+                {
+                    "name": "cafe storefront",
+                    "attribute": [
+                        "red color theme",
+                        "labeled 'Pret A Manger'"
+                    ]
+                },
+                {
+                    "name": "pavement",
+                    "attribute": [
+                        "grey color"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Person 1 (male)",
+            "relationship": "sitting next to",
+            "object": "Person 2 (female)"
+        },
+        {
+            "subject": "Person 2 (female)",
+            "relationship": "looking at",
+            "object": "phone"
+        },
+        {
+            "subject": "Person 1 (male)",
+            "relationship": "holding",
+            "object": "drink"
+        },
+        {
+            "subject": "red telephone box",
+            "relationship": "located next to",
+            "object": "cafe storefront"
+        },
+        {
+            "subject": "Pedestrian 1",
+            "relationship": "walking",
+            "object": "pavement"
+        },
+        {
+            "subject": "Pedestrian 2",
+            "relationship": "walking",
+            "object": "pavement"
+        },
+        {
+            "subject": "Pedestrian 3",
+            "relationship": "walking",
+            "object": "pavement"
+        },
+        {
+            "subject": "Person 1 (male)",
+            "relationship": "sitting on",
+            "object": "bench"
+        },
+        {
+            "subject": "Person 2 (female)",
+            "relationship": "sitting on",
+            "object": "bench"
+        },
+        {
+            "subject": "bench",
+            "relationship": "in front of",
+            "object": "cafe storefront"
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "scene": "Pedestrians waiting at a traffic light in an urban setting.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Pedestrians waiting at traffic light",
+            "objects": [
+                {
+                    "name": "male 1",
+                    "attribute": [
+                        "short hair",
+                        "wearing backpack",
+                        "shorts",
+                        "standing"
+                    ]
+                },
+                {
+                    "name": "male 2",
+                    "attribute": [
+                        "medium hair",
+                        "striped shirt",
+                        "headphones",
+                        "standing"
+                    ]
+                },
+                {
+                    "name": "male 3",
+                    "attribute": [
+                        "bald",
+                        "glasses",
+                        "beard",
+                        "standing"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Urban environment with traffic signs",
+            "objects": [
+                {
+                    "name": "traffic light",
+                    "attribute": [
+                        "red light"
+                    ]
+                },
+                {
+                    "name": "street sign",
+                    "attribute": [
+                        "white",
+                        "rectangular"
+                    ]
+                },
+                {
+                    "name": "bicycle",
+                    "attribute": [
+                        "moving"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background buildings and infrastructure",
+            "objects": [
+                {
+                    "name": "building",
+                    "attribute": [
+                        "modern architecture",
+                        "windows"
+                    ]
+                },
+                {
+                    "name": "railing",
+                    "attribute": [
+                        "metal",
+                        "barrier"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "male 1",
+            "relationship": "standing next to",
+            "object": "male 2"
+        },
+        {
+            "subject": "male 2",
+            "relationship": "wearing",
+            "object": "headphones"
+        },
+        {
+            "subject": "male 3",
+            "relationship": "standing behind",
+            "object": "male 1 and male 2"
+        },
+        {
+            "subject": "traffic light",
+            "relationship": "regulating",
+            "object": "pedestrian movement"
+        },
+        {
+            "subject": "pedestrians",
+            "relationship": "waiting at",
+            "object": "traffic light"
+        },
+        {
+            "subject": "bicycle",
+            "relationship": "moving past",
+            "object": "pedestrians"
+        },
+        {
+            "subject": "building",
+            "relationship": "behind",
+            "object": "railing"
+        },
+        {
+            "subject": "railing",
+            "relationship": "in front of",
+            "object": "pedestrians"
+        }
+    ]
+}

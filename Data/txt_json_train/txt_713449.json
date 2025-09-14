@@ -1,0 +1,100 @@
+{
+    "scene": "A traditional red brick building with a clock tower and golden dome under a clear blue sky.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Red brick building with clock tower and golden dome",
+            "objects": [
+                {
+                    "name": "building",
+                    "attribute": [
+                        "traditional",
+                        "red brick",
+                        "prominent structure"
+                    ]
+                },
+                {
+                    "name": "clock tower",
+                    "attribute": [
+                        "prominent",
+                        "golden dome",
+                        "ornate detailing",
+                        "indicating significance"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Surrounding architecture and urban setting",
+            "objects": [
+                {
+                    "name": "surrounding architecture",
+                    "attribute": [
+                        "less prominent"
+                    ]
+                },
+                {
+                    "name": "urban setting",
+                    "attribute": [
+                        "clear blue sky",
+                        "soft sunlight",
+                        "daytime",
+                        "roundabout with directional signs",
+                        "parked cars"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Seasonal environment",
+            "objects": [
+                {
+                    "name": "trees",
+                    "attribute": [
+                        "bare branches",
+                        "late autumn or early winter"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "clock tower",
+            "relationship": "part of",
+            "object": "building"
+        },
+        {
+            "subject": "clock tower",
+            "relationship": "rises above",
+            "object": "surrounding architecture"
+        },
+        {
+            "subject": "building",
+            "relationship": "located in",
+            "object": "urban setting"
+        },
+        {
+            "subject": "urban setting",
+            "relationship": "features",
+            "object": "roundabout with directional signs"
+        },
+        {
+            "subject": "urban setting",
+            "relationship": "has",
+            "object": "parked cars"
+        },
+        {
+            "subject": "trees",
+            "relationship": "indicate",
+            "object": "season being either late autumn or early winter"
+        },
+        {
+            "subject": "trees",
+            "relationship": "located near",
+            "object": "building"
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "scene": "A young man is preparing to play a video game indoors at an informal gathering with a woman busy in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "A young man standing indoors with a Wii remote",
+            "objects": [
+                {
+                    "name": "man",
+                    "attribute": [
+                        "young",
+                        "relaxed posture",
+                        "smiling",
+                        "holding a Wii remote",
+                        "casual two-tone T-shirt with grey center and dark sleeves",
+                        "grey pants",
+                        "male"
+                    ]
+                },
+                {
+                    "name": "Wii remote",
+                    "attribute": [
+                        "held by the young man"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "A woman busy with activities on a table full of various items",
+            "objects": [
+                {
+                    "name": "woman",
+                    "attribute": [
+                        "busy",
+                        "female"
+                    ]
+                },
+                {
+                    "name": "table",
+                    "attribute": [
+                        "full of various items"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Eclectic decor of the setting",
+            "objects": [
+                {
+                    "name": "brick wall",
+                    "attribute": [
+                        "to the right"
+                    ]
+                },
+                {
+                    "name": "hats",
+                    "attribute": [
+                        "hanging from the ceiling"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "man",
+            "relationship": "holding",
+            "object": "Wii remote"
+        },
+        {
+            "subject": "man",
+            "relationship": "wearing",
+            "object": "casual two-tone T-shirt"
+        },
+        {
+            "subject": "man",
+            "relationship": "wearing",
+            "object": "grey pants"
+        },
+        {
+            "subject": "woman",
+            "relationship": "busy on",
+            "object": "table"
+        },
+        {
+            "subject": "table",
+            "relationship": "covered with",
+            "object": "various items"
+        },
+        {
+            "subject": "brick wall",
+            "relationship": "part of",
+            "object": "the setting decor"
+        },
+        {
+            "subject": "hats",
+            "relationship": "hanging from",
+            "object": "the ceiling"
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "scene": "A person is lying on the ground in a park under an umbrella with surrounding trees and a distant building.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Person lying on the ground under an umbrella",
+            "objects": [
+                {
+                    "name": "person",
+                    "attribute": [
+                        "lying down",
+                        "unidentifiable gender due to position",
+                        "partially obscured"
+                    ]
+                },
+                {
+                    "name": "umbrella",
+                    "attribute": [
+                        "black",
+                        "open"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Foreground trees and ground",
+            "objects": [
+                {
+                    "name": "trees",
+                    "attribute": [
+                        "tall",
+                        "varied textures of bark",
+                        "leafy"
+                    ]
+                },
+                {
+                    "name": "ground",
+                    "attribute": [
+                        "covered with leaves",
+                        "uneven surface"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Distant building in the background",
+            "objects": [
+                {
+                    "name": "building",
+                    "attribute": [
+                        "partially visible",
+                        "light-colored"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "person",
+            "relationship": "lying under",
+            "object": "umbrella"
+        },
+        {
+            "subject": "person",
+            "relationship": "next to",
+            "object": "trees"
+        },
+        {
+            "subject": "umbrella",
+            "relationship": "on",
+            "object": "ground"
+        },
+        {
+            "subject": "trees",
+            "relationship": "surrounding",
+            "object": "person"
+        },
+        {
+            "subject": "trees",
+            "relationship": "surrounding",
+            "object": "umbrella"
+        },
+        {
+            "subject": "building",
+            "relationship": "in the distance behind",
+            "object": "trees"
+        },
+        {
+            "subject": "ground",
+            "relationship": "covered by",
+            "object": "leaves"
+        }
+    ]
+}

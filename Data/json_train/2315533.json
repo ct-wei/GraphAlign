@@ -1,0 +1,96 @@
+{
+    "scene": "Street corner with various signs and a toy figure attached to a pole.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Signs posted on a pole at a street corner",
+            "objects": [
+                {
+                    "name": "stop_sign",
+                    "attribute": [
+                        "red",
+                        "octagonal",
+                        "white border",
+                        "STOP text"
+                    ]
+                },
+                {
+                    "name": "street_sign_main_street",
+                    "attribute": [
+                        "green",
+                        "white text",
+                        "rectangular"
+                    ]
+                },
+                {
+                    "name": "street_sign_second_street",
+                    "attribute": [
+                        "green",
+                        "white text",
+                        "rectangular"
+                    ]
+                },
+                {
+                    "name": "village_park_sign",
+                    "attribute": [
+                        "yellow",
+                        "black text",
+                        "arrow pointing right",
+                        "rectangular"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Toy figure attached to the pole",
+            "objects": [
+                {
+                    "name": "toy_figure",
+                    "attribute": [
+                        "colorful",
+                        "illustrated character",
+                        "attached to pole"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "stop_sign",
+            "relationship": "mounted on",
+            "object": "pole"
+        },
+        {
+            "subject": "street_sign_main_street",
+            "relationship": "above",
+            "object": "street_sign_second_street"
+        },
+        {
+            "subject": "street_sign_second_street",
+            "relationship": "above",
+            "object": "stop_sign"
+        },
+        {
+            "subject": "village_park_sign",
+            "relationship": "attached to",
+            "object": "same pole as stop_sign"
+        },
+        {
+            "subject": "toy_figure",
+            "relationship": "attached to",
+            "object": "pole"
+        },
+        {
+            "subject": "stop_sign",
+            "relationship": "at the corner of",
+            "object": "Main St. and Second St."
+        },
+        {
+            "subject": "village_park_sign",
+            "relationship": "indicating direction to",
+            "object": "Village Park"
+        }
+    ]
+}

@@ -1,0 +1,117 @@
+{
+    "scene": "A skier is performing a jump on a ramp in an urban setup, surrounded by spectators.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Skier performing a jump on a ramp",
+            "objects": [
+                {
+                    "name": "skier (male)",
+                    "attribute": [
+                        "wearing ski attire",
+                        "mid-air",
+                        "sports helmet",
+                        "goggles",
+                        "skis",
+                        "yellow and black ski suit"
+                    ]
+                },
+                {
+                    "name": "ski ramp",
+                    "attribute": [
+                        "covered in snow",
+                        "inclined"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Spectators on either side of the ramp",
+            "objects": [
+                {
+                    "name": "spectator group 1",
+                    "attribute": [
+                        "watching",
+                        "standing",
+                        "crowded"
+                    ]
+                },
+                {
+                    "name": "spectator group 2",
+                    "attribute": [
+                        "watching",
+                        "standing",
+                        "crowded"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Urban environment around the skiing event",
+            "objects": [
+                {
+                    "name": "buildings",
+                    "attribute": [
+                        "various colors",
+                        "windows"
+                    ]
+                },
+                {
+                    "name": "street",
+                    "attribute": [
+                        "covered in snow"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "skier (male)",
+            "relationship": "jumping off",
+            "object": "ski ramp"
+        },
+        {
+            "subject": "ski ramp",
+            "relationship": "flanked by",
+            "object": "spectator group 1"
+        },
+        {
+            "subject": "ski ramp",
+            "relationship": "flanked by",
+            "object": "spectator group 2"
+        },
+        {
+            "subject": "spectator group 1",
+            "relationship": "facing",
+            "object": "ski ramp"
+        },
+        {
+            "subject": "spectator group 2",
+            "relationship": "facing",
+            "object": "ski ramp"
+        },
+        {
+            "subject": "buildings",
+            "relationship": "surrounding",
+            "object": "ski event"
+        },
+        {
+            "subject": "street",
+            "relationship": "covered with",
+            "object": "snow"
+        },
+        {
+            "subject": "snow",
+            "relationship": "on",
+            "object": "street"
+        },
+        {
+            "subject": "skier (male)",
+            "relationship": "wearing",
+            "object": "ski attire"
+        }
+    ]
+}

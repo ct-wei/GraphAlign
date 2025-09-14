@@ -1,0 +1,148 @@
+{
+    "scene": "A cozy and homelike bedroom with traditional decor.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "The bed area",
+            "objects": [
+                {
+                    "name": "bed",
+                    "attribute": [
+                        "large",
+                        "wooden headboard"
+                    ]
+                },
+                {
+                    "name": "quilt",
+                    "attribute": [
+                        "patchwork",
+                        "patterns",
+                        "stars"
+                    ]
+                },
+                {
+                    "name": "doll",
+                    "attribute": [
+                        "small",
+                        "placed near pillows"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "The nightstand area",
+            "objects": [
+                {
+                    "name": "nightstand",
+                    "attribute": [
+                        "wooden",
+                        "holding objects"
+                    ]
+                },
+                {
+                    "name": "lamp",
+                    "attribute": [
+                        "classic lampshade"
+                    ]
+                },
+                {
+                    "name": "personal belongings",
+                    "attribute": [
+                        "small items"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "The walls and windows",
+            "objects": [
+                {
+                    "name": "wallpaper",
+                    "attribute": [
+                        "patterned"
+                    ]
+                },
+                {
+                    "name": "window 1",
+                    "attribute": [
+                        "white blinds"
+                    ]
+                },
+                {
+                    "name": "window 2",
+                    "attribute": [
+                        "white blinds"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "The foreground right area",
+            "objects": [
+                {
+                    "name": "papers",
+                    "attribute": [
+                        "stacked"
+                    ]
+                },
+                {
+                    "name": "magazines",
+                    "attribute": [
+                        "looks like",
+                        "possibly newspapers"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "quilt",
+            "relationship": "covering",
+            "object": "bed"
+        },
+        {
+            "subject": "doll",
+            "relationship": "placed on",
+            "object": "bed"
+        },
+        {
+            "subject": "lamp",
+            "relationship": "sitting on",
+            "object": "nightstand"
+        },
+        {
+            "subject": "personal belongings",
+            "relationship": "sitting on",
+            "object": "nightstand"
+        },
+        {
+            "subject": "wallpaper",
+            "relationship": "covering",
+            "object": "wall"
+        },
+        {
+            "subject": "window 1",
+            "relationship": "allowing light into",
+            "object": "bedroom"
+        },
+        {
+            "subject": "window 2",
+            "relationship": "allowing light into",
+            "object": "bedroom"
+        },
+        {
+            "subject": "papers",
+            "relationship": "stacked in",
+            "object": "foreground right area"
+        },
+        {
+            "subject": "magazines",
+            "relationship": "stacked with",
+            "object": "papers"
+        }
+    ]
+}

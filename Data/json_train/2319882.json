@@ -1,0 +1,103 @@
+{
+    "scene": "A boat floating on tranquil water with a smaller boat in the foreground and a lighthouse in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Boat floating on water",
+            "objects": [
+                {
+                    "name": "boat 1",
+                    "attribute": [
+                        "white and blue",
+                        "two masts",
+                        "anchored"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Small boat resting on water",
+            "objects": [
+                {
+                    "name": "boat 2",
+                    "attribute": [
+                        "gray",
+                        "empty",
+                        "dinghy"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Lighthouse with water and sky",
+            "objects": [
+                {
+                    "name": "lighthouse",
+                    "attribute": [
+                        "striped",
+                        "white and red",
+                        "tall structure"
+                    ]
+                },
+                {
+                    "name": "water",
+                    "attribute": [
+                        "calm",
+                        "reflective surface"
+                    ]
+                },
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "clear",
+                        "daytime"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "boat 1",
+            "relationship": "floating on",
+            "object": "water"
+        },
+        {
+            "subject": "boat 2",
+            "relationship": "resting on",
+            "object": "water"
+        },
+        {
+            "subject": "lighthouse",
+            "relationship": "standing behind",
+            "object": "boat 1"
+        },
+        {
+            "subject": "lighthouse",
+            "relationship": "standing behind",
+            "object": "boat 2"
+        },
+        {
+            "subject": "sky",
+            "relationship": "above",
+            "object": "water"
+        },
+        {
+            "subject": "boat 1",
+            "relationship": "in front of",
+            "object": "boat 2"
+        },
+        {
+            "subject": "boat 1",
+            "relationship": "closer to viewer than",
+            "object": "lighthouse"
+        },
+        {
+            "subject": "boat 2",
+            "relationship": "closer to viewer than",
+            "object": "lighthouse"
+        }
+    ]
+}

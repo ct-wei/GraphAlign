@@ -1,0 +1,132 @@
+{
+    "scene": "A variety of vegetables displayed on a tablecloth.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Various types of tomatoes",
+            "objects": [
+                {
+                    "name": "tomato 1",
+                    "attribute": [
+                        "red",
+                        "round"
+                    ]
+                },
+                {
+                    "name": "cherry tomatoes",
+                    "attribute": [
+                        "small",
+                        "red",
+                        "round"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "root vegetables and broccoli",
+            "objects": [
+                {
+                    "name": "carrot 1",
+                    "attribute": [
+                        "long",
+                        "orange"
+                    ]
+                },
+                {
+                    "name": "carrot 2",
+                    "attribute": [
+                        "long",
+                        "orange"
+                    ]
+                },
+                {
+                    "name": "broccoli",
+                    "attribute": [
+                        "green",
+                        "tree-like"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Zucchinis and green beans",
+            "objects": [
+                {
+                    "name": "zucchini 1",
+                    "attribute": [
+                        "long",
+                        "green"
+                    ]
+                },
+                {
+                    "name": "zucchini 2",
+                    "attribute": [
+                        "long",
+                        "green"
+                    ]
+                },
+                {
+                    "name": "green beans",
+                    "attribute": [
+                        "elongated",
+                        "green"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "tomato 1",
+            "relationship": "next to",
+            "object": "cherry tomatoes"
+        },
+        {
+            "subject": "carrot 1",
+            "relationship": "next to",
+            "object": "broccoli"
+        },
+        {
+            "subject": "carrot 2",
+            "relationship": "next to",
+            "object": "broccoli"
+        },
+        {
+            "subject": "zucchini 1",
+            "relationship": "parallel to",
+            "object": "zucchini 2"
+        },
+        {
+            "subject": "zucchini 1",
+            "relationship": "next to",
+            "object": "green beans"
+        },
+        {
+            "subject": "zucchini 2",
+            "relationship": "next to",
+            "object": "green beans"
+        },
+        {
+            "subject": "cherry tomatoes",
+            "relationship": "in front of",
+            "object": "zucchini 1"
+        },
+        {
+            "subject": "cherry tomatoes",
+            "relationship": "in front of",
+            "object": "zucchini 2"
+        },
+        {
+            "subject": "tomato 1",
+            "relationship": "in front of",
+            "object": "carrot 1"
+        },
+        {
+            "subject": "tomato 1",
+            "relationship": "in front of",
+            "object": "carrot 2"
+        }
+    ]
+}

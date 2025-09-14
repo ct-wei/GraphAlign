@@ -1,0 +1,96 @@
+{
+    "scene": "A banana plantation with growing banana trees wrapped in newspaper.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Banana trees with newspapers",
+            "objects": [
+                {
+                    "name": "banana tree 1",
+                    "attribute": [
+                        "green leaves",
+                        "tall"
+                    ]
+                },
+                {
+                    "name": "banana tree 2",
+                    "attribute": [
+                        "green leaves",
+                        "tall"
+                    ]
+                },
+                {
+                    "name": "newspaper on banana tree 1",
+                    "attribute": [
+                        "printed",
+                        "wrapped around"
+                    ]
+                },
+                {
+                    "name": "newspaper on banana tree 2",
+                    "attribute": [
+                        "printed",
+                        "wrapped around"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Soil and ground area",
+            "objects": [
+                {
+                    "name": "soil",
+                    "attribute": [
+                        "dark",
+                        "moist"
+                    ]
+                },
+                {
+                    "name": "sign",
+                    "attribute": [
+                        "wooden",
+                        "rectangular shape"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "banana tree 1",
+            "relationship": "has",
+            "object": "newspaper on banana tree 1"
+        },
+        {
+            "subject": "banana tree 2",
+            "relationship": "has",
+            "object": "newspaper on banana tree 2"
+        },
+        {
+            "subject": "banana tree 1",
+            "relationship": "growing in",
+            "object": "soil"
+        },
+        {
+            "subject": "banana tree 2",
+            "relationship": "growing in",
+            "object": "soil"
+        },
+        {
+            "subject": "soil",
+            "relationship": "supports",
+            "object": "banana tree 1"
+        },
+        {
+            "subject": "soil",
+            "relationship": "supports",
+            "object": "banana tree 2"
+        },
+        {
+            "subject": "sign",
+            "relationship": "placed on",
+            "object": "soil"
+        }
+    ]
+}

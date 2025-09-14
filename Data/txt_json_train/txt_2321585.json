@@ -1,0 +1,108 @@
+{
+    "scene": "A modestly furnished bedroom with a cozy atmosphere.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "The center of the bedroom with a queen-sized bed",
+            "objects": [
+                {
+                    "name": "bed",
+                    "attribute": [
+                        "queen-sized",
+                        "patchwork quilt",
+                        "red",
+                        "blue",
+                        "beige",
+                        "white metal frame",
+                        "simple headboard"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Window area with natural light and curtains",
+            "objects": [
+                {
+                    "name": "window",
+                    "attribute": [
+                        "natural light",
+                        "left side"
+                    ]
+                },
+                {
+                    "name": "curtains",
+                    "attribute": [
+                        "green",
+                        "patterned",
+                        "partially drawn"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "The walls and the garment/towel on furniture",
+            "objects": [
+                {
+                    "name": "walls",
+                    "attribute": [
+                        "purple-painted",
+                        "brick"
+                    ]
+                },
+                {
+                    "name": "garment or towel",
+                    "attribute": [
+                        "dark-colored",
+                        "laid out"
+                    ]
+                },
+                {
+                    "name": "furniture",
+                    "attribute": [
+                        "chair or dresser",
+                        "uncertain"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "bed",
+            "relationship": "covered with",
+            "object": "patchwork quilt"
+        },
+        {
+            "subject": "quilt",
+            "relationship": "has shades of",
+            "object": "red, blue, and beige"
+        },
+        {
+            "subject": "bed",
+            "relationship": "has",
+            "object": "white metal frame"
+        },
+        {
+            "subject": "window",
+            "relationship": "illuminated by",
+            "object": "natural light"
+        },
+        {
+            "subject": "curtains",
+            "relationship": "hanging on",
+            "object": "window"
+        },
+        {
+            "subject": "walls",
+            "relationship": "painted",
+            "object": "purple"
+        },
+        {
+            "subject": "garment or towel",
+            "relationship": "laid out on",
+            "object": "furniture"
+        }
+    ]
+}

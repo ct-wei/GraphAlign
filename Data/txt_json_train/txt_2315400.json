@@ -1,0 +1,219 @@
+{
+    "scene": "An assortment of fresh vegetables laid out on a kitchen towel.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Several zucchinis dominating the center.",
+            "objects": [
+                {
+                    "name": "zucchini 1",
+                    "attribute": [
+                        "long",
+                        "green"
+                    ]
+                },
+                {
+                    "name": "zucchini 2",
+                    "attribute": [
+                        "long",
+                        "green"
+                    ]
+                },
+                {
+                    "name": "zucchini 3",
+                    "attribute": [
+                        "long",
+                        "green"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Cluster of ripe, red tomatoes to the left.",
+            "objects": [
+                {
+                    "name": "tomato 1",
+                    "attribute": [
+                        "ripe",
+                        "red"
+                    ]
+                },
+                {
+                    "name": "tomato 2",
+                    "attribute": [
+                        "ripe",
+                        "red"
+                    ]
+                },
+                {
+                    "name": "tomato 3",
+                    "attribute": [
+                        "ripe",
+                        "red"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Carrots with green tops above the tomatoes.",
+            "objects": [
+                {
+                    "name": "carrot 1",
+                    "attribute": [
+                        "orange",
+                        "green tops"
+                    ]
+                },
+                {
+                    "name": "carrot 2",
+                    "attribute": [
+                        "orange",
+                        "green tops"
+                    ]
+                },
+                {
+                    "name": "carrot 3",
+                    "attribute": [
+                        "orange",
+                        "green tops"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Broccoli head to the right of the carrots.",
+            "objects": [
+                {
+                    "name": "broccoli",
+                    "attribute": [
+                        "green florets"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region5",
+            "description": "Green chili peppers and Roma tomatoes below the broccoli.",
+            "objects": [
+                {
+                    "name": "chili pepper 1",
+                    "attribute": [
+                        "green"
+                    ]
+                },
+                {
+                    "name": "chili pepper 2",
+                    "attribute": [
+                        "green"
+                    ]
+                },
+                {
+                    "name": "Roma tomato 1",
+                    "attribute": [
+                        "small",
+                        "oval-shaped"
+                    ]
+                },
+                {
+                    "name": "Roma tomato 2",
+                    "attribute": [
+                        "small",
+                        "oval-shaped"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region6",
+            "description": "Kitchen towel with a plaid pattern.",
+            "objects": [
+                {
+                    "name": "kitchen towel",
+                    "attribute": [
+                        "plaid pattern"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "zucchini 1",
+            "relationship": "next to",
+            "object": "zucchini 2"
+        },
+        {
+            "subject": "zucchini 2",
+            "relationship": "next to",
+            "object": "zucchini 3"
+        },
+        {
+            "subject": "zucchini 3",
+            "relationship": "center of",
+            "object": "scene"
+        },
+        {
+            "subject": "tomato 1",
+            "relationship": "next to",
+            "object": "tomato 2"
+        },
+        {
+            "subject": "tomato 2",
+            "relationship": "next to",
+            "object": "tomato 3"
+        },
+        {
+            "subject": "tomato 3",
+            "relationship": "left of",
+            "object": "zucchinis"
+        },
+        {
+            "subject": "carrot 1",
+            "relationship": "next to",
+            "object": "carrot 2"
+        },
+        {
+            "subject": "carrot 2",
+            "relationship": "next to",
+            "object": "carrot 3"
+        },
+        {
+            "subject": "carrot 3",
+            "relationship": "above",
+            "object": "tomatoes"
+        },
+        {
+            "subject": "broccoli",
+            "relationship": "right of",
+            "object": "carrots"
+        },
+        {
+            "subject": "chili pepper 1",
+            "relationship": "next to",
+            "object": "chili pepper 2"
+        },
+        {
+            "subject": "chili pepper 2",
+            "relationship": "below",
+            "object": "broccoli"
+        },
+        {
+            "subject": "Roma tomato 1",
+            "relationship": "next to",
+            "object": "Roma tomato 2"
+        },
+        {
+            "subject": "Roma tomato 2",
+            "relationship": "next to",
+            "object": "chili peppers"
+        },
+        {
+            "subject": "kitchen towel",
+            "relationship": "underneath",
+            "object": "vegetables"
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "scene": "A busy train station platform with people waiting and trains arriving.",
+    "regions": [
+        {
+            "region_name": "platform",
+            "description": "People waiting on the train station platform",
+            "objects": [
+                {
+                    "name": "person 1 (male)",
+                    "attribute": [
+                        "standing",
+                        "white shirt",
+                        "black pants"
+                    ]
+                },
+                {
+                    "name": "person 2 (female)",
+                    "attribute": [
+                        "walking",
+                        "colorful clothing"
+                    ]
+                },
+                {
+                    "name": "person 3 (male)",
+                    "attribute": [
+                        "walking",
+                        "casual attire"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "tracks",
+            "description": "Train tracks with an arriving train",
+            "objects": [
+                {
+                    "name": "train 1",
+                    "attribute": [
+                        "white",
+                        "multiple compartments"
+                    ]
+                },
+                {
+                    "name": "train 2",
+                    "attribute": [
+                        "not visible",
+                        "implied presence"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "person 1 (male)",
+            "relationship": "standing on",
+            "object": "platform"
+        },
+        {
+            "subject": "person 2 (female)",
+            "relationship": "walking on",
+            "object": "platform"
+        },
+        {
+            "subject": "person 3 (male)",
+            "relationship": "walking on",
+            "object": "platform"
+        },
+        {
+            "subject": "train 1",
+            "relationship": "arriving on",
+            "object": "tracks"
+        },
+        {
+            "subject": "train 2",
+            "relationship": "expected on",
+            "object": "tracks"
+        },
+        {
+            "subject": "people",
+            "relationship": "waiting for",
+            "object": "train 1"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "scene": "Two individuals in wetsuits participate in an outdoor cave diving training with specialized gear.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Individual preparing gear",
+            "objects": [
+                {
+                    "name": "Individual 1 (male)",
+                    "attribute": [
+                        "wearing wetsuit",
+                        "wearing gloves",
+                        "wearing helmet",
+                        "managing rope"
+                    ]
+                },
+                {
+                    "name": "rope",
+                    "attribute": [
+                        "used for descent or safety"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Individual descending into cave",
+            "objects": [
+                {
+                    "name": "Individual 2 (male)",
+                    "attribute": [
+                        "wearing wetsuit",
+                        "wearing helmet",
+                        "wearing fins",
+                        "suspended by ropes",
+                        "descending into opening"
+                    ]
+                },
+                {
+                    "name": "cave entrance",
+                    "attribute": [
+                        "narrow opening",
+                        "in the ground"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Surrounding environment",
+            "objects": [
+                {
+                    "name": "terrain",
+                    "attribute": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "overcast"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Individual 1 (male)",
+            "relationship": "managing",
+            "object": "rope"
+        },
+        {
+            "subject": "Individual 2 (male)",
+            "relationship": "suspended by",
+            "object": "rope"
+        },
+        {
+            "subject": "Individual 2 (male)",
+            "relationship": "descending into",
+            "object": "cave entrance"
+        },
+        {
+            "subject": "cave entrance",
+            "relationship": "located in",
+            "object": "terrain"
+        },
+        {
+            "subject": "terrain",
+            "relationship": "under",
+            "object": "sky"
+        },
+        {
+            "subject": "Individual 1 (male)",
+            "relationship": "standing on",
+            "object": "terrain"
+        },
+        {
+            "subject": "Individual 2 (male)",
+            "relationship": "above",
+            "object": "cave entrance"
+        },
+        {
+            "subject": "Individual 2 (male)",
+            "relationship": "using",
+            "object": "breathing apparatus"
+        },
+        {
+            "subject": "Individual 1 (male)",
+            "relationship": "using",
+            "object": "breathing apparatus"
+        }
+    ]
+}

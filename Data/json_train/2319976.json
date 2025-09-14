@@ -1,0 +1,96 @@
+{
+    "scene": "A variety of objects on a kitchen counter including a bottle of soda, a measuring cup set, and other miscellaneous items.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "The center of the counter with items on display.",
+            "objects": [
+                {
+                    "name": "soda bottle",
+                    "attribute": [
+                        "orange",
+                        "plastic",
+                        "carbonated drink",
+                        "labeled"
+                    ]
+                },
+                {
+                    "name": "measuring cup set",
+                    "attribute": [
+                        "blue",
+                        "plastic",
+                        "stacked",
+                        "kitchen utensils"
+                    ]
+                },
+                {
+                    "name": "brown bowl",
+                    "attribute": [
+                        "ceramic",
+                        "rounded",
+                        "empty"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Background area with various other items.",
+            "objects": [
+                {
+                    "name": "cutting board",
+                    "attribute": [
+                        "wooden",
+                        "rounded edge"
+                    ]
+                },
+                {
+                    "name": "spice jars",
+                    "attribute": [
+                        "small",
+                        "variety of colors"
+                    ]
+                },
+                {
+                    "name": "clock",
+                    "attribute": [
+                        "red",
+                        "wall-mounted"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "soda bottle",
+            "relationship": "placed on",
+            "object": "cutting board"
+        },
+        {
+            "subject": "measuring cup set",
+            "relationship": "standing next to",
+            "object": "soda bottle"
+        },
+        {
+            "subject": "measuring cup set",
+            "relationship": "positioned to the right of",
+            "object": "brown bowl"
+        },
+        {
+            "subject": "brown bowl",
+            "relationship": "located in front of",
+            "object": "spice jars"
+        },
+        {
+            "subject": "spice jars",
+            "relationship": "adjacent to",
+            "object": "clock"
+        },
+        {
+            "subject": "cutting board",
+            "relationship": "resting under",
+            "object": "soda bottle"
+        }
+    ]
+}

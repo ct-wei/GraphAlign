@@ -1,0 +1,87 @@
+{
+    "scene": "A giraffe feeding from a person's hand at a zoo.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Giraffe being fed by a person",
+            "objects": [
+                {
+                    "name": "giraffe",
+                    "attribute": [
+                        "long neck",
+                        "spotted pattern",
+                        "brown and white colors",
+                        "visible tongue"
+                    ]
+                },
+                {
+                    "name": "person's hand",
+                    "attribute": [
+                        "human",
+                        "visible fingers",
+                        "feeding giraffe"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Zoo environment",
+            "objects": [
+                {
+                    "name": "wooden railing",
+                    "attribute": [
+                        "brown",
+                        "horizontal"
+                    ]
+                },
+                {
+                    "name": "background foliage",
+                    "attribute": [
+                        "green",
+                        "trees"
+                    ]
+                },
+                {
+                    "name": "distant giraffe",
+                    "attribute": [
+                        "partially visible",
+                        "spotted pattern"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "giraffe",
+            "relationship": "eating from",
+            "object": "person's hand"
+        },
+        {
+            "subject": "person's hand",
+            "relationship": "belongs to",
+            "object": "unseen person"
+        },
+        {
+            "subject": "giraffe",
+            "relationship": "standing by",
+            "object": "wooden railing"
+        },
+        {
+            "subject": "wooden railing",
+            "relationship": "in front of",
+            "object": "background foliage"
+        },
+        {
+            "subject": "distant giraffe",
+            "relationship": "behind",
+            "object": "feeding giraffe"
+        },
+        {
+            "subject": "distant giraffe",
+            "relationship": "part of",
+            "object": "zoo environment"
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "scene": "A close-up of a pasta salad with various vegetables and beans.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Close-up on pasta and beans",
+            "objects": [
+                {
+                    "name": "pasta",
+                    "attribute": [
+                        "yellow",
+                        "spiral-shaped"
+                    ]
+                },
+                {
+                    "name": "beans",
+                    "attribute": [
+                        "cooked",
+                        "lima beans",
+                        "green"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Various vegetables in the salad",
+            "objects": [
+                {
+                    "name": "carrot",
+                    "attribute": [
+                        "chopped",
+                        "orange"
+                    ]
+                },
+                {
+                    "name": "broccoli",
+                    "attribute": [
+                        "green",
+                        "florets"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "pasta",
+            "relationship": "mixed with",
+            "object": "beans"
+        },
+        {
+            "subject": "beans",
+            "relationship": "adjacent to",
+            "object": "carrot"
+        },
+        {
+            "subject": "carrot",
+            "relationship": "next to",
+            "object": "broccoli"
+        },
+        {
+            "subject": "broccoli",
+            "relationship": "part of",
+            "object": "salad"
+        },
+        {
+            "subject": "pasta",
+            "relationship": "part of",
+            "object": "salad"
+        },
+        {
+            "subject": "beans",
+            "relationship": "part of",
+            "object": "salad"
+        }
+    ]
+}

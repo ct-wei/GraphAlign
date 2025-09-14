@@ -1,0 +1,133 @@
+{
+    "scene": "A person reading at the bar counter with various items and a TV screen in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Person sitting at the bar",
+            "objects": [
+                {
+                    "name": "Person",
+                    "attribute": [
+                        "sitting",
+                        "reading",
+                        "casually dressed"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Bar counter with items",
+            "objects": [
+                {
+                    "name": "Bar counter",
+                    "attribute": [
+                        "wooden"
+                    ]
+                },
+                {
+                    "name": "Beer taps",
+                    "attribute": [
+                        "white",
+                        "prominent"
+                    ]
+                },
+                {
+                    "name": "Glasses",
+                    "attribute": [
+                        "clear",
+                        "empty"
+                    ]
+                },
+                {
+                    "name": "Bottles",
+                    "attribute": [
+                        "various colors",
+                        "labeled"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background with a TV screen",
+            "objects": [
+                {
+                    "name": "TV screen",
+                    "attribute": [
+                        "on",
+                        "showing a video"
+                    ]
+                },
+                {
+                    "name": "Wall shelf",
+                    "attribute": [
+                        "wooden",
+                        "with items"
+                    ]
+                },
+                {
+                    "name": "Cans",
+                    "attribute": [
+                        "metallic",
+                        "cylindrical"
+                    ]
+                },
+                {
+                    "name": "Signs",
+                    "attribute": [
+                        "various sizes",
+                        "decorative"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Person",
+            "relationship": "sitting at",
+            "object": "Bar counter"
+        },
+        {
+            "subject": "Person",
+            "relationship": "facing",
+            "object": "Bottles"
+        },
+        {
+            "subject": "Glasses",
+            "relationship": "on",
+            "object": "Bar counter"
+        },
+        {
+            "subject": "Beer taps",
+            "relationship": "mounted on",
+            "object": "Bar counter"
+        },
+        {
+            "subject": "Bottles",
+            "relationship": "behind",
+            "object": "Glasses"
+        },
+        {
+            "subject": "TV screen",
+            "relationship": "mounted on",
+            "object": "Wall"
+        },
+        {
+            "subject": "Cans",
+            "relationship": "placed on",
+            "object": "Wall shelf"
+        },
+        {
+            "subject": "Signs",
+            "relationship": "hanging on",
+            "object": "Wall"
+        },
+        {
+            "subject": "Person",
+            "relationship": "under",
+            "object": "TV screen"
+        }
+    ]
+}

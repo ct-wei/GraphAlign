@@ -1,0 +1,108 @@
+{
+    "scene": "A vintage steam locomotive arriving at a station platform with passengers waiting.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "A vintage steam locomotive on the tracks",
+            "objects": [
+                {
+                    "name": "steam locomotive",
+                    "attribute": [
+                        "vintage",
+                        "black",
+                        "emitting steam",
+                        "number 75069"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Passengers waiting on the platform",
+            "objects": [
+                {
+                    "name": "male passenger 1",
+                    "attribute": [
+                        "standing",
+                        "wearing clothes"
+                    ]
+                },
+                {
+                    "name": "female passenger 1",
+                    "attribute": [
+                        "standing",
+                        "wearing clothes"
+                    ]
+                },
+                {
+                    "name": "platform",
+                    "attribute": [
+                        "paved"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "The station with various details",
+            "objects": [
+                {
+                    "name": "station building",
+                    "attribute": [
+                        "red color elements",
+                        "sheltering"
+                    ]
+                },
+                {
+                    "name": "platform bench",
+                    "attribute": [
+                        "wooden",
+                        "seating"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "steam locomotive",
+            "relationship": "arriving at",
+            "object": "platform"
+        },
+        {
+            "subject": "male passenger 1",
+            "relationship": "standing on",
+            "object": "platform"
+        },
+        {
+            "subject": "female passenger 1",
+            "relationship": "standing on",
+            "object": "platform"
+        },
+        {
+            "subject": "passengers",
+            "relationship": "waiting for",
+            "object": "steam locomotive"
+        },
+        {
+            "subject": "platform bench",
+            "relationship": "placed on",
+            "object": "platform"
+        },
+        {
+            "subject": "passengers",
+            "relationship": "facing",
+            "object": "steam locomotive"
+        },
+        {
+            "subject": "station building",
+            "relationship": "adjacent to",
+            "object": "platform"
+        },
+        {
+            "subject": "steam locomotive",
+            "relationship": "emitting",
+            "object": "steam"
+        }
+    ]
+}

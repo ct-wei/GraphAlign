@@ -1,0 +1,100 @@
+{
+    "scene": "A bathroom interior with a toilet, a shower curtain, and a wooden cabinet.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Toilet area with accessories",
+            "objects": [
+                {
+                    "name": "toilet",
+                    "attribute": [
+                        "white",
+                        "ceramic",
+                        "wooden seat cover"
+                    ]
+                },
+                {
+                    "name": "toilet tissue box",
+                    "attribute": [
+                        "decorative",
+                        "on toilet tank"
+                    ]
+                },
+                {
+                    "name": "magazine rack",
+                    "attribute": [
+                        "wooden",
+                        "filled with magazines"
+                    ]
+                },
+                {
+                    "name": "towel",
+                    "attribute": [
+                        "hanging",
+                        "multi-colored"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Shower area with curtain",
+            "objects": [
+                {
+                    "name": "shower curtain",
+                    "attribute": [
+                        "camouflage pattern",
+                        "hanging"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Sink and cabinet area",
+            "objects": [
+                {
+                    "name": "wooden cabinet",
+                    "attribute": [
+                        "brown",
+                        "with drawers"
+                    ]
+                },
+                {
+                    "name": "sink",
+                    "attribute": [
+                        "white",
+                        "ceramic"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "toilet tissue box",
+            "relationship": "is on",
+            "object": "toilet"
+        },
+        {
+            "subject": "magazine rack",
+            "relationship": "is next to",
+            "object": "toilet"
+        },
+        {
+            "subject": "towel",
+            "relationship": "is hanging next to",
+            "object": "sink"
+        },
+        {
+            "subject": "shower curtain",
+            "relationship": "is part of",
+            "object": "shower area"
+        },
+        {
+            "subject": "wooden cabinet",
+            "relationship": "is next to",
+            "object": "sink"
+        }
+    ]
+}

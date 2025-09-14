@@ -1,0 +1,66 @@
+{
+    "scene": "A cat is sniffing a shoe on a wooden floor.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Cat sniffing a shoe",
+            "objects": [
+                {
+                    "name": "cat",
+                    "attribute": [
+                        "tortoiseshell pattern",
+                        "curled tail",
+                        "attentive posture"
+                    ]
+                },
+                {
+                    "name": "shoe 1",
+                    "attribute": [
+                        "black",
+                        "sports style"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Wooden floor with a pair of shoes",
+            "objects": [
+                {
+                    "name": "floor",
+                    "attribute": [
+                        "wooden"
+                    ]
+                },
+                {
+                    "name": "shoe 2",
+                    "attribute": [
+                        "matching with shoe 1"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "cat",
+            "relationship": "sniffing",
+            "object": "shoe 1"
+        },
+        {
+            "subject": "cat",
+            "relationship": "standing on",
+            "object": "floor"
+        },
+        {
+            "subject": "shoe 1",
+            "relationship": "next to",
+            "object": "shoe 2"
+        },
+        {
+            "subject": "shoe 1 and shoe 2",
+            "relationship": "on",
+            "object": "floor"
+        }
+    ]
+}

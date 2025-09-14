@@ -1,0 +1,117 @@
+{
+    "scene": "A bedroom with various personal items and wall decorations.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Bed with a quilt and pillows",
+            "objects": [
+                {
+                    "name": "bed",
+                    "attribute": [
+                        "unmade",
+                        "patterned quilt",
+                        "pillows"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Wooden dresser with items on top",
+            "objects": [
+                {
+                    "name": "dresser",
+                    "attribute": [
+                        "wooden"
+                    ]
+                },
+                {
+                    "name": "telephone",
+                    "attribute": [
+                        "corded",
+                        "black"
+                    ]
+                },
+                {
+                    "name": "miscellaneous items",
+                    "attribute": [
+                        "various small items"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Wall decorated with various posters and pictures",
+            "objects": [
+                {
+                    "name": "posters",
+                    "attribute": [
+                        "various sizes",
+                        "framed and unframed"
+                    ]
+                },
+                {
+                    "name": "pictures",
+                    "attribute": [
+                        "framed"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Backpack on the bed",
+            "objects": [
+                {
+                    "name": "backpack",
+                    "attribute": [
+                        "black"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "bed",
+            "relationship": "covered with",
+            "object": "quilt"
+        },
+        {
+            "subject": "quilt",
+            "relationship": "has",
+            "object": "pillows"
+        },
+        {
+            "subject": "dresser",
+            "relationship": "supports",
+            "object": "telephone"
+        },
+        {
+            "subject": "dresser",
+            "relationship": "has on top",
+            "object": "miscellaneous items"
+        },
+        {
+            "subject": "wall",
+            "relationship": "decorated with",
+            "object": "posters"
+        },
+        {
+            "subject": "wall",
+            "relationship": "decorated with",
+            "object": "pictures"
+        },
+        {
+            "subject": "bed",
+            "relationship": "has on top",
+            "object": "backpack"
+        },
+        {
+            "subject": "backpack",
+            "relationship": "resting on",
+            "object": "bed"
+        }
+    ]
+}

@@ -1,0 +1,129 @@
+{
+    "scene": "A collection of hairstyling tools arranged on a wooden background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Hairstyling tools hanging on a wooden surface",
+            "objects": [
+                {
+                    "name": "scissor 1",
+                    "attribute": [
+                        "metal",
+                        "sharp",
+                        "silver"
+                    ]
+                },
+                {
+                    "name": "scissor 2",
+                    "attribute": [
+                        "metal",
+                        "sharp",
+                        "silver"
+                    ]
+                },
+                {
+                    "name": "scissor 3",
+                    "attribute": [
+                        "metal",
+                        "sharp",
+                        "silver"
+                    ]
+                },
+                {
+                    "name": "comb",
+                    "attribute": [
+                        "plastic",
+                        "blue",
+                        "fine-toothed"
+                    ]
+                },
+                {
+                    "name": "watch",
+                    "attribute": [
+                        "wristwatch",
+                        "black strap",
+                        "round face"
+                    ]
+                },
+                {
+                    "name": "clipper",
+                    "attribute": [
+                        "metal",
+                        "black handle",
+                        "adjustable blade"
+                    ]
+                },
+                {
+                    "name": "razor",
+                    "attribute": [
+                        "metal",
+                        "foldable"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Wooden surface and wall",
+            "objects": [
+                {
+                    "name": "wooden background",
+                    "attribute": [
+                        "wood grain",
+                        "varnished",
+                        "streaked with paint"
+                    ]
+                },
+                {
+                    "name": "wooden shelf",
+                    "attribute": [
+                        "brown",
+                        "rectangular"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "scissor 1",
+            "relationship": "hanging on",
+            "object": "wooden background"
+        },
+        {
+            "subject": "scissor 2",
+            "relationship": "hanging on",
+            "object": "wooden background"
+        },
+        {
+            "subject": "scissor 3",
+            "relationship": "hanging on",
+            "object": "wooden background"
+        },
+        {
+            "subject": "comb",
+            "relationship": "hanging on",
+            "object": "wooden background"
+        },
+        {
+            "subject": "watch",
+            "relationship": "hanging on",
+            "object": "wooden background"
+        },
+        {
+            "subject": "clipper",
+            "relationship": "hanging on",
+            "object": "wooden background"
+        },
+        {
+            "subject": "razor",
+            "relationship": "hanging on",
+            "object": "wooden background"
+        },
+        {
+            "subject": "wooden shelf",
+            "relationship": "attached to",
+            "object": "wooden background"
+        }
+    ]
+}

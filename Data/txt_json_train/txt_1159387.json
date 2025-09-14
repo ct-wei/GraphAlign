@@ -1,0 +1,120 @@
+{
+    "scene": "A skateboarder performing a trick over another skateboard in an outdoor urban environment with a clear blue sky.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "The skateboarder performing a trick",
+            "objects": [
+                {
+                    "name": "Skateboarder",
+                    "attribute": [
+                        "male",
+                        "mid-air",
+                        "jumping",
+                        "feet above the board",
+                        "hands outstretched",
+                        "maintain balance"
+                    ]
+                },
+                {
+                    "name": "Skateboard vertical",
+                    "attribute": [
+                        "vertical on the ground"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Outdoor setting with clear blue sky",
+            "objects": [
+                {
+                    "name": "Clear blue sky",
+                    "attribute": [
+                        "clear",
+                        "blue"
+                    ]
+                },
+                {
+                    "name": "Spacious plaza",
+                    "attribute": [
+                        "outdoor",
+                        "spacious"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background with parked cars and modern lampposts",
+            "objects": [
+                {
+                    "name": "Parked cars",
+                    "attribute": [
+                        "various colours",
+                        "stationary"
+                    ]
+                },
+                {
+                    "name": "Modern lampposts",
+                    "attribute": [
+                        "contemporary",
+                        "tall"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Skateboarder",
+            "relationship": "performing a trick over",
+            "object": "Skateboard vertical"
+        },
+        {
+            "subject": "Skateboarder",
+            "relationship": "is in",
+            "object": "Spacious plaza"
+        },
+        {
+            "subject": "Spacious plaza",
+            "relationship": "has",
+            "object": "Parked cars"
+        },
+        {
+            "subject": "Spacious plaza",
+            "relationship": "has",
+            "object": "Modern lampposts"
+        },
+        {
+            "subject": "Modern lampposts",
+            "relationship": "in",
+            "object": "region3"
+        },
+        {
+            "subject": "Parked cars",
+            "relationship": "in",
+            "object": "region3"
+        },
+        {
+            "subject": "Skateboard vertical",
+            "relationship": "placed on",
+            "object": "ground"
+        },
+        {
+            "subject": "Skateboarder",
+            "relationship": "is under",
+            "object": "Clear blue sky"
+        },
+        {
+            "subject": "Skateboard vertical",
+            "relationship": "is under",
+            "object": "Clear blue sky"
+        },
+        {
+            "subject": "Parked cars",
+            "relationship": "are under",
+            "object": "Clear blue sky"
+        }
+    ]
+}

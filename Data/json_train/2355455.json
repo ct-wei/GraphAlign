@@ -1,0 +1,61 @@
+{
+    "scene": "A baseball player standing on the field wearing a red Braves uniform with a bat.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Baseball player standing on the field",
+            "objects": [
+                {
+                    "name": "player (male)",
+                    "attribute": [
+                        "focused",
+                        "wearing cap",
+                        "wearing red Braves uniform",
+                        "holding bat",
+                        "wearing gloves"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Baseball field",
+            "objects": [
+                {
+                    "name": "field",
+                    "attribute": [
+                        "grass",
+                        "outdoor"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "player (male)",
+            "relationship": "wearing",
+            "object": "Braves uniform"
+        },
+        {
+            "subject": "player (male)",
+            "relationship": "holding",
+            "object": "bat"
+        },
+        {
+            "subject": "player (male)",
+            "relationship": "standing on",
+            "object": "field"
+        },
+        {
+            "subject": "Braves uniform",
+            "relationship": "is",
+            "object": "red"
+        },
+        {
+            "subject": "field",
+            "relationship": "has",
+            "object": "grass"
+        }
+    ]
+}

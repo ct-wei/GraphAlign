@@ -1,0 +1,111 @@
+{
+    "scene": "A man standing in a cozy living room with a TV and children's toys, suggesting a family home.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Man standing and smiling at the camera",
+            "objects": [
+                {
+                    "name": "man (male)",
+                    "attribute": [
+                        "wearing glasses",
+                        "black T-shirt with a red logo",
+                        "blue jeans",
+                        "hands clasped together"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Living room setup",
+            "objects": [
+                {
+                    "name": "sofa",
+                    "attribute": [
+                        "beige"
+                    ]
+                },
+                {
+                    "name": "TV",
+                    "attribute": [
+                        "large",
+                        "displaying a colorful scene"
+                    ]
+                },
+                {
+                    "name": "children's toys",
+                    "attribute": [
+                        "various"
+                    ]
+                },
+                {
+                    "name": "area rug",
+                    "attribute": [
+                        "large",
+                        "red"
+                    ]
+                },
+                {
+                    "name": "hardwood flooring",
+                    "attribute": []
+                },
+                {
+                    "name": "wall",
+                    "attribute": [
+                        "painted",
+                        "warm neutral color",
+                        "adorned with framed pictures or artwork"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "man (male)",
+            "relationship": "standing on",
+            "object": "area rug"
+        },
+        {
+            "subject": "man (male)",
+            "relationship": "in front of",
+            "object": "TV"
+        },
+        {
+            "subject": "man (male)",
+            "relationship": "next to",
+            "object": "sofa"
+        },
+        {
+            "subject": "sofa",
+            "relationship": "on",
+            "object": "area rug"
+        },
+        {
+            "subject": "TV",
+            "relationship": "in front of",
+            "object": "wall"
+        },
+        {
+            "subject": "children's toys",
+            "relationship": "on",
+            "object": "hardwood flooring"
+        },
+        {
+            "subject": "children's toys",
+            "relationship": "in front of",
+            "object": "sofa"
+        },
+        {
+            "subject": "area rug",
+            "relationship": "on",
+            "object": "hardwood flooring"
+        },
+        {
+            "subject": "wall",
+            "relationship": "behind",
+            "object": "sofa"
+        }
+    ]
+}

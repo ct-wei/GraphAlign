@@ -1,0 +1,83 @@
+{
+    "scene": "A deteriorated old toilet in a neglected bathroom setting.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "The toilet area",
+            "objects": [
+                {
+                    "name": "toilet",
+                    "attribute": [
+                        "white",
+                        "ceramic",
+                        "dirty",
+                        "old",
+                        "stained"
+                    ]
+                },
+                {
+                    "name": "flush tank",
+                    "attribute": [
+                        "blue",
+                        "metal",
+                        "rusty",
+                        "attached to toilet"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "The wall and floor surrounding the toilet",
+            "objects": [
+                {
+                    "name": "wall",
+                    "attribute": [
+                        "painted",
+                        "dirty",
+                        "deteriorating"
+                    ]
+                },
+                {
+                    "name": "floor",
+                    "attribute": [
+                        "concrete",
+                        "dirty"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "toilet",
+            "relationship": "attached to",
+            "object": "flush tank"
+        },
+        {
+            "subject": "toilet",
+            "relationship": "in front of",
+            "object": "wall"
+        },
+        {
+            "subject": "toilet",
+            "relationship": "standing on",
+            "object": "floor"
+        },
+        {
+            "subject": "flush tank",
+            "relationship": "above",
+            "object": "toilet"
+        },
+        {
+            "subject": "wall",
+            "relationship": "behind",
+            "object": "toilet"
+        },
+        {
+            "subject": "floor",
+            "relationship": "below",
+            "object": "toilet"
+        }
+    ]
+}

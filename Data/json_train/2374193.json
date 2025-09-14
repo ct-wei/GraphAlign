@@ -1,0 +1,90 @@
+{
+    "scene": "A male and a female surfer are standing on a wooden pier, with bystanders in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Male surfer standing with a surfboard",
+            "objects": [
+                {
+                    "name": "male surfer 1",
+                    "attribute": [
+                        "wet",
+                        "white surfboard",
+                        "black wetsuit",
+                        "holding surfboard"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Female surfer standing, holding a wetsuit",
+            "objects": [
+                {
+                    "name": "female surfer 1",
+                    "attribute": [
+                        "black and white swimsuit",
+                        "holding black wetsuit"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Bystanders in the background",
+            "objects": [
+                {
+                    "name": "bystander 1",
+                    "attribute": [
+                        "black clothing"
+                    ]
+                },
+                {
+                    "name": "bystander 2",
+                    "attribute": [
+                        "observing"
+                    ]
+                },
+                {
+                    "name": "wooden pier",
+                    "attribute": [
+                        "gray",
+                        "wooden"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "male surfer 1",
+            "relationship": "standing next to",
+            "object": "female surfer 1"
+        },
+        {
+            "subject": "male surfer 1",
+            "relationship": "holding",
+            "object": "white surfboard"
+        },
+        {
+            "subject": "female surfer 1",
+            "relationship": "holding",
+            "object": "black wetsuit"
+        },
+        {
+            "subject": "bystander 1",
+            "relationship": "standing on",
+            "object": "wooden pier"
+        },
+        {
+            "subject": "bystander 2",
+            "relationship": "standing on",
+            "object": "wooden pier"
+        },
+        {
+            "subject": "bystander 1",
+            "relationship": "looking at",
+            "object": "male surfer 1"
+        }
+    ]
+}

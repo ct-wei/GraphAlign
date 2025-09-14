@@ -1,0 +1,114 @@
+{
+    "scene": "A street corner with multiple signs and a whimsical figure cutout on a cloudy day.",
+    "regions": [
+        {
+            "region_name": "Intersection",
+            "description": "The intersection of Main Street and Second Street",
+            "objects": [
+                {
+                    "name": "Main St sign",
+                    "attribute": [
+                        "green",
+                        "top position"
+                    ]
+                },
+                {
+                    "name": "Second St sign",
+                    "attribute": [
+                        "green",
+                        "top position"
+                    ]
+                },
+                {
+                    "name": "Stop sign",
+                    "attribute": [
+                        "red",
+                        "adjacent to Village Park sign"
+                    ]
+                },
+                {
+                    "name": "Village Park sign",
+                    "attribute": [
+                        "directional",
+                        "with arrow pointing right"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "Utility Pole",
+            "description": "A utility pole with a colorful figure cutout",
+            "objects": [
+                {
+                    "name": "Figure cutout",
+                    "attribute": [
+                        "colorful",
+                        "yellow top",
+                        "blue pants",
+                        "wearing a cap"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "Sky",
+            "description": "The sky is overcast",
+            "objects": [
+                {
+                    "name": "Sky",
+                    "attribute": [
+                        "overcast",
+                        "cloudy"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Main St sign",
+            "relationship": "attached to",
+            "object": "Intersection"
+        },
+        {
+            "subject": "Second St sign",
+            "relationship": "attached to",
+            "object": "Intersection"
+        },
+        {
+            "subject": "Stop sign",
+            "relationship": "located below",
+            "object": "Main St sign and Second St sign"
+        },
+        {
+            "subject": "Village Park sign",
+            "relationship": "adjacent to",
+            "object": "Stop sign"
+        },
+        {
+            "subject": "Figure cutout",
+            "relationship": "affixed to",
+            "object": "Utility Pole"
+        },
+        {
+            "subject": "Intersection",
+            "relationship": "located below",
+            "object": "Sky"
+        },
+        {
+            "subject": "Utility Pole",
+            "relationship": "located at",
+            "object": "Intersection"
+        },
+        {
+            "subject": "Village Park sign",
+            "relationship": "pointing direction to",
+            "object": "Village Park"
+        },
+        {
+            "subject": "Sky",
+            "relationship": "setting for",
+            "object": "Intersection and Utility Pole"
+        }
+    ]
+}

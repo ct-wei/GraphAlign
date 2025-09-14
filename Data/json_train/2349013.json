@@ -1,0 +1,134 @@
+{
+    "scene": "A baseball game with a batter ready to hit, a catcher in position, and an umpire standing behind.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Batter ready to hit",
+            "objects": [
+                {
+                    "name": "batter (male)",
+                    "attribute": [
+                        "wearing white uniform",
+                        "holding bat",
+                        "concentrated",
+                        "number 10 on jersey",
+                        "wearing helmet",
+                        "standing"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Catcher in position",
+            "objects": [
+                {
+                    "name": "catcher (male)",
+                    "attribute": [
+                        "wearing dark uniform",
+                        "crouching",
+                        "wearing catcher's gear",
+                        "ready to catch"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Umpire standing behind",
+            "objects": [
+                {
+                    "name": "umpire (male)",
+                    "attribute": [
+                        "standing",
+                        "wearing protective gear",
+                        "watching the play"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Onlookers and players in the dugout",
+            "objects": [
+                {
+                    "name": "onlookers",
+                    "attribute": [
+                        "seated",
+                        "various clothing",
+                        "watching game"
+                    ]
+                },
+                {
+                    "name": "players in dugout",
+                    "attribute": [
+                        "wearing uniform",
+                        "sitting",
+                        "waiting"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region5",
+            "description": "Baseball field",
+            "objects": [
+                {
+                    "name": "field",
+                    "attribute": [
+                        "dirt",
+                        "grass",
+                        "playing area"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "batter (male)",
+            "relationship": "holding",
+            "object": "bat"
+        },
+        {
+            "subject": "batter (male)",
+            "relationship": "facing",
+            "object": "catcher (male)"
+        },
+        {
+            "subject": "catcher (male)",
+            "relationship": "crouching behind",
+            "object": "batter (male)"
+        },
+        {
+            "subject": "umpire (male)",
+            "relationship": "standing behind",
+            "object": "catcher (male)"
+        },
+        {
+            "subject": "onlookers",
+            "relationship": "watching",
+            "object": "batter (male)"
+        },
+        {
+            "subject": "players in dugout",
+            "relationship": "watching",
+            "object": "batter (male)"
+        },
+        {
+            "subject": "field",
+            "relationship": "being played on",
+            "object": "batter (male)"
+        },
+        {
+            "subject": "field",
+            "relationship": "being played on",
+            "object": "catcher (male)"
+        },
+        {
+            "subject": "field",
+            "relationship": "being played on",
+            "object": "umpire (male)"
+        }
+    ]
+}

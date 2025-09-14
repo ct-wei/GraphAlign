@@ -1,0 +1,131 @@
+{
+    "scene": "A person sitting at a dining table with prepared meal items in a kitchen or dining area.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Person sitting at dining table with meal",
+            "objects": [
+                {
+                    "name": "Person 1 (male)",
+                    "attribute": [
+                        "sitting",
+                        "wearing white t-shirt with text",
+                        "wearing glasses",
+                        "engaging with camera or someone"
+                    ]
+                },
+                {
+                    "name": "dining table",
+                    "attribute": [
+                        "wooden",
+                        "cluttered with food items"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Food items on table",
+            "objects": [
+                {
+                    "name": "skillet",
+                    "attribute": [
+                        "containing saut\u00e9ed vegetables"
+                    ]
+                },
+                {
+                    "name": "salad bowl",
+                    "attribute": [
+                        "filled with salad"
+                    ]
+                },
+                {
+                    "name": "condiments",
+                    "attribute": [
+                        "assorted"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Background shelving unit with jars and items",
+            "objects": [
+                {
+                    "name": "shelving unit",
+                    "attribute": [
+                        "holding jars",
+                        "holding other kitchen items"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Decorative motif on walls and reflective surface",
+            "objects": [
+                {
+                    "name": "decorative motif",
+                    "attribute": [
+                        "unique",
+                        "on walls"
+                    ]
+                },
+                {
+                    "name": "reflective surface",
+                    "attribute": [
+                        "mirror or window",
+                        "showing reflection"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Person 1 (male)",
+            "relationship": "wearing",
+            "object": "white t-shirt with text"
+        },
+        {
+            "subject": "Person 1 (male)",
+            "relationship": "wearing",
+            "object": "glasses"
+        },
+        {
+            "subject": "Person 1 (male)",
+            "relationship": "sitting at",
+            "object": "dining table"
+        },
+        {
+            "subject": "dining table",
+            "relationship": "has",
+            "object": "skillet"
+        },
+        {
+            "subject": "dining table",
+            "relationship": "has",
+            "object": "salad bowl"
+        },
+        {
+            "subject": "dining table",
+            "relationship": "has",
+            "object": "condiments"
+        },
+        {
+            "subject": "reflective surface",
+            "relationship": "shows",
+            "object": "Person 1 (male)"
+        },
+        {
+            "subject": "shelving unit",
+            "relationship": "behind",
+            "object": "dining table"
+        },
+        {
+            "subject": "decorative motif",
+            "relationship": "on",
+            "object": "walls"
+        }
+    ]
+}

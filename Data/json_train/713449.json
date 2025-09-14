@@ -1,0 +1,104 @@
+{
+    "scene": "A historical building with a clock tower under a clear sky during daytime.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "The historical building with a clock tower",
+            "objects": [
+                {
+                    "name": "building",
+                    "attribute": [
+                        "brick red",
+                        "with windows",
+                        "old-fashioned architecture"
+                    ]
+                },
+                {
+                    "name": "clock tower",
+                    "attribute": [
+                        "tall",
+                        "prominent",
+                        "with a clock face"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Foreground with road and vehicles",
+            "objects": [
+                {
+                    "name": "road",
+                    "attribute": [
+                        "paved",
+                        "with markings"
+                    ]
+                },
+                {
+                    "name": "car 1",
+                    "attribute": [
+                        "white",
+                        "compact"
+                    ]
+                },
+                {
+                    "name": "car 2",
+                    "attribute": [
+                        "blue",
+                        "compact"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "The sky",
+            "objects": [
+                {
+                    "name": "sky",
+                    "attribute": [
+                        "clear",
+                        "blue"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "building",
+            "relationship": "adjoined to",
+            "object": "clock tower"
+        },
+        {
+            "subject": "clock tower",
+            "relationship": "above",
+            "object": "building"
+        },
+        {
+            "subject": "car 1",
+            "relationship": "parked on",
+            "object": "road"
+        },
+        {
+            "subject": "car 2",
+            "relationship": "parked on",
+            "object": "road"
+        },
+        {
+            "subject": "building",
+            "relationship": "in front of",
+            "object": "sky"
+        },
+        {
+            "subject": "clock tower",
+            "relationship": "in front of",
+            "object": "sky"
+        },
+        {
+            "subject": "road",
+            "relationship": "in front of",
+            "object": "building"
+        }
+    ]
+}

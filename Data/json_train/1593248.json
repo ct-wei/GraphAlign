@@ -1,0 +1,116 @@
+{
+    "scene": "A woman holding an album and smiling, a seated man looking at her, with a buffet table in the background.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Woman holding an album",
+            "objects": [
+                {
+                    "name": "woman (female)",
+                    "attribute": [
+                        "smiling",
+                        "wearing glasses",
+                        "holding an album",
+                        "long hair",
+                        "casual clothing"
+                    ]
+                },
+                {
+                    "name": "album",
+                    "attribute": [
+                        "held by woman",
+                        "large",
+                        "photo collage"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Seated man looking at the woman",
+            "objects": [
+                {
+                    "name": "man (male)",
+                    "attribute": [
+                        "sitting",
+                        "wearing glasses",
+                        "looking at woman",
+                        "short hair",
+                        "casual clothing"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Buffet table with food items",
+            "objects": [
+                {
+                    "name": "buffet table",
+                    "attribute": [
+                        "with food items",
+                        "in a kitchen setting"
+                    ]
+                },
+                {
+                    "name": "food items",
+                    "attribute": [
+                        "assorted",
+                        "in serving dishes"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Kitchen appliances and a woman in the background",
+            "objects": [
+                {
+                    "name": "kitchen appliances",
+                    "attribute": [
+                        "standard kitchenware"
+                    ]
+                },
+                {
+                    "name": "woman (female)",
+                    "attribute": [
+                        "background",
+                        "partially visible"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "woman (female)",
+            "relationship": "holding",
+            "object": "album"
+        },
+        {
+            "subject": "woman (female)",
+            "relationship": "standing in front of",
+            "object": "buffet table"
+        },
+        {
+            "subject": "man (male)",
+            "relationship": "sitting next to",
+            "object": "buffet table"
+        },
+        {
+            "subject": "man (male)",
+            "relationship": "looking at",
+            "object": "woman (female)"
+        },
+        {
+            "subject": "buffet table",
+            "relationship": "laden with",
+            "object": "food items"
+        },
+        {
+            "subject": "woman (female) in background",
+            "relationship": "standing behind",
+            "object": "buffet table"
+        }
+    ]
+}

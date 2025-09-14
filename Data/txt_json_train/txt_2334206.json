@@ -1,0 +1,107 @@
+{
+    "scene": "A man standing on a horse-drawn cart in an urban environment with modern infrastructure.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "A man standing on a horse-drawn cart",
+            "objects": [
+                {
+                    "name": "man",
+                    "attribute": [
+                        "male",
+                        "casual clothing",
+                        "red top",
+                        "jeans",
+                        "relaxed"
+                    ]
+                },
+                {
+                    "name": "horse",
+                    "attribute": [
+                        "light color",
+                        "white or gray",
+                        "harnessed"
+                    ]
+                },
+                {
+                    "name": "cart",
+                    "attribute": [
+                        "blue",
+                        "simple"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Urban environment with modern infrastructure",
+            "objects": [
+                {
+                    "name": "building",
+                    "attribute": [
+                        "with 'BANPRO' sign"
+                    ]
+                },
+                {
+                    "name": "vehicle",
+                    "attribute": [
+                        "white",
+                        "parked"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "man",
+            "relationship": "standing on",
+            "object": "cart"
+        },
+        {
+            "subject": "horse",
+            "relationship": "harnessed to",
+            "object": "cart"
+        },
+        {
+            "subject": "cart",
+            "relationship": "located in",
+            "object": "urban environment"
+        },
+        {
+            "subject": "building",
+            "relationship": "located in",
+            "object": "urban environment"
+        },
+        {
+            "subject": "vehicle",
+            "relationship": "parked on",
+            "object": "side of the street"
+        },
+        {
+            "subject": "man",
+            "relationship": "oversees",
+            "object": "cart's movement"
+        },
+        {
+            "subject": "building",
+            "relationship": "suggests location near",
+            "object": "bank"
+        },
+        {
+            "subject": "building",
+            "relationship": "suggests presence in",
+            "object": "Spanish speaking region"
+        },
+        {
+            "subject": "building",
+            "relationship": "part of",
+            "object": "modern infrastructure"
+        },
+        {
+            "subject": "horse-drawn cart",
+            "relationship": "contrasts with",
+            "object": "modern infrastructure"
+        }
+    ]
+}

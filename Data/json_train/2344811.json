@@ -1,0 +1,145 @@
+{
+    "scene": "A bathroom with a toilet, bathtub, and various items along the windowsill and edges.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Bathroom area with a toilet",
+            "objects": [
+                {
+                    "name": "toilet",
+                    "attribute": [
+                        "white",
+                        "ceramic",
+                        "with seat and lid"
+                    ]
+                },
+                {
+                    "name": "toilet mat",
+                    "attribute": [
+                        "blue",
+                        "rectangular"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Bathtub with a shower curtain and bath items",
+            "objects": [
+                {
+                    "name": "bathtub",
+                    "attribute": [
+                        "white",
+                        "ceramic",
+                        "with shower hose"
+                    ]
+                },
+                {
+                    "name": "shower curtain",
+                    "attribute": [
+                        "white",
+                        "opaque"
+                    ]
+                },
+                {
+                    "name": "bath items",
+                    "attribute": [
+                        "assorted",
+                        "bottles",
+                        "containers"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Window area with personal care products",
+            "objects": [
+                {
+                    "name": "window",
+                    "attribute": [
+                        "double",
+                        "with sill"
+                    ]
+                },
+                {
+                    "name": "care products",
+                    "attribute": [
+                        "various",
+                        "bottles",
+                        "containers"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Floor area and wall with hand towel",
+            "objects": [
+                {
+                    "name": "floor",
+                    "attribute": [
+                        "white",
+                        "tiled"
+                    ]
+                },
+                {
+                    "name": "hand towel",
+                    "attribute": [
+                        "yellow",
+                        "hanging"
+                    ]
+                },
+                {
+                    "name": "wall",
+                    "attribute": [
+                        "white",
+                        "tiled"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "toilet",
+            "relationship": "adjacent to",
+            "object": "toilet mat"
+        },
+        {
+            "subject": "toilet mat",
+            "relationship": "on",
+            "object": "floor"
+        },
+        {
+            "subject": "bathtub",
+            "relationship": "covered by",
+            "object": "shower curtain"
+        },
+        {
+            "subject": "shower curtain",
+            "relationship": "next to",
+            "object": "bath items"
+        },
+        {
+            "subject": "bathtub",
+            "relationship": "next to",
+            "object": "bath items"
+        },
+        {
+            "subject": "bath items",
+            "relationship": "on",
+            "object": "window sill"
+        },
+        {
+            "subject": "care products",
+            "relationship": "on",
+            "object": "window sill"
+        },
+        {
+            "subject": "hand towel",
+            "relationship": "attached to",
+            "object": "wall"
+        }
+    ]
+}

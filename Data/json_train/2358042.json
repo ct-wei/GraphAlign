@@ -1,0 +1,93 @@
+{
+    "scene": "A double-decker bus driving down the street with parked cars on either side.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Double-decker bus driving on the street",
+            "objects": [
+                {
+                    "name": "Double-decker bus",
+                    "attribute": [
+                        "purple and white",
+                        "two-story",
+                        "number 112",
+                        "operational"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Parked cars on the side of the street",
+            "objects": [
+                {
+                    "name": "Car 1",
+                    "attribute": ["blue", "compact"]
+                },
+                {
+                    "name": "Car 2",
+                    "attribute": ["silver", "saloon"]
+                },
+                {
+                    "name": "Car 3",
+                    "attribute": ["red", "hatchback"]
+                },
+                {
+                    "name": "Car 4",
+                    "attribute": ["blue", "estate"]
+                },
+                {
+                    "name": "Car 5",
+                    "attribute": ["green", "hatchback"]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Sidewalk next to the street",
+            "objects": [
+                {
+                    "name": "Sidewalk",
+                    "attribute": ["paved", "pedestrian area"]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Double-decker bus",
+            "relationship": "driving past",
+            "object": "Car 1"
+        },
+        {
+            "subject": "Double-decker bus",
+            "relationship": "driving past",
+            "object": "Car 2"
+        },
+        {
+            "subject": "Car 1",
+            "relationship": "parked behind",
+            "object": "Car 2"
+        },
+        {
+            "subject": "Car 3",
+            "relationship": "parked in front of",
+            "object": "Car 2"
+        },
+        {
+            "subject": "Double-decker bus",
+            "relationship": "on",
+            "object": "street"
+        },
+        {
+            "subject": "Car 1",
+            "relationship": "next to",
+            "object": "Sidewalk"
+        },
+        {
+            "subject": "Car 5",
+            "relationship": "next to",
+            "object": "Sidewalk"
+        }
+    ]
+}

@@ -1,0 +1,134 @@
+{
+    "scene": "Two hikers with snowboards are ascending a snowy mountain slope.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Hiker with a green backpack",
+            "objects": [
+                {
+                    "name": "Hiker 1 (gender unspecified)",
+                    "attribute": [
+                        "wearing dark clothing",
+                        "carrying a snowboard",
+                        "wearing a green backpack",
+                        "holding walking poles",
+                        "hiking"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Hiker with a blue and orange backpack",
+            "objects": [
+                {
+                    "name": "Hiker 2 (gender unspecified)",
+                    "attribute": [
+                        "wearing bright clothing",
+                        "carrying a snowboard",
+                        "wearing a blue and orange backpack",
+                        "holding walking poles",
+                        "hiking"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "Snowy mountain slope with partially visible mountain peak",
+            "objects": [
+                {
+                    "name": "snow",
+                    "attribute": [
+                        "white",
+                        "covering mountain slope"
+                    ]
+                },
+                {
+                    "name": "mountain peak",
+                    "attribute": [
+                        "rocky",
+                        "partially covered with snow"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region4",
+            "description": "Grassy foreground with snow patches",
+            "objects": [
+                {
+                    "name": "grass",
+                    "attribute": [
+                        "green",
+                        "in the foreground"
+                    ]
+                },
+                {
+                    "name": "snow patches",
+                    "attribute": [
+                        "white",
+                        "interspersed with grass"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Hiker 1 (gender unspecified)",
+            "relationship": "walking ahead of",
+            "object": "Hiker 2 (gender unspecified)"
+        },
+        {
+            "subject": "Hiker 1 (gender unspecified)",
+            "relationship": "carrying",
+            "object": "snowboard"
+        },
+        {
+            "subject": "Hiker 2 (gender unspecified)",
+            "relationship": "carrying",
+            "object": "snowboard"
+        },
+        {
+            "subject": "Hiker 1 (gender unspecified)",
+            "relationship": "using",
+            "object": "walking poles"
+        },
+        {
+            "subject": "Hiker 2 (gender unspecified)",
+            "relationship": "using",
+            "object": "walking poles"
+        },
+        {
+            "subject": "Hiker 1 (gender unspecified)",
+            "relationship": "on",
+            "object": "grass"
+        },
+        {
+            "subject": "Hiker 2 (gender unspecified)",
+            "relationship": "on",
+            "object": "grass"
+        },
+        {
+            "subject": "grass",
+            "relationship": "surrounding",
+            "object": "snow patches"
+        },
+        {
+            "subject": "snow",
+            "relationship": "covering",
+            "object": "mountain peak"
+        },
+        {
+            "subject": "Hiker 1 (gender unspecified)",
+            "relationship": "ascending",
+            "object": "snowy mountain slope"
+        },
+        {
+            "subject": "Hiker 2 (gender unspecified)",
+            "relationship": "ascending",
+            "object": "snowy mountain slope"
+        }
+    ]
+}

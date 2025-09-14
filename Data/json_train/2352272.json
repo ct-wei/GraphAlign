@@ -1,0 +1,106 @@
+{
+    "scene": "A mobile phone mounted on a car dashboard holder with a view of the street outside.",
+    "regions": [
+        {
+            "region_name": "region1",
+            "description": "Mobile phone mounted on dashboard holder",
+            "objects": [
+                {
+                    "name": "mobile phone",
+                    "attribute": [
+                        "black",
+                        "screen turned off"
+                    ]
+                },
+                {
+                    "name": "dashboard holder",
+                    "attribute": [
+                        "black",
+                        "adjustable"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region2",
+            "description": "Car interior",
+            "objects": [
+                {
+                    "name": "car dashboard",
+                    "attribute": [
+                        "beige",
+                        "plastic material"
+                    ]
+                },
+                {
+                    "name": "car window",
+                    "attribute": [
+                        "transparent",
+                        "closed"
+                    ]
+                },
+                {
+                    "name": "car speaker",
+                    "attribute": [
+                        "black",
+                        "round"
+                    ]
+                }
+            ]
+        },
+        {
+            "region_name": "region3",
+            "description": "View of street outside through car window",
+            "objects": [
+                {
+                    "name": "street",
+                    "attribute": []
+                },
+                {
+                    "name": "other cars",
+                    "attribute": [
+                        "multiple colors",
+                        "parked"
+                    ]
+                }
+            ]
+        }
+    ],
+    "triples": [
+        {
+            "subject": "mobile phone",
+            "relationship": "mounted on",
+            "object": "dashboard holder"
+        },
+        {
+            "subject": "dashboard holder",
+            "relationship": "attached to",
+            "object": "car dashboard"
+        },
+        {
+            "subject": "car dashboard",
+            "relationship": "part of",
+            "object": "car interior"
+        },
+        {
+            "subject": "car speaker",
+            "relationship": "mounted on",
+            "object": "car dashboard"
+        },
+        {
+            "subject": "mobile phone",
+            "relationship": "facing",
+            "object": "car window"
+        },
+        {
+            "subject": "car window",
+            "relationship": "providing view to",
+            "object": "street"
+        },
+        {
+            "subject": "other cars",
+            "relationship": "visible through",
+            "object": "car window"
+        }
+    ]
+}
